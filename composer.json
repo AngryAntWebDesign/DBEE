@@ -6,7 +6,13 @@
     "require": {
         "acquia/lightning": "^4.0",
         "cweagans/composer-patches": "^1.6.0",
-        "drupal-composer/drupal-scaffold": "^2.0.0"
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "drupal/bootstrap_barrio": "^4.22",
+        "drupal/admin_toolbar": "^1.27",
+        "drupal/webform": "^5.2",
+        "drupal/adminimal_admin_toolbar": "^1.9",
+        "drupal/image_effects": "^2.3",
+        "drupal/yoast_seo": "^1.5"
     },
     "require-dev": {
         "drush/drush": "^9.0"

@@ -1,0 +1,180 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+a {
+    color: #0448a0;
+}
+
+p {
+    color: #132448;
+}
+
+.btn {
+    border-radius:0px;
+}
+
+
+
+.btn.btn-default {
+
+}
+.btn.btn-secondary {
+
+}
+.btn.btn-third {
+    background-color: #8fcb00;
+}
+.btn.btn-fourth {
+
+}
+.btn.btn-fifth {
+    border-color: #8fcb00;
+}
+/* where titles are displayed from blocks *** not really used */
+ h2.display-4 {
+     color: #ffffff;
+     color: #0448a0;
+ }
+.clear {
+    clear: both;
+}
+
+/* custom blocks types  */
+
+.solid-colour-block-background {
+    padding:50px;
+}
+.image-block-background {
+    padding:50px;
+}
+.image-block-background .lead p {
+    /* position: absolute; */
+    bottom: 0px;
+    color: #ffffff;
+}
+/* Homepage Block classes defined below */
+
+.h-timber-processing-banner {
+     
+}
+.h-timber-processing-banner h2 {
+    color:#ffffff;
+    font-size: 2.5em;
+}
+.h-timber-processing-banner h3 {
+    color: #8fcb00;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+ .h-discuss-project {text-align: center;}
+ .h-service-view {
+
+ }
+
+ .view-id-service div.views-row {
+    float: left;
+    width: 25%;
+    clear: unset !important;
+}
+ .h-hand-banner {
+
+ }
+ .h-diverse {
+    text-align:center;
+ }
+ .h-diverse ul {
+     list-style:none;
+ }
+ .h-diverse li {
+    float:left;
+    width: 25%;
+ }
+ #page .h-contact-block-group,
+ #page .h-footer-group {
+    max-width:1140px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 50px;
+}
+.site-footer {
+    background-color: #F5F5F5;;
+    text-align: center;
+}
+.site-footer .site-footer__top .region-footer-second {
+    width: 100% !important;
+}
+ .h-contact {
+    float: left;
+    
+}
+ .h-webform {float: left;}
+ 
+ .h-bespoke-projects {
+
+ }
+ .h-logo {
+    float: left;
+ }
+ .h-logo img {
+     width:200px;
+ }
+ .h-about {
+     float: left;
+
+
+ }
+
+ 
+ .view-id-service .views-field-title {
+     font-size: 2em;
+     font-weight: bold;
+     color: #132448;
+ }
+ .view-id-service .views-field-title a {
+    color: #132448;
+    font-weight: normal;
+ }
+
+ div[class*=" col-"] {
+     margin:0px;
+     padding:0px;
+ }
+
+ .h-bespoke-projects .jumbotron-fluid, .h-hand-banner .jumbotron-fluid {
+     height: 600px;
+ }
+.jumbotron {
+    /* padding: 0px; */
+    margin:0px;
+}
+
+.h-custom-timber  p, .h-custom-timber  h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+div.h-service-view {
+    padding: 80px;
+}
+
+.header-right-address-phone {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.view-products .views-row {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 25px;
+    max-width: calc(25% - 25px);
+}
+.block-system-main-block {
+    clear: both;
+}

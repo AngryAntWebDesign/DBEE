@@ -1,0 +1,569 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+ body, p, a, li {
+    font-family: 'Avenir';
+    font-weight: 500;
+}
+.path-node .view-service-content-page img {
+    padding:0 20px 10px 0px;
+    /* width: 50%; */
+}
+
+a {
+    color: #0448a0;
+    font-weight:normal;
+}
+
+.btn:hover {
+    opacity: .8;
+    /* color: #ffffff; */
+    filter: alpha(opacity=80);
+}
+
+p {
+    color: #132448;
+    line-height: 1.5rem;
+}
+.lead {
+    text-align: center;
+}
+.jumbotron .lead .field--name-body h2, 
+.jumbotron .lead .field--name-body h3 {
+    text-align: left;
+}
+h3 {
+    color:#0448a0;
+    font-weight: 600;
+}
+.path-frontpage h3 {
+    font-size: 2.3rem;
+}
+/* contains logo, menu and contact block  */
+.navbar-main {
+    position: relative;
+}
+#navbar-main {
+    padding: 0rem;
+    /* height: 173px; */
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(19, 36, 72, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-dark.navbar-toggler {
+    border-color: rgb(19, 36, 72);
+  } 
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #0448a0;
+    font-size: 1.1rem;
+    margin-top: 0px;
+    padding: .5rem 1rem .2rem 1rem;
+}
+li.nav-item {
+    padding:0px 5px;
+}
+/* active nav links */
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #132448;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #132448;
+}
+/*  */
+.navbar-brand img {
+    width: 320px;
+    padding:20px;
+    padding-left: 120px;
+}
+.path-node h2, .path-node h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 65px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color:#0448a0;
+}
+
+#block-aaweb-subtheme-main-menu {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #F5F5F5;
+    padding: 0px 20px;
+}
+
+.btn {
+    padding: .35rem .5rem .2rem .5rem;
+    border-radius:0px;
+}
+.btn.btn-default {
+
+}
+.btn.btn-secondary {background-color: #0448a0;margin-right: 10px;}
+.btn.btn-third {
+    background-color: #8fcb00;
+    color: #132448;
+    margin-left: 10px;
+}
+.btn.btn-fourth {
+
+}
+.btn.btn-fifth {
+    border: 2px solid #8fcb00;
+    /* padding: .35rem .5rem .2rem .5rem; */
+}
+/* where titles are displayed from blocks *** not really used */
+ h2.display-4 {
+     color: #ffffff;
+     color: #0448a0;
+ }
+.clear {
+    clear: both;
+}
+
+/* custom blocks types  */
+
+.solid-colour-block-background {
+    padding: 68px 60px 53px 60px;
+}
+
+#block-aaweb-subtheme-diverserangeoftimberprojects .solid-colour-block-background {
+    padding-top: 81px;
+}
+.image-block-background {
+    padding: 95px 0px;
+}
+.image-block-background .lead p {
+    /* position: absolute; */
+    bottom: 0px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    /* width: 100%; */
+}
+
+
+/* Homepage Block classes defined below */
+#block-aaweb-subtheme-hometimberprocessingsolutions .image-block-background p {
+    text-align: left;
+}
+div#block-ispm15certified {
+    position: absolute;
+    right: 50px;
+    z-index: 99;
+    margin-top: -150px;
+}
+
+#block-aaweb-subtheme-diverserangeoftimberprojects .field--name-body {
+    padding: 50px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.node--type-page .field--name-body img {
+    padding:0px 20px;
+}
+.h-timber-processing-banner h2 {
+    color:#ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.h-timber-processing-banner h3 {
+    color: #8fcb00;
+    font-weight: normal;
+    font-size: 1em;
+    padding-bottom: 54px;
+}
+.h-timber-processing-banner .image-block-background {
+    height:515px;
+}
+.h-timber-processing-banner .btn.btn-fifth {
+    margin-top: 17px;
+    color: #ffffff;
+}
+#block-aaweb-subtheme-discussyourproject .solid-colour-block-background  {
+    padding: 65px;
+}
+ .h-discuss-project {text-align: center;}
+ .h-discuss-project a {
+     font-size: 1.5rem;
+     color: #132448;
+ }
+.path-node #block-aaweb-subtheme-homecontactus {
+    /* max-width: 1270px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+ .block-views-blockservice-content-page-block-1 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .h-service-view {
+
+ }
+ .footer-services {
+     text-align: center;
+     margin-top: 30px;
+ }
+ .footer-services h3 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+ }
+.footer-services a.btn.btn-primary {
+    background-color: #8fcb00;
+    color: #132448;
+    margin-left: 10px;
+    text-align: center;
+}
+ #block-homelogofootergroup-2 {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .block-inline-blockbasic {
+ max-width: 800px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+.node--type-landing-page h2 {
+    margin-bottom: 0px;
+}
+
+ .view-service-content-page .view-header {
+     margin-bottom: 60px;
+ }
+ .footer-services .lead, .footer-services p {
+     color:#ffffff;
+ }
+ .view-products .lead, 
+ .view-service-content-page .lead {
+    margin-bottom:50px;
+ }
+
+ .view-products .views-field-title h4 {
+    font-size: 1.2rem !important;
+    margin-top: 10px;
+    color: #0448a0;
+    font-weight: 600;
+ }
+
+ .views-field-field-featured-text p {
+     font-size: .9rem;
+     font-weight: 500;
+     line-height: 1.2rem;
+ }
+ .views-field-field-featured-text {
+     padding-bottom: 10px;
+ }
+
+ .view-id-service div.views-row {
+    float: left;
+    /* width: 25%; */
+    clear: unset !important;
+    padding: 16px !important;
+}
+.block-views-blockservice-content-page-block-1 .views-row  {
+    padding-bottom: 50px;
+}
+
+ .h-hand-banner {background: linear-gradient(rgba(19,36,72,0),rgba(19,36,72,.5));}
+ .h-hand-banner .container,
+ .h-bespoke-projects .container
+  {
+     /* display: flex; */
+     /* align-items: baseline; */
+     max-width: inherit;
+     position: absolute;
+     bottom: 15px;
+     left: 0;
+ }
+ .h-diverse {
+    text-align:center;
+ }
+ .h-diverse ul {
+     list-style:none;
+ }
+ .h-diverse li {
+    float:left;
+    width: 25%;
+ }
+ #page .h-contact-block-group,
+ #page .h-footer-group {
+    clear: both;
+    /* max-width:1140px; */
+    /* margin-left: auto; */
+    /* margin-right:auto; */
+    padding: 44px;
+    /* display: block; */
+    /* position: relative; */
+    float: left;
+}
+#block-aaweb-subtheme-homelogofootergroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 960px; */
+}
+
+#page .h-contact-block-group {display: flex;align-items: center !important;justify-content: center;flex-direction: column;width: 100%;text-align: center;/* margin: 10% 0; *//* min-height: 200px; *//* background-color: rgba(33, 33, 33, .3); */align-items: center;/* padding: 75px 0px; */}
+.site-footer {
+    background-color: #F5F5F5;;
+    text-align: center;
+    padding: 0px;
+}
+.site-footer .block {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+    color: #606060;
+}
+.site-footer .block p,
+.site-footer .block a  {
+    color: #606060;
+}
+.site-footer .site-footer__top .region-footer-second {
+    width: 100% !important;
+}
+ .h-contact {
+    float: left;
+    text-align: left;
+}
+#block-aaweb-subtheme-homecontactblock p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+ .h-webform {float: left;/* max-width: 400px; */text-align: left;}
+ 
+ .h-bespoke-projects {
+
+ }
+ .h-logo {
+    float: left;
+    margin-left: 100px;
+    display: inline;
+    width: 220px;
+ }
+ .h-logo img {
+     width: 165px;
+     float: right;
+     margin-right: 50px;
+ }
+ #block-aaweb-subtheme-homeaboutus-2.h-about {
+     float: left;
+     padding: 10px;
+     max-width: 445px;
+     display: inline-block;
+ }
+ #block-aaweb-subtheme-homeaboutus-2 p {
+     color: #0448a0;
+     font-weight: 500;
+     line-height: 1.2rem;
+     font-size: .9rem;
+     padding-bottom: 10px;
+ }
+ 
+ .view-id-service .views-field-title {
+     font-size: 2em;
+     font-weight: bold;
+     color: #132448;
+     margin-bottom: 10px;
+ }
+ .view-id-service .views-field-title a {
+    color: #132448;
+    font-weight: 600;
+    font-size: 24px;
+ }
+
+ .path-frontpage div[class*=" col-"] {
+     margin:0px;
+     padding:0px;
+ }
+
+ .h-bespoke-projects .jumbotron-fluid, .h-hand-banner .jumbotron-fluid {
+     height: 620px;
+     position: relative;
+     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1));
+ }
+.jumbotron {
+    /* padding: 0px; */
+    margin:0px;
+}
+
+.h-custom-timber  p, .h-custom-timber  h3 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+.h-custom-timber  h3 {
+    font-weight: 600;
+}
+
+.path-frontpage div.h-service-view {
+    padding: 45px 0px;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-right-address-phone {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: right;
+    padding: 30px 30px 0px 0px;
+    font-weight: 500;
+}
+.ph-normal {
+    font-weight: normal;
+}
+p.ph-line {
+    margin-bottom: 0px;
+}
+.header-right-address-phone p {
+    font-weight: 500;
+}
+.header-right-address-phone a {
+    font-size: 1.5rem;
+    color: #132448;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.view-products .views-row {
+    text-align: left;
+    /* border: 1px solid #ccc; */
+    /* margin: 10px; */
+    padding: 30px;
+    padding-top: 25px;
+    /* max-width: calc(25% - 25px); */
+    overflow: hidden;
+}
+.block-system-main-block {
+    clear: both;
+    margin-bottom: 50px;
+}
+.block-views-blockproducts-block-3 {
+    padding-top: 50px;
+}
+.block-views-blockservice-block-1 div.views-row {
+    width: 50%;
+}
+
+#block-aaweb-subtheme-webform input, #block-aaweb-subtheme-webform textarea {
+    background-color: #f5f5f5;
+    border: 0px;
+    border-radius: 0px;
+}
+.webform-button--submit {
+    background-color: #0448a0 !important;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-color: #0448a0 !important;
+    padding: .7rem 1rem .5rem 1rem;
+}
+
+ .pers-details p {
+    color:#0448a0;
+}
+
+.block-views-blockservice-block-1 {
+    padding-bottom: 50px;
+}
+
+.block-views-blockservice-block-1 img {
+    width: 300px;
+    padding: 0px 20px;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    #block-aaweb-subtheme-main-menu {
+        position: relative;
+    }
+    #block-aaweb-subtheme-diverserangeoftimberprojects li {
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .path-node .view-service-content-page img {
+    width: 50%;
+    height: auto;
+    }
+
+    #block-aaweb-subtheme-diverserangeoftimberprojects li {
+        width: 100%;
+        padding: 20px;
+    }
+    .header-right-address-phone {
+        display: none;
+    }
+    .solid-colour-block-background {
+        padding: 50px;
+    }
+    h3 {
+        font-size:1.5rem;
+    }
+    .h-timber-processing-banner h2 {
+        font-size: 2rem;
+    }
+    .path-frontpage p {
+        font-size: 1.2rem;
+    }
+    #block-aaweb-subtheme-homecontactblock.h-contact-block-group {
+        padding: 45px;
+    }
+    #page fieldset {
+        padding: 0px;
+    }
+    /* consistency  */
+    .solid-colour-block-background,
+    #block-aaweb-subtheme-diverserangeoftimberprojects .solid-colour-block-background,
+    #block-aaweb-subtheme-discussyourproject .solid-colour-block-background {
+        padding: 45px;
+    }
+    #block-aaweb-subtheme-homecontactblock p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand img {
+        width: 220px;
+        padding: 20px;
+        padding-left: 50px;
+    }
+
+}
+
+button.navbar-toggler.navbar-toggler-right {
+    color: #132448;
+    margin-top: 10px;
+    border-color: #132448;
+    margin-right: 20px;
+}
+
+.h-about h3 {
+    margin-bottom: 13px;
+}
+
+div#block-aaweb-subtheme-hometimberprocessingsolutions .container {
+    margin-left: 120px;
+}
+
+a.btn.btn-primary {
+    background-color: #132448;
+    border-color: #132448;
+}
