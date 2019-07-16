@@ -6,7 +6,6 @@ description: 'Basic structure for a Bootstrap Barrio SubTheme.'
 base theme: bootstrap_barrio
 
 libraries:
-  - aaweb_subtheme/bootstrap_cdn
   - aaweb_subtheme/global-styling
 
 regions:

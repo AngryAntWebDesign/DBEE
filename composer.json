@@ -12,7 +12,8 @@
         "drupal/webform": "^5.2",
         "drupal/adminimal_admin_toolbar": "^1.9",
         "drupal/image_effects": "^2.3",
-        "drupal/yoast_seo": "^1.5"
+        "drupal/yoast_seo": "^1.5",
+        "drupal/bootstrap_library": "^1.11"
     },
     "require-dev": {
         "drush/drush": "^9.0"
