@@ -4,7 +4,7 @@
     "description": "Project template for Drupal 8 sites built with the Lightning distribution.",
     "license": "GPL-2.0-or-later",
     "require": {
-        "acquia/lightning": "^4.0",
+        "acquia/lightning": "4.0.4",
         "cweagans/composer-patches": "^1.6.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "drupal/bootstrap_barrio": "^4.22",
@@ -14,7 +14,10 @@
         "drupal/image_effects": "^2.3",
         "drupal/yoast_seo": "^1.5",
         "drupal/bootstrap_library": "^1.11",
-        "drupal/leaflet": "^1.15"
+        "drupal/leaflet": "^1.15",
+        "drupal/fontyourface": "^3.2",
+        "drupal/mailchimp": "^1.10",
+        "drupal/easy_breadcrumb": "^1.12"
     },
     "require-dev": {
         "drush/drush": "^9.0"
