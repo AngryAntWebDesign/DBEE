@@ -54,12 +54,15 @@ h3 {
 h4 {
     font-weight: 600;
     font-style: normal;
-    font-size: 25px;
+    font-size: 14px;
+    color: #658678;
+    line-height: 2em;
+    letter-spacing: .15em;
 }
 h5 {
     font-weight: 600;
     font-style: normal;
-    font-size: 18px;
+    font-size: 12px;
 }
 ol {
     color:#658678;
@@ -90,14 +93,16 @@ a:hover, a:active {
     outline: 0;
     text-decoration: none;
 }
-.block-menu {
-
-}
+.block-menu {width: 100%;}
 .navbar-brand img {
     max-width: 268px;
 }
+/* right hand main menu separateion from the left side -realigned  */
+.main-cta-separation {
+    margin-left: 50px;
+}
 #block-aaweb-subtheme-main-menu .nav {
-    width: 500px;
+    width: 100%;
 }
 .navbar-brand, .nav a {
     border-bottom: none;
@@ -105,13 +110,25 @@ a:hover, a:active {
 #block-aaweb-subtheme-main-menu .nav a.nav-link {
     color:#ffffff;
     text-decoration: none;
-    
+    font-weight: 700;
 }
 #block-aaweb-subtheme-main-menu .nav a.nav-link:hover {
 color: #778;
 }
 #block-aaweb-subtheme-footer {
     text-align: center;
+    width: 100%;
+}
+
+.footer-contained img {
+    max-width: 2500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.block-hero,
+.block-footer-banner
+{
     width: 100%;
 }
 .footer-partner-images {
@@ -124,10 +141,24 @@ color: #778;
 }
 #block-aaweb-subtheme-footer a {
     display: inline-block;
+    text-transform: uppercase;
 }
-.image-block-background {
-
+.image-block-background {width: 100% !important;-webkit-animation: anim-opacity-full 480ms ease-out;animation: anim-opacity-full 480ms ease-out;background-color: #452726;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #fff;}
+.image-block-background p.block-button  {
+    position: relative;
+    height: auto;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    outline: none;
+    box-shadow: inset 0 0 0 1px rgba(128,128,128,0);
+    -webkit-transition: box-shadow .2s ease-in-out;
+    -moz-transition: box-shadow .2s ease-in-out;
+    -ms-transition: box-shadow .2s ease-in-out;
+    -o-transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
 }
+/* Content areas front page possibly content pages */
 .node__content,
 #block-frontgetinvolved,
 #block-frontprojectpartners {
@@ -136,6 +167,12 @@ color: #778;
     margin-right: auto;
     margin-top: 40px;
 }
+/* parallax front images  */
+#block-frontanaturalperformer,
+#block-frontshareyourstory {
+    min-height: 500px;
+}
+
 /* white text on any image block includes hero */
 .image-block-background h1,
 .image-block-background h2,
@@ -148,6 +185,30 @@ color: #778;
 .cta-block h3 {
     color:#ffffff;
 }
+/* Team page using layout builder to make user experience easy */
+
+.page-node-2 .node__content {
+    width: 100%;
+}
+
+
+/* Webform stuff for getting involved */
+.webform-submission-register-interest-form button.webform-button--submit {
+    background-color: transparent;
+    color: #707070;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgb(112, 112, 112);
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    transition: 0.1s background-color linear, 0.1s color linear;
+}
+.webform-submission-register-interest-form button.webform-button--submit:hover {
+    background-color: #707070;
+    color: #ffffff;
+}
+
 /* Defined Styleed classes needs to be part of development process due to specifying in rich text editor. This defines
 the default behaviour of syles to minimise overides. see dbee.ddev.site/website-styles. explicitly define to override globals */
 p.lead-bg-light {
@@ -166,10 +227,148 @@ p.subtext-bg-dark {
 p.light-text {
     color: #636363;    
 }
+/* news view front page */
+.view-news .views-field-created {
+    /* font-size: 12px; */
+    display: -moz-box;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    /* display: -webkit-flex; */
+    /* display: flex; */
+    /* font-family: Arial,Helvetica,sans-serif; */
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0em;
+    text-transform: none;
+    /* font-family: futura-pt; */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: rgba(112,112,112,.5);
+    text-align: center;
+}
+.project-news img {
+    width:100%;
+    height: auto;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-news {
+    text-align: center;
+}
+.view-news a {
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 0px;
+    /* text-transform: uppercase; */
+    color: #525252;
+    line-height: 1em;
+    /* padding-top: 50px; */
+}
+/* Mailchimp stuff - it's times like this you wish you could use scss or less variables and encapsulation */
+#block-mailchimpsubscriptionformsubscribeforprojectupdates {
+    background-color: #2e2d49;
+    color: #ffffff;
+    padding: 40px 0px;
+    margin: 17px 0;
+}
+#block-mailchimpsubscriptionformsubscribeforprojectupdates label {
+    display: none;  
+}
+#block-mailchimpsubscriptionformsubscribeforprojectupdates h2 {
+    color: #ffffff;
+    text-align: center;
+}
+#block-mailchimpsubscriptionformsubscribeforprojectupdates input {
+    background-color: #66887a;
+    color: rgb(99, 99, 99);
+    border-radius: 0px;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid rgba(0,0,0,.12);
+    font-family: inherit;
+    font-size: 15px;
+    line-height: normal;
+    outline: none;
+    -webkit-transition: background .3s ease-out,border .3s ease-out;
+    -moz-transition: background .3s ease-out,border .3s ease-out;
+    -ms-transition: background .3s ease-out,border .3s ease-out;
+    -o-transition: background .3s ease-out,border .3s ease-out;
+    transition: background .3s ease-out,border .3s ease-out;
+    display: inline-block;
+}
+#block-mailchimpsubscriptionformsubscribeforprojectupdates .form-control:focus {
+    box-shadow: none;
+}
+#block-mailchimpsubscriptionformsubscribeforprojectupdates button {
+    border-color: #66887a;
+    border-width:3px;
+    color: #66887a;
+    border-color: #66887a;
+    background-color: transparent;
+}
+/* Mailchimp news page */
+#block-mailchimpsubscriptionformprojectnews,
+#block-mailchimpsubscriptionformprojectnews h2
+ {
+    text-align: center;
+}
+#mailchimp-signup-subscribe-block-project-news-form {
+    margin: 17px 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+.mailchimp-newsletter-mergefields fieldset {
+    width: 50%;
+    display: inline-block;
+}
+.mailchimp-newsletter-mergefields label {
+    display: none;
+}
+/*  END MAILCHIMP STUFF */
+/* CUSTOM BLOCK TYPE  */
+.image-block-background h4 {
+    color: #ffffff;
+}
+#block-frontbeetleswithbenefits-2 jumbotron {
+    position: relative;
+    z-index: 2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* overlay for banners */
+.special {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(69,39,38,.37);
+}
+/*  */
 footer.site-footer {
     background-color: #ffffff;
     text-align: center;
     width: 100%;
+}
+footer .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+footer .nav-item {
+    display: inline-block;
+    float: left;
+    width: auto;
+    /* display: inline-block; */
 }
 /* Consistent Buttons  */
 .btn {
@@ -236,12 +435,27 @@ a.btn-third {
     line-height: normal;
     white-space: nowrap;
 }
+a.btn-primary:hover {
+    border-color: #2e2d49;
+    color: #ffffff !important;
+    opacity: .8;
+}
+a.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #2e2d49;
+    border: #ffffff 2px solid;
+    color: #1d1d1d !important;
+}
 a.btn-third:hover {
     background-color: #66887a !important;
     border-color: #66887a !important;
     color: #fff !important;
 }
-
+#block-mailchimpsubscriptionformsubscribeforprojectupdates button:hover {
+    background-color: #66887a !important;
+    border-color: #66887a !important;
+    color: #fff !important;
+}
 a.btn-fourth {
     color: #66887a !important;
     border-color: #66887a !important;
@@ -264,12 +478,15 @@ a.btn-fourth:hover {
 a.btn-fifth {
 
 }
+#
 #block-views-block-news-block-2 {
     padding-bottom: 17px;
 }
-@media (min-width: 992px) {
-
+@media only screen and (max-width: 992px) {
+    .main-cta-separation {
+        margin-left: 0px;
+    }
 }
-@media (min-width: 768px) {
+@media only screen and (max-width: 760px) {
 
 }

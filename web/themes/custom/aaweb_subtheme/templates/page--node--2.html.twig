@@ -62,7 +62,8 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" >
+        <div id="main" class="other-container">
+          {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
                 <section class="section">
@@ -88,6 +89,16 @@
         </div>
       {% endblock %}
     </div>
+    {% if page.featured_bottom_contained %}
+    <div class="featured-bottom-contained">
+          {{ page.featured_bottom_contained }}
+    </div>
+    {% endif %}
+    {% if page.featured_bottom %}
+    <div class="featured-bottom">
+          {{ page.featured_bottom }}
+    </div>
+    {% endif %}
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom">
         <aside class="{{ container }} clearfix" role="complementary">
@@ -96,16 +107,6 @@
           {{ page.featured_bottom_third }}
         </aside>
       </div>
-    {% endif %}
-    {% if page.featured_bottom_contained %}
-    <div class="featured-bottom-contained">
-          {{ page.featured_bottom_contained }}
-    </div>
-    {% endif %}    
-    {% if page.featured_bottom %}
-    <div class="featured-bottom">
-          {{ page.featured_bottom }}
-    </div>
     {% endif %}
     <footer class="site-footer">
       {% block footer %}

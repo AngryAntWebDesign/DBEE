@@ -54,7 +54,7 @@
     {% if page.featured_top %}
       {% block featured %}
         <div class="featured-top">
-          <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
+          <aside class="featured-top__inner section clearfix" role="complementary">
             {{ page.featured_top }}
           </aside>
         </div>
@@ -89,7 +89,11 @@
         </div>
       {% endblock %}
     </div>
-    
+    {% if page.featured_bottom_contained %}
+    <div class="featured-bottom-contained">
+          {{ page.featured_bottom_contained }}
+    </div>
+    {% endif %}
     {% if page.featured_bottom %}
     <div class="featured-bottom">
           {{ page.featured_bottom }}
