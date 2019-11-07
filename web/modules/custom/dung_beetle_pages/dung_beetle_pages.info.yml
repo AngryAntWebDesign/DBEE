@@ -1,0 +1,10 @@
+name: 'Dung Beetle Pages'
+type: module
+description: 'Dung Beetle Pages contains a csv import for the content type Dung Beetles'
+core: 8.x
+package: 'dbee'
+dependencies:
+  - migrate
+  - migrate_tools
+  - migrate_plus
+  - migrate_source_csv

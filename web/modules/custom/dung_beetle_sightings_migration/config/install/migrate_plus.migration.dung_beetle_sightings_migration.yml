@@ -1,0 +1,170 @@
+# Migration configuration 
+id: dung_beetle_sightings_migration
+label: DB migration
+migration_group: sighting_migrate
+migration_tags:
+  - dbee sightings
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  headers:
+    Accept: 'application/json; charset=utf-8'
+    Content-Type: 'application/json'
+  urls: 
+    - https://biocache-ws.ala.org.au/ws/occurrences/search?fq=data_resource_uid:dr2270&pageSize=100
+  item_selector: occurrences/
+  fields:
+    -
+      name: uuid
+      label: 'UUID'
+      selector: uuid
+    -
+      name: eventDate
+      label: 'Event Date'
+      selector: eventDate
+    -
+      name: occurrenceYear
+      label: 'Occurance Year'
+      selector: occurrenceYear
+    -
+      name: scientificName
+      label: 'Scientific Name'
+      selector: scientificName
+    -
+      name: vernacularName
+      label: 'Vernacular Name'
+      selector: vernacularName
+    -
+      name: taxonRankID
+      label: 'Taxon Rank ID'
+      selector: taxonRankID
+    -
+      name: country
+      label: 'country'
+      selector: country
+    -
+      name: kingdom
+      label: 'Kingdom'
+      selector: kingdom
+    -
+      name: phylum
+      label: 'phylum'
+      selector: phylum
+    -
+      name: classs
+      label: 'classs'
+      selector: classs
+    -
+      name: order
+      label: 'order'
+      selector: order
+    -
+      name: family
+      label: 'family'
+      selector: family
+    -
+      name: genus
+      label: 'genus'
+      selector: genus
+    -
+      name: species
+      label: 'species'
+      selector: species
+    -
+      name: stateProvince
+      label: 'stateProvince'
+      selector: stateProvince
+    -
+      name: decimalLatitude
+      label: 'decimalLatitude'
+      selector: decimalLatitude
+    -
+      name: decimalLongitude
+      label: 'decimalLongitude'
+      selector: decimalLongitude
+    -
+      name: latLong
+      label: 'latLong'
+      selector: latLong
+    -
+      name: year
+      label: 'year'
+      selector: year
+    -
+      name: month
+      label: 'month'
+      selector: month
+    -
+      name: lga
+      label: 'lga'
+      selector: lga
+    -
+      name: dataResourceName
+      label: 'dataResourceName'
+      selector: dataResourceName
+  ids:
+    uuid:
+      type: string
+process:
+  sighting_date: 
+    plugin: transform_value
+    source: eventDate
+  sighting_date2: 
+    plugin: transform_value2
+    source: eventDate  
+  species:
+    plugin: entity_generate
+    source: species
+    value_key: name
+    bundle_key: vid
+    bundle: species
+    entity_type: taxonomy_term
+    ignore_case: true
+  vernacular_name: vernacularName
+  kingdom: kingdom
+  phylum: phylum
+  family: family
+  genus: 
+    plugin: entity_generate
+    source: genus
+    value_key: name
+    bundle_key: vid
+    bundle: genus
+    entity_type: taxonomy_term
+    ignore_case: true    
+  taxonRankID: taxonRankID
+  occurance_year: year
+  year: year
+  order: order
+  month: month
+  class: classs
+  decimalLongitude: decimalLongitude
+  decimalLatitude: decimalLatitude
+  latLong: 
+    plugin: geofield_latlon
+    source: 
+      - decimalLatitude
+      - decimalLongitude
+  lga: lga
+  state: stateProvince
+  type:
+    plugin: default_value
+    default_value: sightings
+  name: scientificName
+  langcode: 
+    plugin: default_value 
+    default_value: en
+  uid: 
+    plugin: default_value 
+    default_value: 1
+destination:
+  plugin: entity:sightings
+migration_dependencies:
+  required:
+    - dung_beetle_sightings_migration_species
+    - dung_beetle_sightings_migration_genus
+dependencies:
+  enforced:
+    module:
+      - dung_beetle_sightings_migration

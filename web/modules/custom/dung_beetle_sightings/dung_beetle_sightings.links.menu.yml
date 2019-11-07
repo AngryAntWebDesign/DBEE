@@ -1,0 +1,14 @@
+
+# Sightings menu items definition
+entity.sightings.collection:
+  title: 'Sightings list'
+  route_name: entity.sightings.collection
+  description: 'List Sightings entities'
+  parent: system.admin_structure
+  weight: 100
+
+sightings.admin.structure.settings:
+  title: 'Sightings settings'
+  description: 'Configure Sightings entities'
+  route_name: sightings.settings
+  parent: system.admin_structure

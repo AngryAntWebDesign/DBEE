@@ -1,0 +1,9 @@
+name: 'Dung Beetle Sightings Migration'
+type: module
+description: 'Dung Beetle Migration Migration Module imports sightings into the sightings entity from the Atlas of Living Australia'
+core: 8.x
+package: 'dbee'
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools

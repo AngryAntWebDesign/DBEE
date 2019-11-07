@@ -1,0 +1,5 @@
+name: 'Dung Beetle Sightings'
+type: module
+description: 'Dung beetle sightings module'
+core: 8.x
+package: 'dbee'

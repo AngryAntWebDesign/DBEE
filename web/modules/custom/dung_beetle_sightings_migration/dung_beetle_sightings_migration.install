@@ -1,0 +1,10 @@
+<?php
+/**
+ * Implements hook_uninstall().
+ */
+function dung_beetle_sightings_migration_uninstall() {
+    // @review with like
+    
+  // db_query("DELETE FROM {config} WHERE name LIKE 'migrate.migration.dung_beetle_sightings_migration%'");
+  // drupal_flush_all_caches();
+}

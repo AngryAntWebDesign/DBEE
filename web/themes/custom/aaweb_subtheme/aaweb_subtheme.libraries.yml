@@ -21,7 +21,7 @@ bootstrap_cdn:
     component:
       //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
 color.preview:
-  version: VERSION
+  version: 1.0
   css:
     theme:
       color/preview.css: {}
@@ -29,3 +29,23 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+varieties:
+  version: 1.0
+  css:
+      component:
+        //unpkg.com/leaflet@1.5.1/dist/leaflet.css: {}
+        css/varieties.css: {}
+  js:
+    //unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
+    js/NRM-regions.js: {}
+    js/varieties.js: {}
+bubas-bison:
+  version: 1.0
+  css:
+      component:
+        //unpkg.com/leaflet@1.5.1/dist/leaflet.css: {}
+        css/varieties.css: {}
+  js:
+    //unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
+    js/NRM-regions.js: {}
+    js/bubas-bison.js: {}

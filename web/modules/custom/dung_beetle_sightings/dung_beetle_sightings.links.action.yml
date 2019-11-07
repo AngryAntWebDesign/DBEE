@@ -1,0 +1,5 @@
+entity.sightings.add_form:
+  route_name: entity.sightings.add_form
+  title: 'Add Sightings'
+  appears_on:
+    - entity.sightings.collection

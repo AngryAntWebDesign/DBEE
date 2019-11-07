@@ -1,0 +1,33 @@
+add sightings entities:
+  title: 'Create new Sightings entities'
+
+administer sightings entities:
+  title: 'Administer Sightings entities'
+  description: 'Allow to access the administration form to configure Sightings entities.'
+  restrict access: true
+
+delete sightings entities:
+  title: 'Delete Sightings entities'
+
+edit sightings entities:
+  title: 'Edit Sightings entities'
+
+view published sightings entities:
+  title: 'View published Sightings entities'
+
+view unpublished sightings entities:
+  title: 'View unpublished Sightings entities'
+
+view all sightings revisions:
+  title: 'View all Sightings revisions'
+
+revert all sightings revisions:
+  title: 'Revert all Sightings revisions'
+  description: 'Role requires permission <em>view Sightings revisions</em> and <em>edit rights</em> for sightings entities in question or <em>administer sightings entities</em>.'
+
+delete all sightings revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Sightings revisions</em> and <em>delete rights</em> for sightings entities in question or <em>administer sightings entities</em>.'
+
+permission_callbacks:
+  - \Drupal\dung_beetle_sightings\SightingsPermissions::generatePermissions

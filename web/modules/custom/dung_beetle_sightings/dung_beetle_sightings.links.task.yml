@@ -1,0 +1,26 @@
+# Sightings routing definition
+sightings.settings_tab:
+  route_name: sightings.settings
+  title: 'Settings'
+  base_route: sightings.settings
+
+entity.sightings.canonical:
+  route_name: entity.sightings.canonical
+  base_route: entity.sightings.canonical
+  title: 'View'
+
+entity.sightings.edit_form:
+  route_name: entity.sightings.edit_form
+  base_route: entity.sightings.canonical
+  title: 'Edit'
+
+entity.sightings.version_history:
+  route_name: entity.sightings.version_history
+  base_route: entity.sightings.canonical
+  title: 'Revisions'
+
+entity.sightings.delete_form:
+  route_name:  entity.sightings.delete_form
+  base_route:  entity.sightings.canonical
+  title: Delete
+  weight: 10

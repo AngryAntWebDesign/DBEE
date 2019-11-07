@@ -1,0 +1,92 @@
+# Migration configuration 
+id: dung_beetle_sightings_migration_species
+label: DB migration species
+migration_group: sighting_migrate_species
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      term_id: 1
+      name: 'Bubas bison'
+    -
+      term_id: 2
+      name: 'Bubas bubalus'
+    -
+      term_id: 3
+      name: 'Copris elphenor'
+    -
+      term_id: 4
+      name: 'Copris hispanus'
+    -
+      term_id: 5
+      name: 'Euoniticellus intermedius'
+    -
+      term_id: 6
+      name: 'Euoniticellus pallipes'
+    -
+      term_id: 7
+      name: 'Euoniticellus africanus'
+    -
+      term_id: 8
+      name: 'Geotrupes spiniger'
+    -
+      term_id: 9
+      name: 'Liatongus militaris'
+    -
+      term_id: 10
+      name: 'Onitis alexis'
+    -
+      term_id: 11
+      name: 'Onitis aygulus'
+    -
+      term_id: 12
+      name: 'Onitis caffer'
+    -
+      term_id: 13
+      name: 'Onitis pecuarius'
+    -
+      term_id: 14
+      name: 'Onitis vanderkelleni'
+    -
+      term_id: 16
+      name: 'Onitis viridulus'
+    -
+      term_id: 17
+      name: 'Onthophagus binodis'
+    -
+      term_id: 18
+      name: 'Onthophagus gazella'
+    -
+      term_id: 19
+      name: 'Onthophagus nigriventris'
+    -
+      term_id: 20
+      name: 'Onthophagus obliquus'
+    -
+      term_id: 21
+      name: 'Onthophagus sagittarius'
+    -
+      term_id: 22
+      name: 'Onthophagus taurus'
+    -
+      term_id: 23
+      name: 'Onthophagus vacca'
+    -
+      term_id: 24
+      name: 'Sisyphus rubrus'
+    -
+      term_id: 25
+      name: 'Sisyphus spinipes'
+  ids:
+    term_id:
+      type: integer
+process:
+  tid: term_id
+  name: name
+destination:
+  plugin: entity:taxonomy_term
+  default_bundle: species
+dependencies:
+  enforced:
+    module:
+      - dung_beetle_sightings_migration
