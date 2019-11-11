@@ -98,13 +98,51 @@ a:hover, a:active {
     outline: 0;
     text-decoration: none;
 }
-.block-menu {width: 100%;}
+/* too generic needs specific for each menu  */
+.block-menu,
+.block .ultimenu__flyout .ultimenu__region {
+    /* width: 100%; */
+    /* width: 300px; */
+}
+.ultimenu.ultimenu--hover .ultimenu__link {
+    padding-right: .0em;
+}
+.ultimenu--main .ultimenu__link, .ultimenu .ultimenu__ajax {
+    padding: 1em 1.25em;
+    min-height: 42px;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #658678;
+}
+
+.ultimenu__flyout #block-speciesmenu li.nav-item  {
+    width:220px;
+    /* display: inline-block; */
+    flex-flow: column;
+}
+#block-speciesmenu, .region-ultimenu-main-species  {
+    width:800px;
+}
+.navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+}
+#ultimenu-main span.ultimenu__link {
+    color:#ffffff;
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:#666;
+}
+#header .ultimenu--hover .ultimenu__flyout, #footer .ultimenu--hover .ultimenu__flyout, .sidebar .ultimenu__flyout {
+    min-width: auto;
+}
+
 .navbar-brand img {
     max-width: 268px;
 }
 /* right hand main menu separateion from the left side -realigned  */
 .main-cta-separation {
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 #block-aaweb-subtheme-main-menu .nav {
     width: 100%;

@@ -36,7 +36,7 @@ var speciesType = '';
       {
         maxZoom: 18,
         attribution:
-          'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          'Map data &copy; <a href="http://ala.org.au">Atlast Living Australia</a> contributors, ' +
           '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
           'Imagery © <a href="http://mapbox.com">Mapbox</a>',
         // id: "mapbox.light-v9",

@@ -43,9 +43,14 @@ bubas-bison:
   version: 1.0
   css:
       component:
-        //unpkg.com/leaflet@1.5.1/dist/leaflet.css: {}
+        #//unpkg.com/leaflet@1.5.1/dist/leaflet.css: {}
         css/varieties.css: {}
   js:
-    //unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
+    #//unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
     js/NRM-regions.js: {}
     js/bubas-bison.js: {}
+species:
+  version: 1.0
+  css:
+      component:
+        css/species.css: {}

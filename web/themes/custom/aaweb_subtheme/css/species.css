@@ -1,0 +1,16 @@
+.node--type-species {
+    text-align: left;
+}
+.node--type-species .fieldset-legend {
+    display: none;
+}
+.node--type-species fieldset, .field--name-field-feature-image {
+    width: 50%;
+    float: left;
+}
+.field--name-field-presence-map {
+    clear: both;
+}
+#leaflet-map-view-species-sightings-block-1 {
+    min-width:100% !important;
+}

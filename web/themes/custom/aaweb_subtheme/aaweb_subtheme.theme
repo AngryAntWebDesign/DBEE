@@ -53,6 +53,10 @@ function aaweb_subtheme_page_attachments_alter(array &$page) {
     $page['#attached']['library'][] = 'aaweb_subtheme/bubas-bison';
   }
 
+// Species Page  Styling Stuff
+  if($path == '/node/17') {
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  }
 }
 
 /**

@@ -32,7 +32,8 @@
         "drupal/ultimenu": "^2.0",
         "drupal/views_block_filter_block": "^1.0@beta",
         "drupal/menu_block": "^1.5",
-        "drupal/simple_timeline": "^1.1"
+        "drupal/simple_timeline": "^1.1",
+        "drupal/field_group": "^1.0"
     },
     "require-dev": {
     },
