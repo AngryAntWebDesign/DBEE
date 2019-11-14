@@ -1,6 +1,45 @@
 /**
  * @file
  * Subtheme specific CSS.
+ * JSG WHAT YOU NEED TO KNOW
+ 
+
+ * BOOTSTRAP 4 --- uses media queries for sm,md,lg,xl sizes
+   --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  I have Configured below  for the cKeditor
+
+  START at the http://{sitename}/STYLE-GUIDE
+
+p.lead-bg-light|Lead text BG Dark
+p.lead-bg-dark|Lead text BG White
+p.subtext-bg-light|Subtext BG Dark
+p.subtext-bg-dark|Sub text BG White
+p.light-text|Lighter text
+p.block-button|Block Btn Space
+a.btn.btn-primary|Primary Button
+a.btn.btn-secondary|Secondary Button
+a.btn-third|Third Button
+a.btn-fourth|Fourth Button
+a.btn-fifth|Fifith Button
+
+OTHER NOTES:
+- This file controls mainly what I would say is global
+- custom.css extends base feature components and for homepage block layout
+- separation of concerns will make it easier to have a cleaner css file for reuse
+- EACH CUSTOM BLOCK TYPE HAS SPECIFIED CLASSES 
+- Custom image block TYPE has a configuable OVERLAY (optional toggle on and off)
+- Wherever possible use a bootstrap class
+- Extra regions are provided for layout of the homepage and to use flexbox as a base part of boostrap
+
+
+** As Boostrap 4 is flex based display: flex is assigned to parent items therefore flex: 1 and content-align: or align-items with flex-basis can be used for layout.
+
+
  */
 
 body {
@@ -574,12 +613,76 @@ a.btn-fifth {
 #leaflet-map-view-sightings-block-1 {
     width: 100%;
 }
+/* MEGA MENU STUFF */
+.Mobile-bar-branding-logo { 
+    display: none;;
+}
+#off-canvas-menu {
+    width: 100%;
+}
+.ultimenu--top-right-header {
+    float: none;
+}
+.is-ultimenu-canvas.is-ultimenu-expanded .is-ultimenu-canvas-off {
+    width: 500px;
+}
+/* #ultimenu-main */
+/* DEFAULT BOOSTRAP 4 BREAKPOINTS */
+@media screen and (max-width: 1200px) { 
+
+}
+
 
 @media only screen and (max-width: 992px) {
     .main-cta-separation {
         margin-left: 0px;
     }
+    .Mobile-bar-branding-logo {
+        display: inline;
+        max-width: 150px;
+    }
+    .navbar-brand img {
+        max-width: 150px;
+    }
+    .featured-top__inner {
+        padding-top: 120px;
+    }
+    #block-speciesmenu, .region-ultimenu-main-species {
+        width: 100%;
+    }
 }
-@media only screen and (max-width: 760px) {
+/* unsure why 944 megamenu breaks at this point would be better at 768 or 992 to maintain bootstrap consistency*/
+@media only screen and (max-width: 944px) {
+#header-mobile {
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    background-color: #2e2c48;
+    z-index: 999;
+    padding: 0 20px;
+}
+}
 
+
+@media only screen and (max-width: 768px) {
+    #header-mobile {
+        width: 100%;
+        top: 0px;
+        position: fixed;
+        left: 0px;
+        background-color: #2e2c48;
+        z-index: 999;
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) { 
+
+}
+@media screen and (max-width: 500px) { 
+    .is-ultimenu-canvas.is-ultimenu-expanded .is-ultimenu-canvas-off {
+        width: 425px;
+    }
 }
