@@ -1,0 +1,8 @@
+uuid: 6ce2ead2-23eb-4025-ab8e-40d6c056c24e
+langcode: en
+status: true
+dependencies: {  }
+name: Team
+vid: team
+description: 'This vocab describes staff, affiliate or partner and used for filtering purposes'
+weight: 0

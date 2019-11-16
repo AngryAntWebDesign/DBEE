@@ -1,0 +1,22 @@
+uuid: 7a6d9857-4bfb-4efb-b211-3d25b1fa5b57
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: species
+label: Species
+type: 'canonical_entities:node'
+pattern: 'species/[node:title]'
+selection_criteria:
+  fa294db0-78a9-4a6c-826f-0a15ed3cf0a7:
+    id: node_type
+    bundles:
+      species: species
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fa294db0-78a9-4a6c-826f-0a15ed3cf0a7
+selection_logic: and
+weight: -5
+relationships: {  }

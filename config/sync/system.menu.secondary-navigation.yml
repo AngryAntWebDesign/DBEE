@@ -1,0 +1,8 @@
+uuid: 2fa08bb1-ef60-4dc6-906a-5b2e3c846b77
+langcode: en
+status: true
+dependencies: {  }
+id: secondary-navigation
+label: 'Secondary Navigation'
+description: 'Top right CTA type menu'
+locked: false

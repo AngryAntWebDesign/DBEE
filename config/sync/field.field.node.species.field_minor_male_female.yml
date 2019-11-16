@@ -1,0 +1,19 @@
+uuid: 79d3a260-6393-4a6c-a56c-ede4e9eaae12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minor_male_female
+    - node.type.species
+id: node.species.field_minor_male_female
+field_name: field_minor_male_female
+entity_type: node
+bundle: species
+label: 'Minor male/female'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

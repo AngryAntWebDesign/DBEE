@@ -1,0 +1,14 @@
+uuid: ce8b1ae4-aac9-4d96-bef4-a57e8f3c9613
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_item_creator
+  module:
+    - user
+id: user_remove_role_action.timeline_item_creator
+label: 'Remove the Timeline item creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: timeline_item_creator

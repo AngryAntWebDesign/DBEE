@@ -1,0 +1,14 @@
+uuid: 71a1fe50-69d2-4341-9dff-676d3fa47128
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.publications_reviewer
+  module:
+    - user
+id: user_add_role_action.publications_reviewer
+label: 'Add the Publications reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: publications_reviewer

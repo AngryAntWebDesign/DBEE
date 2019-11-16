@@ -1,0 +1,30 @@
+uuid: 61697dc8-a1ea-4e54-b6de-bee0bb5be407
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faqs
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__faqs_block_1
+theme: aaweb_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:faqs-block_1'
+settings:
+  id: 'views_block:faqs-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /resources/frequently-asked-questions
+    negate: false
+    context_mapping: {  }

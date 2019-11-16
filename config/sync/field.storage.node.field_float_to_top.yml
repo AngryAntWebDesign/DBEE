@@ -1,0 +1,27 @@
+uuid: 88be8403-8cbe-44e7-9efe-61daa77405af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_float_to_top
+field_name: field_float_to_top
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Float
+    -
+      value: 0
+      label: 'Default Order'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

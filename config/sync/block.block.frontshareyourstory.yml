@@ -1,0 +1,31 @@
+uuid: 7a0ca982-4123-413d-b50a-e540c4bdaab7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b1a025b3-10df-484d-8549-db2da91a3199'
+  module:
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+id: frontshareyourstory
+theme: aaweb_subtheme
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:b1a025b3-10df-484d-8549-db2da91a3199'
+settings:
+  id: 'block_content:b1a025b3-10df-484d-8549-db2da91a3199'
+  label: 'front - share your story'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

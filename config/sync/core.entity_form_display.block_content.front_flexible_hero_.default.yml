@@ -1,0 +1,49 @@
+uuid: 45a09cd1-784d-4aa1-803c-d4e54e7bca4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.front_flexible_hero_
+    - field.field.block_content.front_flexible_hero_.body
+    - field.field.block_content.front_flexible_hero_.field_banner_image
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.front_flexible_hero_.default
+targetEntityType: block_content
+bundle: front_flexible_hero_
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_banner_image:
+    type: entity_browser_file
+    weight: 27
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      field_widget_replace: false
+      selection_mode: selection_append
+    region: content
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

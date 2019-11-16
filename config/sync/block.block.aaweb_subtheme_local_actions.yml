@@ -1,0 +1,20 @@
+uuid: 43900288-cc89-4d3c-9eda-4b531029c98c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aaweb_subtheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: aaweb_subtheme_local_actions
+theme: aaweb_subtheme
+region: content
+weight: -17
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

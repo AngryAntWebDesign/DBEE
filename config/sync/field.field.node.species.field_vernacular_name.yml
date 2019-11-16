@@ -1,0 +1,19 @@
+uuid: d636f146-35b1-4057-835c-4e8e6fc77d72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vernacular_name
+    - node.type.species
+id: node.species.field_vernacular_name
+field_name: field_vernacular_name
+entity_type: node
+bundle: species
+label: 'Vernacular Name'
+description: 'Common Name'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: bda3e6f9-9d0f-4866-b2c0-3fd15078ab97
+langcode: en
+status: true
+dependencies: {  }
+id: front_flexible_hero_
+label: 'Front Flexible Hero '
+revision: 1
+description: "This is not a slideshow\r\nThis block is to be used on homepages and has flexible text overlay that you can place buttons on. "

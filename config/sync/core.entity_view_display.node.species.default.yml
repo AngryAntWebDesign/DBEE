@@ -1,0 +1,352 @@
+uuid: 9500d95e-93db-493a-a46e-1aef9fc684e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.species.field_anatomy_image_1
+    - field.field.node.species.field_anatomy_image_2
+    - field.field.node.species.field_beetle_size_chart
+    - field.field.node.species.field_biology
+    - field.field.node.species.field_colour
+    - field.field.node.species.field_distribution
+    - field.field.node.species.field_dung_depth_chart
+    - field.field.node.species.field_feature_image
+    - field.field.node.species.field_female_image
+    - field.field.node.species.field_flight_time
+    - field.field.node.species.field_genus
+    - field.field.node.species.field_horns
+    - field.field.node.species.field_length
+    - field.field.node.species.field_male_image_1
+    - field.field.node.species.field_male_image_2
+    - field.field.node.species.field_minor_male_female
+    - field.field.node.species.field_neutral_image_12
+    - field.field.node.species.field_neutral_image_2
+    - field.field.node.species.field_other_notes
+    - field.field.node.species.field_presence_map
+    - field.field.node.species.field_recent_introduction
+    - field.field.node.species.field_roller
+    - field.field.node.species.field_similar_species
+    - field.field.node.species.field_vernacular_name
+    - field.field.node.species.field_yearly_activity
+    - node.type.species
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_details:
+      children:
+        - field_genus
+        - field_vernacular_name
+        - field_length
+        - field_colour
+        - field_horns
+        - field_flight_time
+        - field_yearly_activity
+        - field_minor_male_female
+        - field_distribution
+        - field_similar_species
+        - field_biology
+        - field_roller
+        - field_recent_introduction
+        - field_other_notes
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+      label: Details
+    group_images:
+      children:
+        - group_male
+        - group_female
+        - group_neutral
+        - group_anatomy
+        - group_size_depth
+      parent_name: ''
+      weight: 3
+      format_type: tabs
+      format_settings:
+        label: Images
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Images
+    group_male:
+      children:
+        - field_male_image_1
+        - field_male_image_2
+      parent_name: group_images
+      weight: 2
+      format_type: tab
+      format_settings:
+        label: Male
+        formatter: open
+        description: ''
+        id: ''
+        classes: ''
+      label: Male
+    group_female:
+      children:
+        - field_female_image
+      parent_name: group_images
+      weight: 3
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+      label: Female
+    group_neutral:
+      children:
+        - field_neutral_image_12
+        - field_neutral_image_2
+      parent_name: group_images
+      weight: 4
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+      label: Neutral
+    group_anatomy:
+      children:
+        - field_anatomy_image_1
+        - field_anatomy_image_2
+      parent_name: group_images
+      weight: 5
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+      label: Anatomy
+    group_size_depth:
+      children:
+        - field_beetle_size_chart
+        - field_dung_depth_chart
+      parent_name: group_images
+      weight: 6
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+      label: 'Size and Depth'
+id: node.species.default
+targetEntityType: node
+bundle: species
+mode: default
+content:
+  field_anatomy_image_1:
+    weight: 10
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_anatomy_image_2:
+    weight: 11
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_beetle_size_chart:
+    weight: 25
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_biology:
+    weight: 12
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_colour:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_distribution:
+    weight: 10
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dung_depth_chart:
+    weight: 26
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_female_image:
+    weight: 22
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_flight_time:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_genus:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_horns:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_length:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_male_image_1:
+    weight: 21
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_male_image_2:
+    weight: 22
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_minor_male_female:
+    weight: 9
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_neutral_image_12:
+    weight: 25
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_neutral_image_2:
+    weight: 26
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_other_notes:
+    weight: 15
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_presence_map:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_recent_introduction:
+    weight: 14
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_roller:
+    weight: 13
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_similar_species:
+    weight: 11
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vernacular_name:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_yearly_activity:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_feature_image: true
+  search_api_excerpt: true

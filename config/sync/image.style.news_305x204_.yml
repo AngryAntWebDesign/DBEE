@@ -1,0 +1,28 @@
+uuid: 8a487318-325c-4e19-a639-c863e3bdbc5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freeform
+  module:
+    - crop
+    - image_effects
+name: news_305x204_
+label: 'News (380x254)'
+effects:
+  ca7ce42d-c83a-4a44-9336-ab565532ec94:
+    uuid: ca7ce42d-c83a-4a44-9336-ab565532ec94
+    id: image_effects_scale_and_smart_crop
+    weight: -9
+    data:
+      width: '380'
+      height: '254'
+      upscale: false
+      simulate: false
+      algorithm: entropy_slice
+  c532d58d-3a95-4f6a-aa75-0c46c6326bdc:
+    uuid: c532d58d-3a95-4f6a-aa75-0c46c6326bdc
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: freeform

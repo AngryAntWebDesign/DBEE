@@ -1,0 +1,19 @@
+uuid: 2106e8f4-a296-4c3e-8596-9a4dcb28f58a
+langcode: en
+status: true
+dependencies: {  }
+id: species_reviewer
+label: 'Species reviewer'
+weight: 14
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any species content'
+  - 'edit any species content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

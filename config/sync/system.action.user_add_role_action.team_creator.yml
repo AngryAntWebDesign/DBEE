@@ -1,0 +1,14 @@
+uuid: b65555ba-cb25-48b8-b5e8-d852ebff9e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.team_creator
+  module:
+    - user
+id: user_add_role_action.team_creator
+label: 'Add the Team creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: team_creator

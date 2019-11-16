@@ -1,0 +1,14 @@
+uuid: f5a6d586-eaec-44db-8eea-b603e8a76edc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_item_creator
+  module:
+    - user
+id: user_add_role_action.timeline_item_creator
+label: 'Add the Timeline item creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: timeline_item_creator

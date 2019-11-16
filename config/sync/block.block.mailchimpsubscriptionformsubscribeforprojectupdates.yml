@@ -1,0 +1,26 @@
+uuid: 40672d4c-b6aa-426e-a5ed-b629f63b2d4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+    - system
+  theme:
+    - aaweb_subtheme
+id: mailchimpsubscriptionformsubscribeforprojectupdates
+theme: aaweb_subtheme
+region: content
+weight: -12
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:subscribe_for_project_updates'
+settings:
+  id: 'mailchimp_signup_subscribe_block:subscribe_for_project_updates'
+  label: 'Subscribe for project updates'
+  provider: mailchimp_signup
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

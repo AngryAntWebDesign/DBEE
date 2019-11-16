@@ -1,0 +1,14 @@
+uuid: 8e3e43f0-d1b7-45ac-bfdf-f31d8b9ec794
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.article_creator
+  module:
+    - user
+id: user_remove_role_action.article_creator
+label: 'Remove the Article creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: article_creator

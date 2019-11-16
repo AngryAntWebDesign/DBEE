@@ -1,0 +1,18 @@
+uuid: fb30bb4d-200d-411f-ae70-98aa87c65286
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: FAQs
+type: faqs
+description: 'Use this content type to create FAQ items to be displayed throughout the site. By using this content type it enables the ability to display these in a more easily navigatable format.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

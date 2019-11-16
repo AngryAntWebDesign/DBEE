@@ -1,0 +1,27 @@
+uuid: 1cf0d815-a964-4817-a2ca-d4dcf17b6a6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - aaweb_subtheme
+id: mainnavigation_3
+theme: aaweb_subtheme
+region: ultimenu_main_news_media
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'News & media'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:fbe99a61-2543-42e0-8fa9-8dd3fab0dd5d'
+  suggestion: main
+visibility: {  }

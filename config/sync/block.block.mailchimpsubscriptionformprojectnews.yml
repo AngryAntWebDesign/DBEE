@@ -1,0 +1,30 @@
+uuid: e265a076-6d0f-4ea4-8e4a-7fc1b0b6fdab
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - mailchimp_signup
+    - system
+  theme:
+    - aaweb_subtheme
+third_party_settings:
+  block_class:
+    classes: mailchimp-news
+id: mailchimpsubscriptionformprojectnews
+theme: aaweb_subtheme
+region: content
+weight: -11
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:project_news'
+settings:
+  id: 'mailchimp_signup_subscribe_block:project_news'
+  label: 'Project News'
+  provider: mailchimp_signup
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /news
+    negate: false
+    context_mapping: {  }

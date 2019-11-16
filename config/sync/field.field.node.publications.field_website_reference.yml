@@ -1,0 +1,23 @@
+uuid: 3817ad28-14a7-440f-9858-2d4360c3fb99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_reference
+    - node.type.publications
+  module:
+    - link
+id: node.publications.field_website_reference
+field_name: field_website_reference
+entity_type: node
+bundle: publications
+label: 'Website Reference'
+description: 'Reference URL or website address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,14 @@
+uuid: 9a366293-906c-4a1f-8a9e-ef17702ddbe2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.timeline_item_reviewer
+  module:
+    - user
+id: user_remove_role_action.timeline_item_reviewer
+label: 'Remove the Timeline item reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: timeline_item_reviewer

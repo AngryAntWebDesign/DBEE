@@ -1,0 +1,69 @@
+uuid: 84e1c790-7cbb-4c53-9936-f1a1115761c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.species.field_anatomy_image_1
+    - field.field.node.species.field_anatomy_image_2
+    - field.field.node.species.field_beetle_size_chart
+    - field.field.node.species.field_biology
+    - field.field.node.species.field_colour
+    - field.field.node.species.field_distribution
+    - field.field.node.species.field_dung_depth_chart
+    - field.field.node.species.field_feature_image
+    - field.field.node.species.field_female_image
+    - field.field.node.species.field_flight_time
+    - field.field.node.species.field_genus
+    - field.field.node.species.field_horns
+    - field.field.node.species.field_length
+    - field.field.node.species.field_male_image_1
+    - field.field.node.species.field_male_image_2
+    - field.field.node.species.field_neutral_image_12
+    - field.field.node.species.field_neutral_image_2
+    - field.field.node.species.field_other_notes
+    - field.field.node.species.field_presence_map
+    - field.field.node.species.field_recent_introduction
+    - field.field.node.species.field_roller
+    - field.field.node.species.field_similar_species
+    - field.field.node.species.field_vernacular_name
+    - field.field.node.species.field_yearly_activity
+    - node.type.species
+  module:
+    - user
+id: node.species.teaser
+targetEntityType: node
+bundle: species
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_anatomy_image_1: true
+  field_anatomy_image_2: true
+  field_beetle_size_chart: true
+  field_biology: true
+  field_colour: true
+  field_distribution: true
+  field_dung_depth_chart: true
+  field_feature_image: true
+  field_female_image: true
+  field_flight_time: true
+  field_genus: true
+  field_horns: true
+  field_length: true
+  field_male_image_1: true
+  field_male_image_2: true
+  field_neutral_image_12: true
+  field_neutral_image_2: true
+  field_other_notes: true
+  field_presence_map: true
+  field_recent_introduction: true
+  field_roller: true
+  field_similar_species: true
+  field_vernacular_name: true
+  field_yearly_activity: true
+  search_api_excerpt: true

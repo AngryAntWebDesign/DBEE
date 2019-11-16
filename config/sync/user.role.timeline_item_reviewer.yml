@@ -1,0 +1,19 @@
+uuid: 472737eb-c3db-4826-9d3c-d89fc81f4651
+langcode: en
+status: true
+dependencies: {  }
+id: timeline_item_reviewer
+label: 'Timeline item reviewer'
+weight: 16
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any timeline_item content'
+  - 'edit any timeline_item content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

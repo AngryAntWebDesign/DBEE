@@ -1,0 +1,25 @@
+uuid: bdf7e417-5a2a-461e-ae81-9bab8e32e811
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freeform
+  module:
+    - crop
+name: crop_freeform_wide_220px_
+label: 'Crop & Freeform wide 220px '
+effects:
+  c23d86e1-1f49-42c0-89e1-21df56914d62:
+    uuid: c23d86e1-1f49-42c0-89e1-21df56914d62
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: freeform
+  e186966c-91dd-4062-aa70-be23411008fa:
+    uuid: e186966c-91dd-4062-aa70-be23411008fa
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

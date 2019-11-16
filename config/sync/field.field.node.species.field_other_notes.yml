@@ -1,0 +1,21 @@
+uuid: f6b752f5-c5af-4be2-97d6-0f4aa1538d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_notes
+    - node.type.species
+  module:
+    - text
+id: node.species.field_other_notes
+field_name: field_other_notes
+entity_type: node
+bundle: species
+label: 'Other notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

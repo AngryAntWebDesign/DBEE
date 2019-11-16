@@ -1,0 +1,10 @@
+uuid: adb44f23-4b87-469f-97c1-461e5f62b4f8
+langcode: en
+status: true
+dependencies: {  }
+id: sighting_migrate
+label: sighting_migrate
+description: ''
+source_type: null
+module: null
+shared_configuration: null

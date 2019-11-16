@@ -1,0 +1,11 @@
+api_key: 730987aec5e819c5ece22a24ca2402bb-us20
+cron: false
+batch_limit: 100
+api_classname: Mailchimp\Mailchimp
+test_mode: false
+_core:
+  default_config_hash: x8k6uOqmSHPqpp71jYGxHF3_SAs3U-Pha3YCntQIhPU
+enable_connected: true
+connected_id: 750b5f91558a5e5
+connected_paths: "<front>\r\n/news"
+webhook_hash: 017ded04f080472634cadd326d6842db

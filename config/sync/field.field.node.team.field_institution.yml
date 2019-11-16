@@ -1,0 +1,19 @@
+uuid: f4032e67-36c7-489b-bba3-6e2da7854c91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institution
+    - node.type.team
+id: node.team.field_institution
+field_name: field_institution
+entity_type: node
+bundle: team
+label: Institution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

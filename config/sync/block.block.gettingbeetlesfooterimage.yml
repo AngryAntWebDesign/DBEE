@@ -1,0 +1,35 @@
+uuid: 4fa17aca-15a4-4b90-a734-18fa9cfdfdc8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:f1bee97f-3022-417d-b690-1003657ca9ac'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+third_party_settings:
+  block_class:
+    classes: footer-contained
+id: gettingbeetlesfooterimage
+theme: aaweb_subtheme
+region: featured_bottom_contained
+weight: 0
+provider: null
+plugin: 'block_content:f1bee97f-3022-417d-b690-1003657ca9ac'
+settings:
+  id: 'block_content:f1bee97f-3022-417d-b690-1003657ca9ac'
+  label: 'Getting Beetles - Footer Image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /getting-beetles
+    negate: false
+    context_mapping: {  }

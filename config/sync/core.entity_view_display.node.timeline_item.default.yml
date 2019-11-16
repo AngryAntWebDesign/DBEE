@@ -1,0 +1,52 @@
+uuid: 82681af4-cd01-40c9-ac01-ff3c4611193c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.timeline_item.body
+    - field.field.node.timeline_item.field_date
+    - field.field.node.timeline_item.field_timeline_image
+    - image.style.large
+    - node.type.timeline_item
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.timeline_item.default
+targetEntityType: node
+bundle: timeline_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_timeline_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

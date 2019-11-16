@@ -1,0 +1,35 @@
+uuid: d82a1755-4179-4ce4-8d68-c9867ba4f08c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:0e223126-bcbe-456b-9787-33fcd25b990a'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+third_party_settings:
+  block_class:
+    classes: block-hero
+id: objectives
+theme: aaweb_subtheme
+region: featured_top
+weight: -9
+provider: null
+plugin: 'block_content:0e223126-bcbe-456b-9787-33fcd25b990a'
+settings:
+  id: 'block_content:0e223126-bcbe-456b-9787-33fcd25b990a'
+  label: 'Objectives - '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /objectives
+    negate: false
+    context_mapping: {  }

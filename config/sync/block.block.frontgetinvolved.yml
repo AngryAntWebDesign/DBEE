@@ -1,0 +1,31 @@
+uuid: f341e0f1-d383-49d4-9d08-e082195719b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:42b07e88-522b-475b-9776-d094a82276ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+id: frontgetinvolved
+theme: aaweb_subtheme
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:42b07e88-522b-475b-9776-d094a82276ae'
+settings:
+  id: 'block_content:42b07e88-522b-475b-9776-d094a82276ae'
+  label: 'front - get involved'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

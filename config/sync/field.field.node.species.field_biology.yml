@@ -1,0 +1,21 @@
+uuid: 5e814ef9-ab52-4f6c-9a35-2cc0b57db3b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biology
+    - node.type.species
+  module:
+    - text
+id: node.species.field_biology
+field_name: field_biology
+entity_type: node
+bundle: species
+label: Biology
+description: 'General description of the species biology this is mainly defined by other specific fields and is not mandatory'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

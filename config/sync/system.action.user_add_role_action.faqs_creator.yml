@@ -1,0 +1,14 @@
+uuid: 0ebc5c73-d3fc-4d3c-8f3c-4bbe9260877c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.faqs_creator
+  module:
+    - user
+id: user_add_role_action.faqs_creator
+label: 'Add the FAQs creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: faqs_creator

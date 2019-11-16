@@ -1,0 +1,14 @@
+uuid: 77e1d31e-9c3b-45fb-8d02-7125c4dbcaf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.species_creator
+  module:
+    - user
+id: user_add_role_action.species_creator
+label: 'Add the Species creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: species_creator

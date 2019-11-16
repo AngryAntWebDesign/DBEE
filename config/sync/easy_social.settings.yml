@@ -1,0 +1,8 @@
+global:
+  widgets:
+    twitter: twitter
+    facebook: facebook
+    pinterest: pinterest
+    googleplus: 0
+    linkedin: 0
+  async: 1

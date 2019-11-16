@@ -1,0 +1,29 @@
+uuid: 054f46a9-7e69-473c-a616-79d284c01af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_type
+    - node.type.team
+    - taxonomy.vocabulary.team
+id: node.team.field_member_type
+field_name: field_member_type
+entity_type: node
+bundle: team
+label: 'Member Type'
+description: 'Tag the team member if they are part of the steering committee, theme leader or other. They will be placed into the corresponding listing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      team: team
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

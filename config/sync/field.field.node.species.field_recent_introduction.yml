@@ -1,0 +1,19 @@
+uuid: ecbe860b-969a-4be2-b689-72d212d4be91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recent_introduction
+    - node.type.species
+id: node.species.field_recent_introduction
+field_name: field_recent_introduction
+entity_type: node
+bundle: species
+label: 'Recent Introduction'
+description: 'Specify "Recent Introduction" as a field providing flexibility. Non-mandatory'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: 8973671a-7d9a-467c-a153-511c36a1d52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_neutral_image_12
+    - node.type.species
+  module:
+    - image
+id: node.species.field_neutral_image_12
+field_name: field_neutral_image_12
+entity_type: node
+bundle: species
+label: 'Neutral Image 1'
+description: 'A non-gender image for the beetle'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'species/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

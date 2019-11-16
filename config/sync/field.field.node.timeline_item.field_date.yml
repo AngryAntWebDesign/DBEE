@@ -1,0 +1,24 @@
+uuid: f14b472a-5e86-47f6-bc48-19970ba03860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.timeline_item
+  module:
+    - datetime
+id: node.timeline_item.field_date
+field_name: field_date
+entity_type: node
+bundle: timeline_item
+label: Date
+description: 'The specific date at which something occurred.'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

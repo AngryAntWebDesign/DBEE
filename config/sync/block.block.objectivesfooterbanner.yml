@@ -1,0 +1,35 @@
+uuid: 065b5946-0be2-4750-9265-b270ec1b400a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:d9f40475-231c-4819-93e6-9f835120a5a3'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+third_party_settings:
+  block_class:
+    classes: block-footer-banner
+id: objectivesfooterbanner
+theme: aaweb_subtheme
+region: featured_bottom
+weight: 0
+provider: null
+plugin: 'block_content:d9f40475-231c-4819-93e6-9f835120a5a3'
+settings:
+  id: 'block_content:d9f40475-231c-4819-93e6-9f835120a5a3'
+  label: 'objectives - footer banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /objectives
+    negate: false
+    context_mapping: {  }

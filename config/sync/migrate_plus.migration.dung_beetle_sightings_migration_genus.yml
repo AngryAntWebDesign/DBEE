@@ -1,0 +1,53 @@
+uuid: e43c21d3-f0f4-48fd-bbdf-a1e00cfca4a5
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dung_beetle_sightings_migration
+_core:
+  default_config_hash: cQFlFffylFU-mLoxxggmFu4-B70otM_jRXW0wGUslIs
+id: dung_beetle_sightings_migration_genus
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: sighting_migrate_genus
+label: 'DB migration genus'
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      term_id: 26
+      name: Bubas
+    -
+      term_id: 27
+      name: Copris
+    -
+      term_id: 28
+      name: Euoniticellus
+    -
+      term_id: 29
+      name: Geotrupes
+    -
+      term_id: 30
+      name: Liatongus
+    -
+      term_id: 31
+      name: Onthophagus
+    -
+      term_id: 32
+      name: Onthophagus
+    -
+      term_id: 33
+      name: Sisyphus
+  ids:
+    term_id:
+      type: integer
+process:
+  tid: term_id
+  name: name
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: genus
+migration_dependencies: null

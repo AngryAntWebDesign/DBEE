@@ -1,0 +1,14 @@
+uuid: 7c84c9d5-4ee8-4406-a037-57d3cbedb959
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.faqs_reviewer
+  module:
+    - user
+id: user_add_role_action.faqs_reviewer
+label: 'Add the FAQs reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: faqs_reviewer

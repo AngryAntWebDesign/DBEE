@@ -1,0 +1,21 @@
+uuid: 2677c576-1f16-4d0a-9cfd-e66925ecc0d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_float_to_top
+    - node.type.news
+  module:
+    - options
+id: node.news.field_float_to_top
+field_name: field_float_to_top
+entity_type: node
+bundle: news
+label: 'Float to top'
+description: 'Floating featured items to the top makes sure that specific items can stick to the top long term. The default behaviour is ordered by date'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

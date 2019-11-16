@@ -1,0 +1,30 @@
+uuid: 5c14277c-b82e-4413-a23e-65350e6f1023
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.dbee_team
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__dbee_team_block_1
+theme: aaweb_subtheme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:dbee_team-block_1'
+settings:
+  id: 'views_block:dbee_team-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /about/dbee-team
+    negate: false
+    context_mapping: {  }

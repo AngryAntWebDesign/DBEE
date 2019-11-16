@@ -1,0 +1,8 @@
+uuid: 8bbaba6e-0061-44b2-ba3f-82f9eed45e0b
+langcode: en
+status: true
+dependencies: {  }
+name: Genus
+vid: genus
+description: 'The genus of the species name'
+weight: 0

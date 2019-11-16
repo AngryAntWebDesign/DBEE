@@ -1,0 +1,14 @@
+uuid: afb7b85d-67fc-43af-aeec-d24c05a6b391
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.team_reviewer
+  module:
+    - user
+id: user_remove_role_action.team_reviewer
+label: 'Remove the Team reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: team_reviewer

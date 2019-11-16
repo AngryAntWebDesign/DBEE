@@ -1,0 +1,19 @@
+uuid: 4fcb29cc-9579-4453-b4ac-fcff6d178af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genus
+    - node.type.species
+id: node.species.field_genus
+field_name: field_genus
+entity_type: node
+bundle: species
+label: Genus
+description: 'Genus is the first part of the species name generally and groups some of the different species together.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

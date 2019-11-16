@@ -1,0 +1,21 @@
+uuid: 6bf20c21-e7bd-41c3-abab-fc91142feb6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__translation
+    - node.type.news
+  module:
+    - layout_builder_st
+id: node.news.layout_builder__translation
+field_name: layout_builder__translation
+entity_type: node
+bundle: news
+label: 'Layout Labels'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_translation

@@ -1,0 +1,1421 @@
+uuid: 24d2a440-cc9a-4998-a9d7-a9ea9d5458c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - dung_beetle_sightings
+    - leaflet
+    - leaflet_views
+id: sightings
+label: Sightings
+module: views
+description: ''
+tag: ''
+base_table: sightings_field_data
+base_field: id
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: some
+        options:
+          items_per_page: 2000
+          offset: 0
+      style:
+        type: leaflet_map
+        options:
+          grouping: {  }
+          data_source: latLong__value
+          entity_source: __base_table
+          name_field: name
+          description_field: nothing
+          view_mode: full
+          leaflet_map: 'OSM Mapnik'
+          height: '850'
+          hide_empty_map: 0
+          disable_wheel: 0
+          fullscreen_control: 1
+          reset_map:
+            control: 0
+            position: topright
+          map_position:
+            force: 1
+            center:
+              lat: '-26.3202'
+              lon: '135.948'
+            zoom: '5'
+            minZoom: '1'
+            maxZoom: '18'
+            zoomFiner: '0'
+          icon:
+            iconUrl: ''
+            shadowUrl: ''
+            iconSize:
+              x: ''
+              'y': ''
+            iconAnchor:
+              x: ''
+              'y': ''
+            shadowSize:
+              x: ''
+              'y': ''
+            shadowAnchor:
+              x: ''
+              'y': ''
+            popupAnchor:
+              x: ''
+              'y': ''
+          leaflet_markercluster:
+            control: 1
+            options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+          path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      row:
+        type: fields
+      fields:
+        name:
+          id: name
+          table: sightings_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: null
+          entity_field: name
+          plugin_id: field
+        latLong__value:
+          id: latLong__value
+          table: sightings_field_data
+          field: latLong__value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: leaflet_formatter_default
+          settings:
+            multiple_map: 0
+            popup: 0
+            popup_content: ''
+            leaflet_map: 'OSM Mapnik'
+            height: '600'
+            hide_empty_map: 1
+            disable_wheel: 0
+            fullscreen_control: 1
+            reset_map:
+              control: 1
+              position: topright
+            map_position:
+              force: 1
+              zoom: '12'
+              minZoom: '1'
+              maxZoom: '18'
+              zoomFiner: '0'
+            icon:
+              iconUrl: ''
+              shadowUrl: ''
+              iconSize:
+                x: ''
+                'y': ''
+              iconAnchor:
+                x: ''
+                'y': ''
+              shadowSize:
+                x: ''
+                'y': ''
+              shadowAnchor:
+                x: ''
+                'y': ''
+              popupAnchor:
+                x: ''
+                'y': ''
+            leaflet_markercluster:
+              control: 1
+              options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+            path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: latLong
+          plugin_id: field
+        genus:
+          id: genus
+          table: sightings_field_data
+          field: genus
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: genus
+          plugin_id: field
+        kingdom:
+          id: kingdom
+          table: sightings_field_data
+          field: kingdom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: kingdom
+          plugin_id: field
+        lga:
+          id: lga
+          table: sightings_field_data
+          field: lga
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: lga
+          plugin_id: field
+        month:
+          id: month
+          table: sightings_field_data
+          field: month
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Month
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: month
+          plugin_id: field
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Species
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: species
+          plugin_id: field
+        state:
+          id: state
+          table: sightings_field_data
+          field: state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: State
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: state
+          plugin_id: field
+        vernacular_name:
+          id: vernacular_name
+          table: sightings_field_data
+          field: vernacular_name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Common Name'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: vernacular_name
+          plugin_id: field
+        year:
+          id: year
+          table: sightings_field_data
+          field: year
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Year
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: sightings
+          entity_field: year
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<h3>{{ name }}</h3>\r\n<ul>\r\n<li>{{ vernacular_name }} </li>\r\n<li>{{ genus }}</li>\r\n<li>{{ kingdom }} </li>\r\n<li>{{ lga }}</li>\r\n<li>{{ month }}</li>\r\n<li>{{ year }} </li>\r\n<li>{{ state }}</li>\r\n</ul>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        genus:
+          id: genus
+          table: sightings_field_data
+          field: genus
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: genus_op
+            label: Genus
+            description: null
+            use_operator: false
+            operator: genus_op
+            identifier: genus
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: Genus
+            description: ''
+            identifier: genus
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Bubas
+                operator: '='
+                value:
+                  value: '26'
+                  min: ''
+                  max: ''
+              2:
+                title: Copris
+                operator: '='
+                value:
+                  value: '27'
+                  min: ''
+                  max: ''
+              3:
+                title: Euoniticellus
+                operator: '='
+                value:
+                  value: '28'
+                  min: ''
+                  max: ''
+              4:
+                title: Geotrupes
+                operator: '='
+                value:
+                  value: '29'
+                  min: ''
+                  max: ''
+              5:
+                title: Liatongus
+                operator: '='
+                value:
+                  value: '30'
+                  min: ''
+                  max: ''
+              6:
+                title: Onitis
+                operator: '='
+                value:
+                  value: '31'
+                  min: ''
+                  max: ''
+              7:
+                title: Onthophagus
+                operator: '='
+                value:
+                  value: '32'
+                  min: ''
+                  max: ''
+              8:
+                title: Sisyphus
+                operator: '='
+                value:
+                  value: '33'
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: genus
+          plugin_id: numeric
+        month:
+          id: month
+          table: sightings_field_data
+          field: month
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: month_op
+            label: Month
+            description: null
+            use_operator: false
+            operator: month_op
+            identifier: month
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: Month
+            description: ''
+            identifier: month
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Jan
+                operator: '='
+                value:
+                  value: '01'
+                  min: ''
+                  max: ''
+              2:
+                title: Feb
+                operator: '='
+                value:
+                  value: '02'
+                  min: ''
+                  max: ''
+              3:
+                title: Mar
+                operator: '='
+                value:
+                  value: '03'
+                  min: ''
+                  max: ''
+              4:
+                title: Apr
+                operator: '='
+                value:
+                  value: '04'
+                  min: ''
+                  max: ''
+              5:
+                title: May
+                operator: '='
+                value:
+                  value: '05'
+                  min: ''
+                  max: ''
+              6:
+                title: Jun
+                operator: '='
+                value:
+                  value: '06'
+                  min: ''
+                  max: ''
+              7:
+                title: Jul
+                operator: '='
+                value:
+                  value: '07'
+                  min: ''
+                  max: ''
+              8:
+                title: Aug
+                operator: '='
+                value:
+                  value: '08'
+                  min: ''
+                  max: ''
+              9:
+                title: Sep
+                operator: '='
+                value:
+                  value: '09'
+                  min: ''
+                  max: ''
+              10:
+                title: Oct
+                operator: '='
+                value:
+                  value: '10'
+                  min: ''
+                  max: ''
+              11:
+                title: Nov
+                operator: '='
+                value:
+                  value: '11'
+                  min: ''
+                  max: ''
+              12:
+                title: Dec
+                operator: '='
+                value:
+                  value: '12'
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: month
+          plugin_id: numeric
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: species_op
+            label: Species
+            description: null
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '40'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: 'Onitis alexis'
+                operator: '='
+                value:
+                  value: '10'
+                  min: ''
+                  max: ''
+              11:
+                title: 'Onitis aygulus'
+                operator: '='
+                value:
+                  value: '11'
+                  min: ''
+                  max: ''
+              12:
+                title: 'Onitis caffer'
+                operator: '='
+                value:
+                  value: '12'
+                  min: ''
+                  max: ''
+              13:
+                title: 'Onitis pecuarius'
+                operator: '='
+                value:
+                  value: '13'
+                  min: ''
+                  max: ''
+              14:
+                title: 'Onitis vanderkelleni'
+                operator: '='
+                value:
+                  value: '14'
+                  min: ''
+                  max: ''
+              15:
+                title: 'Onitis viridulus'
+                operator: '='
+                value:
+                  value: '16'
+                  min: ''
+                  max: ''
+              16:
+                title: 'Onthophagus binodis'
+                operator: '='
+                value:
+                  value: '17'
+                  min: ''
+                  max: ''
+              17:
+                title: 'Onthophagus gazella'
+                operator: '='
+                value:
+                  value: '18'
+                  min: ''
+                  max: ''
+              18:
+                title: 'Onthophagus nigriventris'
+                operator: '='
+                value:
+                  value: '19'
+                  min: ''
+                  max: ''
+              19:
+                title: 'Onthophagus obliquus'
+                operator: '='
+                value:
+                  value: '20'
+                  min: ''
+                  max: ''
+              20:
+                title: 'Onthophagus sagittarius'
+                operator: '='
+                value:
+                  value: '21'
+                  min: ''
+                  max: ''
+              21:
+                title: 'Onthophagus taurus'
+                operator: '='
+                value:
+                  value: '22'
+                  min: ''
+                  max: ''
+              22:
+                title: 'Onthophagus vacca'
+                operator: '='
+                value:
+                  value: '23'
+                  min: ''
+                  max: ''
+              23:
+                title: 'Sisyphus rubrus'
+                operator: '='
+                value:
+                  value: '24'
+                  min: ''
+                  max: ''
+              24:
+                title: 'Sisyphus spinipes'
+                operator: '='
+                value:
+                  value: '25'
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+        year:
+          id: year
+          table: sightings_field_data
+          field: year
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: year_op
+            label: Year
+            description: null
+            use_operator: false
+            operator: year_op
+            identifier: year
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: Year
+            description: ''
+            identifier: year
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: '2020'
+                operator: '='
+                value:
+                  value: '2020'
+                  min: ''
+                  max: ''
+              2:
+                title: '2019'
+                operator: '='
+                value:
+                  value: '2019'
+                  min: ''
+                  max: ''
+              3:
+                title: '2018'
+                operator: '='
+                value:
+                  value: '2018'
+                  min: ''
+                  max: ''
+              4:
+                title: '2017'
+                operator: '='
+                value:
+                  value: '2017'
+                  min: ''
+                  max: ''
+              5:
+                title: '2016'
+                operator: '='
+                value:
+                  value: '2016'
+                  min: ''
+                  max: ''
+              6:
+                title: '2015'
+                operator: '='
+                value:
+                  value: '2015'
+                  min: ''
+                  max: ''
+              7:
+                title: '2014'
+                operator: '='
+                value:
+                  value: '2014'
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: year
+          plugin_id: numeric
+      sorts: {  }
+      title: Sightings
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_ajax: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 1
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags: {  }

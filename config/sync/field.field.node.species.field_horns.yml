@@ -1,0 +1,19 @@
+uuid: 7c8ddf72-20a7-4606-ab1a-900a90c92349
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horns
+    - node.type.species
+id: node.species.field_horns
+field_name: field_horns
+entity_type: node
+bundle: species
+label: Horns
+description: 'A description of how the horns appear to aid the identification process even down to the gender identification'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

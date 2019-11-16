@@ -1,0 +1,18 @@
+uuid: b9547449-5c34-46f0-8664-d8681a732f61
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Publications
+type: publications
+description: 'A guide to different publications available for use'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,29 @@
+uuid: a9e8cf9f-b026-4f7f-99c0-8011360ca185
+langcode: en
+status: true
+dependencies:
+  module:
+    - ultimenu
+  theme:
+    - aaweb_subtheme
+id: ultimenumainnavigation
+theme: aaweb_subtheme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'ultimenu_block:ultimenu-main'
+settings:
+  id: 'ultimenu_block:ultimenu-main'
+  label: 'Ultimenu: Main navigation'
+  provider: ultimenu
+  label_display: '0'
+  ajaxify: false
+  regions: {  }
+  skin: module|ultimenu--top-right-header
+  submenu: false
+  orientation: ultimenu--htb
+  submenu_position: bottom
+  canvas_off: '#header'
+  canvas_on: '#main-wrapper, .featured-top, .site-footer'
+  canvas_skin: slidein
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 2475fc47-7fb0-4d86-8c0f-4584a4b3e1bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - species-menu
+    parent: 'main:'
+name: Species
+type: species
+description: 'Species pages are specific containers for different custom fields and implement consistent layout'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,27 @@
+uuid: f57a091a-8053-4a52-8dac-b02ec1f14606
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aaweb_subtheme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: aaweb_subtheme_page_title
+theme: aaweb_subtheme
+region: content
+weight: -20
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/objectives\r\n/team\r\n/getting-beetles\r\n/get-involved-in-the-project\r\n/contact"
+    negate: true
+    context_mapping: {  }

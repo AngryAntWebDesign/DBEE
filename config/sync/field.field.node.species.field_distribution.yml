@@ -1,0 +1,21 @@
+uuid: 5e5fc37a-da87-47a3-ae56-e02118338757
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distribution
+    - node.type.species
+  module:
+    - text
+id: node.species.field_distribution
+field_name: field_distribution
+entity_type: node
+bundle: species
+label: Distribution
+description: 'Where the species can be found or distributed throughout Australia'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

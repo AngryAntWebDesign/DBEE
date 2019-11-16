@@ -1,0 +1,22 @@
+uuid: 031aaebb-db83-42b2-80ea-8dc18f8dd7d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publications
+  module:
+    - text
+id: node.publications.body
+field_name: body
+entity_type: node
+bundle: publications
+label: Description
+description: 'Description should include things like a brief overview of the publication, author, publisher and publication date.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

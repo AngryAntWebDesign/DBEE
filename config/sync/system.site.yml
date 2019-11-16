@@ -1,0 +1,14 @@
+uuid: 5c659947-355e-437c-bd62-678387dca72f
+name: 'Dung Beetle Ecosystem Engineers'
+mail: jason@aaweb.com.au
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/5
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

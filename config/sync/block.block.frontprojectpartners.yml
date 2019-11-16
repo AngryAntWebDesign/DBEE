@@ -1,0 +1,31 @@
+uuid: 1fc28836-96d1-4a8b-a18d-1ca198fe26b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:8c4ab271-4d56-44c7-8d87-c0e3d9d5e784'
+  module:
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+id: frontprojectpartners
+theme: aaweb_subtheme
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:8c4ab271-4d56-44c7-8d87-c0e3d9d5e784'
+settings:
+  id: 'block_content:8c4ab271-4d56-44c7-8d87-c0e3d9d5e784'
+  label: 'front - Project partners'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

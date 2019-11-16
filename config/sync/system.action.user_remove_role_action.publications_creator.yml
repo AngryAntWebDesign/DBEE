@@ -1,0 +1,14 @@
+uuid: a5db94f5-7944-4d4d-89f8-4a217f909cfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.publications_creator
+  module:
+    - user
+id: user_remove_role_action.publications_creator
+label: 'Remove the Publications creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: publications_creator

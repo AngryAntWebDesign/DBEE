@@ -1,0 +1,14 @@
+uuid: d5cd65e0-9502-4309-a95a-ddc7e9842272
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.article_reviewer
+  module:
+    - user
+id: user_add_role_action.article_reviewer
+label: 'Add the Article reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: article_reviewer

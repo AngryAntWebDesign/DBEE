@@ -1,0 +1,21 @@
+uuid: dd08b50a-3eaa-447c-9ff9-4f9adfb3779b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.news
+  module:
+    - text
+id: node.news.field_author
+field_name: field_author
+entity_type: node
+bundle: news
+label: Author
+description: 'The author field is not the user but the actual source author providing the article on the website. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

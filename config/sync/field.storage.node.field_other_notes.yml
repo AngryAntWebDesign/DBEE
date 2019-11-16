@@ -1,0 +1,20 @@
+uuid: 60ea61da-0f9f-40f3-9c95-9b3c011eb3aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_other_notes
+field_name: field_other_notes
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

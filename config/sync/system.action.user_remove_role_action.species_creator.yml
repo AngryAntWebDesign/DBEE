@@ -1,0 +1,14 @@
+uuid: c9b39d55-e92c-4989-ba4e-4192465fd0b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.species_creator
+  module:
+    - user
+id: user_remove_role_action.species_creator
+label: 'Remove the Species creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: species_creator

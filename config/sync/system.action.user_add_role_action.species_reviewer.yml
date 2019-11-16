@@ -1,0 +1,14 @@
+uuid: f7330155-8149-400b-85f4-c9cf015fe8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.species_reviewer
+  module:
+    - user
+id: user_add_role_action.species_reviewer
+label: 'Add the Species reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: species_reviewer

@@ -1,0 +1,22 @@
+uuid: ac985600-6cff-4c41-a028-e0adc97db18d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aaweb_subtheme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: aaweb_subtheme_local_tasks
+theme: aaweb_subtheme
+region: content
+weight: -19
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

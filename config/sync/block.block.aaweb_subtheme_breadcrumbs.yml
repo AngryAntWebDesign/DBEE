@@ -1,0 +1,27 @@
+uuid: 8ca6a55f-3f7b-4f79-b7c4-dfb823effca3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aaweb_subtheme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: aaweb_subtheme_breadcrumbs
+theme: aaweb_subtheme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: 'news/*'
+    negate: true
+    context_mapping: {  }

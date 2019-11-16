@@ -1,0 +1,19 @@
+uuid: 11039a01-7b28-4b81-a7ad-e527a9da7f81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roller
+    - node.type.species
+id: node.species.field_roller
+field_name: field_roller
+entity_type: node
+bundle: species
+label: Roller
+description: 'Not all species are dung rollers this field helps specify the species as a "roller" text should be entered here for a flexible output'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: 4f712468-2f0e-4ff9-8414-f00b781d9189
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__news_block_3
+theme: aaweb_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news-block_3'
+settings:
+  id: 'views_block:news-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-media/featured-media
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: 1175f316-4750-4a7e-8c66-e3b4390e80f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.team
+  module:
+    - options
+id: node.team.field_order
+field_name: field_order
+entity_type: node
+bundle: team
+label: Order
+description: 'Order determines where in any listing the team member exists. 1 is the lowerest or highest 10 the lowest weighting.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

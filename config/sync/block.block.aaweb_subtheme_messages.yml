@@ -1,0 +1,22 @@
+uuid: 6db6c5d8-2aa5-4efb-a3a5-4b484a19c323
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aaweb_subtheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: aaweb_subtheme_messages
+theme: aaweb_subtheme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

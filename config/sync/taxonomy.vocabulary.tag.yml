@@ -1,0 +1,8 @@
+uuid: 7b2695b2-c1ed-4f50-8f4a-5e87dc6fa8c8
+langcode: en
+status: true
+dependencies: {  }
+name: Tag
+vid: tag
+description: 'Article tags to group posts'
+weight: 0

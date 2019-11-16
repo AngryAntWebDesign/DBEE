@@ -1,0 +1,30 @@
+uuid: ffe99d71-4270-4092-b4e2-ad4ef4ef8b52
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sightings
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__sightings_block_1
+theme: aaweb_subtheme
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:sightings-block_1'
+settings:
+  id: 'views_block:sightings-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /dbee-study-occurrence-sightings
+    negate: false
+    context_mapping: {  }

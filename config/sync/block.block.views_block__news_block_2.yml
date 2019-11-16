@@ -1,0 +1,30 @@
+uuid: 37cede7a-bfd3-442c-884b-dab9877515ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__news_block_2
+theme: aaweb_subtheme
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:news-block_2'
+settings:
+  id: 'views_block:news-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

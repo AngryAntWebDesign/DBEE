@@ -1,0 +1,27 @@
+uuid: dd421ff8-35c8-4d14-b01f-dcf5f7dfd4ef
+langcode: en
+status: true
+dependencies: {  }
+id: publications_creator
+label: 'Publications creator'
+weight: 17
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create publications content'
+  - 'create url aliases'
+  - 'edit own publications content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view publications revisions'

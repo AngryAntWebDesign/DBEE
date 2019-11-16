@@ -1,0 +1,27 @@
+uuid: 4079ea78-cbcc-465c-bd10-a59e1b7170b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - aaweb_subtheme
+id: mainnavigation_6
+theme: aaweb_subtheme
+region: ultimenu_main_resources
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Resources
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:a0b2adb2-136f-43c9-b580-27bacb1e7757'
+  suggestion: main
+visibility: {  }

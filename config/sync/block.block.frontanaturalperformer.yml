@@ -1,0 +1,31 @@
+uuid: ff5fc566-b92f-4748-82f1-d6d54dc16129
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:8b49e89e-caa7-41ce-bd66-405660888360'
+  module:
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+id: frontanaturalperformer
+theme: aaweb_subtheme
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:8b49e89e-caa7-41ce-bd66-405660888360'
+settings:
+  id: 'block_content:8b49e89e-caa7-41ce-bd66-405660888360'
+  label: 'front -  a natural performer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

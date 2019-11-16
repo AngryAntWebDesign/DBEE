@@ -1,0 +1,12 @@
+blocks:
+  main: main
+regions:
+  ultimenu_main_dung_beetles: ultimenu_main_dung_beetles
+  ultimenu_main_news_media: ultimenu_main_news_media
+  ultimenu_main_outcomes_benefits: ultimenu_main_outcomes_benefits
+  ultimenu_main_get_involved: ultimenu_main_get_involved
+  ultimenu_main_about: ultimenu_main_about
+  ultimenu_main_resources: ultimenu_main_resources
+goodies: {  }
+skins: ''
+fallback_text: ''

@@ -1,0 +1,31 @@
+uuid: a24aa10f-c926-4cf9-be4c-87c240fe9a37
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:front_flexible_hero_:dc984293-ab0d-45fd-9688-ee633de82d64'
+  module:
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+id: frontbeetleswithbenefits_2
+theme: aaweb_subtheme
+region: featured_top
+weight: -10
+provider: null
+plugin: 'block_content:dc984293-ab0d-45fd-9688-ee633de82d64'
+settings:
+  id: 'block_content:dc984293-ab0d-45fd-9688-ee633de82d64'
+  label: 'front - Beetles with Benefits'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

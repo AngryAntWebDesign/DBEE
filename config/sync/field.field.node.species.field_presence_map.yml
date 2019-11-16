@@ -1,0 +1,21 @@
+uuid: 5bf224ca-73af-41cc-b8ca-8a8381cc58f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presence_map
+    - node.type.species
+  module:
+    - text
+id: node.species.field_presence_map
+field_name: field_presence_map
+entity_type: node
+bundle: species
+label: 'Presence Map'
+description: 'Code for Presence/Absence Map this should be entered in via "Rich Text" and the source button. Provides the HTML placeholder for the map. The javascript for leaflet is introduced for the specific species page via a theme hook and the page id.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

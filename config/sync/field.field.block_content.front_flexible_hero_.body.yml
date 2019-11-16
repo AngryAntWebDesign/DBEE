@@ -1,0 +1,22 @@
+uuid: 7bcc6868-0917-4bff-8396-82be48b340de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.front_flexible_hero_
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.front_flexible_hero_.body
+field_name: body
+entity_type: block_content
+bundle: front_flexible_hero_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

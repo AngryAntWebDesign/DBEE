@@ -1,0 +1,27 @@
+uuid: e13ff723-9667-45a5-99ec-90514feb755d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - aaweb_subtheme
+id: mainnavigation_7
+theme: aaweb_subtheme
+region: ultimenu_main_about
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:85285726-8ea7-4a59-8e3b-7b0a4691e298'
+  suggestion: main
+visibility: {  }

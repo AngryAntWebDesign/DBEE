@@ -1,0 +1,14 @@
+uuid: f1b67d8b-f29a-406e-80fc-c8e62265c773
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.publications_reviewer
+  module:
+    - user
+id: user_remove_role_action.publications_reviewer
+label: 'Remove the Publications reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: publications_reviewer

@@ -1,0 +1,30 @@
+uuid: 1af75ea7-7537-4ea7-8ef9-b44ee02ce224
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.insta_test
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__insta_test_block_1
+theme: aaweb_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:insta_test-block_1'
+settings:
+  id: 'views_block:insta_test-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /insta-test
+    negate: false
+    context_mapping: {  }
