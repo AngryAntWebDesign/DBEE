@@ -58,6 +58,7 @@ module:
   layout_builder: 0
   layout_builder_restrictions: 0
   layout_builder_st: 0
+  layout_builder_styles: 0
   layout_discovery: 0
   layout_library: 0
   leaflet: 0
@@ -144,6 +145,7 @@ module:
   views_bootstrap: 0
   views_infinite_scroll: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   webform_access: 0
   webform_attachment: 0

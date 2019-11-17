@@ -1,0 +1,62 @@
+uuid: 53345989-2a07-463d-a8cc-3f2d0b13c527
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sightings
+    - node.type.species
+  module:
+    - viewsreference
+id: node.species.field_sightings
+field_name: field_sightings
+entity_type: node
+bundle: species
+label: Sightings
+description: 'This references a leaflet map that will display the specific species instead of having multiple blocks in block manage or using context.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+    embed: 0
+  preselect_views:
+    species_sightings: species_sightings
+    block_content: 0
+    contact_messages: 0
+    content: 0
+    content_moderation_dashboard_in_review: 0
+    content_recent: 0
+    dbee_team: 0
+    faqs: 0
+    files: 0
+    fontyourface_font_manager: 0
+    frontpage: 0
+    insta_test: 0
+    media: 0
+    media_library: 0
+    moderated_content: 0
+    moderation_dashboard_recently_created: 0
+    moderation_dashboard_recent_changes: 0
+    news: 0
+    publications: 0
+    search: 0
+    sightings: 0
+    species_list: 0
+    taxonomy_term: 0
+    timeline_view: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

@@ -26,6 +26,7 @@ dependencies:
     - field.field.node.species.field_presence_map
     - field.field.node.species.field_recent_introduction
     - field.field.node.species.field_roller
+    - field.field.node.species.field_sightings
     - field.field.node.species.field_similar_species
     - field.field.node.species.field_vernacular_name
     - field.field.node.species.field_yearly_activity
@@ -36,6 +37,7 @@ dependencies:
     - field_group
     - path
     - text
+    - viewsreference
 third_party_settings:
   field_group:
     group_images:
@@ -347,6 +349,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_sightings:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
     region: content
   field_similar_species:
     weight: 9

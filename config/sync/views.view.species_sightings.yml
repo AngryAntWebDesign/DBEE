@@ -863,7 +863,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '40'
+            value: '5'
           group: 1
           exposed: false
           expose:
@@ -901,6 +901,8 @@ display:
               publications_reviewer: '0'
               team_creator: '0'
               team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
@@ -990,7 +992,7 @@ display:
           entity_field: species
           plugin_id: numeric
       sorts: {  }
-      title: 'Bubas Bison Sightings'
+      title: 'Onthophagus nigriventris Sightings'
       header: {  }
       footer: {  }
       empty: {  }
@@ -1011,11 +1013,4048 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: 'Bubas Bison'
     position: 1
     display_options:
       display_extenders: {  }
       block_description: 'Sightings Bubas Bison'
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '40'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_10:
+    display_plugin: block
+    id: block_10
+    display_title: 'Liatongus militaris'
+    position: 10
+    display_options:
+      display_extenders: {  }
+      block_description: 'Liatongus militaris'
+      title: 'Liatongus militaris Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '9'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_11:
+    display_plugin: block
+    id: block_11
+    display_title: 'Onitis alexis'
+    position: 11
+    display_options:
+      display_extenders: {  }
+      block_description: 'Onitis alexis'
+      title: 'Onitis alexis Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '10'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_12:
+    display_plugin: block
+    id: block_12
+    display_title: 'Onitis aygulus'
+    position: 12
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Onitis aygulus'
+      title: 'Onitis aygulus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '11'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_13:
+    display_plugin: block
+    id: block_13
+    display_title: 'Onitis caffer'
+    position: 13
+    display_options:
+      display_extenders: {  }
+      block_description: 'Onitis caffer'
+      title: 'Onitis caffer Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '12'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_14:
+    display_plugin: block
+    id: block_14
+    display_title: 'Onitis pecuarius'
+    position: 14
+    display_options:
+      display_extenders: {  }
+      block_description: 'Onitis pecuarius'
+      title: 'Onitis pecuarius Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '13'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_15:
+    display_plugin: block
+    id: block_15
+    display_title: 'Onitis vanderkelleni'
+    position: 15
+    display_options:
+      display_extenders: {  }
+      title: 'Onitis vanderkelleni Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      block_description: 'Onitis vanderkelleni'
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '14'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_16:
+    display_plugin: block
+    id: block_16
+    display_title: 'Onitis viridulus'
+    position: 16
+    display_options:
+      display_extenders: {  }
+      title: 'Onitis viridulus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      block_description: 'Onitis viridulus'
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '16'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_17:
+    display_plugin: block
+    id: block_17
+    display_title: 'Onthophagus binodis'
+    position: 17
+    display_options:
+      display_extenders: {  }
+      block_description: 'Onthophagus binodis'
+      title: 'Onthophagus binodis Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '17'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_18:
+    display_plugin: block
+    id: block_18
+    display_title: 'Onthophagus gazella'
+    position: 18
+    display_options:
+      display_extenders: {  }
+      block_description: 'Onthophagus gazella'
+      title: 'Onthophagus gazella Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '18'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_19:
+    display_plugin: block
+    id: block_19
+    display_title: 'Onthophagus nigriventris'
+    position: 19
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Onthophagus nigriventris'
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '19'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Bubas bubalus'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      block_description: 'Bubas bubalus'
+      title: 'Bubas bubalus Sightings'
+      defaults:
+        title: false
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_20:
+    display_plugin: block
+    id: block_20
+    display_title: 'Onthophagus obliquus'
+    position: 20
+    display_options:
+      display_extenders: {  }
+      block_description: 'Onthophagus obliquus'
+      title: 'Onthophagus obliquus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '20'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_21:
+    display_plugin: block
+    id: block_21
+    display_title: 'Onthophagus sagittarius'
+    position: 21
+    display_options:
+      display_extenders: {  }
+      title: 'Onthophagus sagittarius Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      block_description: 'Onthophagus sagittarius'
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '21'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_22:
+    display_plugin: block
+    id: block_22
+    display_title: 'Onthophagus taurus'
+    position: 22
+    display_options:
+      display_extenders: {  }
+      title: 'Onthophagus taurus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '22'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      block_description: 'Onthophagus taurus'
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_23:
+    display_plugin: block
+    id: block_23
+    display_title: 'Onthophagus vacca'
+    position: 23
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Onthophagus vacca'
+      title: 'Onthophagus vacca Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '23'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_24:
+    display_plugin: block
+    id: block_24
+    display_title: 'Sisyphus rubrus'
+    position: 24
+    display_options:
+      display_extenders: {  }
+      title: 'Sisyphus rubrus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      block_description: 'Sisyphus rubrus'
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '24'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_25:
+    display_plugin: block
+    id: block_25
+    display_title: 'Sisyphus spinipes'
+    position: 25
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Sisyphus spinipes'
+      title: 'Sisyphus spinipes Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '25'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_3:
+    display_plugin: block
+    id: block_3
+    display_title: 'Copris elphenor'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Copris elphenor'
+      title: 'Copris elphenor'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '3'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_4:
+    display_plugin: block
+    id: block_4
+    display_title: 'Copris hispanus'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      block_description: 'Copris hispanus'
+      title: 'Copris hispanus'
+      defaults:
+        title: false
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_5:
+    display_plugin: block
+    id: block_5
+    display_title: 'Euoniticellus africanus'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Euoniticellus africanus'
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '5'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_6:
+    display_plugin: block
+    id: block_6
+    display_title: 'Euoniticellus fulvus'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Euoniticellus fulvus'
+      title: 'Euoniticellus fulvus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '37'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_7:
+    display_plugin: block
+    id: block_7
+    display_title: 'Euoniticellus intermedius'
+    position: 7
+    display_options:
+      display_extenders: {  }
+      block_description: 'Euoniticellus intermedius'
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '5'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_8:
+    display_plugin: block
+    id: block_8
+    display_title: 'Euoniticellus pallipes'
+    position: 8
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      block_description: 'Euoniticellus pallipes'
+      title: 'Euoniticellus pallipes Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '6'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_9:
+    display_plugin: block
+    id: block_9
+    display_title: 'Geotrupes spiniger'
+    position: 9
+    display_options:
+      display_extenders: {  }
+      block_description: 'Geotrupes spiniger'
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '8'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

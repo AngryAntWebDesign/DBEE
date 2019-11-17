@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.species.field_presence_map
     - field.field.node.species.field_recent_introduction
     - field.field.node.species.field_roller
+    - field.field.node.species.field_sightings
     - field.field.node.species.field_similar_species
     - field.field.node.species.field_vernacular_name
     - field.field.node.species.field_yearly_activity
@@ -34,6 +35,7 @@ dependencies:
     - image
     - text
     - user
+    - viewsreference
 third_party_settings:
   field_group:
     group_details:
@@ -318,6 +320,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_sightings:
+    weight: 27
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
     region: content
   field_similar_species:
     weight: 11
