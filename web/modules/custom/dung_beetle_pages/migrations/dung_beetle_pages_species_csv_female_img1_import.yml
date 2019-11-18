@@ -6,7 +6,7 @@ migration_groups:
 
 source:
   constants:
-    SOURCE_BASE_PATH: 'http://dbee.ddev.site/'
+    SOURCE_BASE_PATH: 'https://dbee2.ddev.site/'
     FILE_DIRECTORY: 'public://species_photos'
   plugin: csv
   path: 'modules/custom/dung_beetle_pages/species_photos_female1.csv'
