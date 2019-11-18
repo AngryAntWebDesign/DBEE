@@ -44,17 +44,15 @@ function aaweb_subtheme_page_attachments_alter(array &$page) {
   $path = $current_path = \Drupal::service('path.current')->getPath();
   // If we're on the node listing page, add our varieites library.
   
+  $current_uri = \Drupal::request()->getRequestUri();          
+
   if ($path == '/node/16') {
     
     $page['#attached']['library'][] = 'aaweb_subtheme/varieties';
   }
-  if ($path == '/node/17') {
+  if ($current_uri == '/species/bubas-bison') {
     
     $page['#attached']['library'][] = 'aaweb_subtheme/bubas-bison';
-  }
-
-// Species Page  Styling Stuff
-  if($path == '/node/17') {
     $page['#attached']['library'][] = 'aaweb_subtheme/species';
   }
 }

@@ -1,0 +1,47 @@
+id: species_csv_male_img2_import
+label: Import Male 2 species photos
+migration_group: species_pages
+migration_groups:
+  - Species import
+
+source:
+  constants:
+    SOURCE_BASE_PATH: 'http://dbee.ddev.site/'
+    FILE_DIRECTORY: 'public://species_photos'
+  plugin: csv
+  path: 'modules/custom/dung_beetle_pages/species_photos_male2.csv'
+  header_row_count: 1
+  ids:
+    - SID
+process:
+  destination_filename:
+    -
+      plugin: callback
+      callable: basename
+      source: 'Photo URL'
+    -
+      plugin: skip_on_empty
+      method: row
+  destination_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/FILE_DIRECTORY
+        - '@destination_filename'
+    -
+      plugin: urlencode
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/SOURCE_BASE_PATH
+        - 'Photo URL'
+  uri:
+    plugin: file_copy
+    source: 
+      - '@source_full_path'
+      - '@destination_full_path'
+destination:
+  plugin: 'entity:file'

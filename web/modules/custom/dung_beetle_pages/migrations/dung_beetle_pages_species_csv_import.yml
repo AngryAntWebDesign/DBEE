@@ -1,46 +1,171 @@
-id: species_csv_import
+id: species_csv_import2
 label: Import species
+migration_group: species_pages
 migration_groups:
   - Species import
-
 source:
   plugin: 'csv'
   # Full path to the file.
-  path: 'modules/custom/dung_beetle_pages/species.csv'
+  path: 'modules/custom/dung_beetle_pages/species-pages.csv'
   # Column delimiter. Comma (,) by default.
   delimiter: ','
   # Field enclosure. Double quotation marks (") by default.
   enclosure: '"'
   # The number of rows at the beginning which are not data.
   header_row_count: 1
-  # The column(s) to use as a key. Each column specified will 
-  # create an index in the migration table and too many columns 
-  # may throw an index size error.
   ids:
-    - id
-  # Here we identify the columns of interest in the source file. 
-  # Each numeric key is the 0-based index of the column. 
-  # For each column, the key below is the field name assigned to 
-  # the data on import, to be used in field mappings below. 
-  # The value is a user-friendly string for display by the 
-  # migration UI.
+    - SID
   fields:
     0:
-      name: id
+      name: SID
       label: 'Unique Id'
     1:
-      name: title
+      name: Name
       label: 'Title'
-    2:
-      name: body
-      label: 'Post body'
-
+    2:    
+      name: Genus
+      label: 'Genus'      
+    3:    
+      name: Common
+      label: 'Common'
+    4:
+      name: Length
+      label: 'Length'
+    5:
+      name: Colour
+      label: 'Colour'
+    6:
+      name: Horns
+      label: 'Horns'
+    7:
+      name: Flight
+      label: 'Flight'
+    8:
+      name: Activity
+      label: 'Activity'
+    9:
+      name: Similar
+      label: 'Similar'
+    10:
+      name: Distribution
+      label: 'Distribution'
+    11:
+      name: minor
+      label: 'Minor male/female'
+    12:
+      name: Roller
+      label: Roller
+    13:
+      name: Recent
+      label: 'Recent'
+    14:
+      name: Anatomy_img1_caption
+      label: 'Anatomy_img1_caption'
+    15:
+      name: Anatomy_img2_caption
+      label: 'Anatomy_img2_caption'
+    16:
+      name: Other_notes
+      label: Other_notes
 process:
-  title: title
-  body: body
+  title: Name
+  field_genus: Genus
+  field_vernacular_name: Common  
+  field_length: Length
+  field_colour: Colour
+  field_horns: Horns
+  field_flight_time: Flight
+  field_yearly_activity: Activity
+  field_similar_species: Similar
+  field_distribution: Distribution
+  field_minor_male_female: minor
+  field_roller: Roller
+  field_recent_introduction: Recent
+  field_other_notes: Other_notes
+  field_male_image_1/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_male_img1_import
+      source: 'SID'
+  field_male_image_1/alt:
+    plugin: default_value
+    default_value: 'Male Image Species'
+  field_male_image_2/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_male_img2_import
+      source: 'SID'
+  field_male_image_2/alt:
+    plugin: default_value
+    default_value: 'Male Image 2 Species'
+  field_female_image_1/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_female_img1_import
+      source: 'SID'
+  field_female_image_1/alt:
+    plugin: default_value
+    default_value: 'Female Image Species'
+  field_female_image_2/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_female_img2_import
+      source: 'SID'
+  field_female_image_2/alt:
+    plugin: default_value
+    default_value: 'Female Image 2 Species'
+  field_neutral_image_12/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_neutral_img1_import
+      source: 'SID'
+  field_neutral_image_12/alt:
+    plugin: default_value
+    default_value: 'Neutral Image Species'
+  field_neutral_image_2/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_neutral_img2_import
+      source: 'SID'
+  field_neutral_image_2/alt:
+    plugin: default_value
+    default_value: 'Neutral Image 2 Species'
+  field_anatomy_image_1/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_anatomy_img1_import
+      source: 'SID'
+  field_anatomy_image_1/alt:
+    plugin: default_value
+    default_value: 'Anatomy Image Species'
+  field_anatomy_image_2/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_anatomy_img2_import
+      source: 'SID'
+  field_anatomy_image_2/alt:
+    plugin: default_value
+    default_value: 'Anatomy Image 2 Species'
+  field_beetle_size_chart/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_size_img_import
+      source: 'SID'
+  field_beetle_size_chart/alt:
+    plugin: default_value
+    default_value: 'Size Chart Species'
+  field_dung_depth_chart/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_depth_img_import
+      source: 'SID'
+  field_dung_depth_chart/alt:
+    plugin: default_value
+    default_value: 'Depth Size Chart Species'
   type:
     plugin: default_value
     default_value: species
-
 destination:
   plugin: entity:node
+migration_dependencies:
+  required:
+    - species_csv_male_img1_import
+    - species_csv_male_img2_import
+    - species_csv_female_img1_import
+    - species_csv_female_img2_import
+    - species_csv_neutral_img1_import
+    - species_csv_neutral_img2_import
+    - species_csv_anatomy_img1_import
+    - species_csv_anatomy_img2_import
+    - species_csv_size_img_import
+    - species_csv_depth_img_import    
