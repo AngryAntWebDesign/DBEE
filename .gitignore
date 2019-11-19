@@ -8,6 +8,8 @@
 /web/libraries/
 .ddev
 .DS_Store
+# keys
+/config/sync/mailchimp.settings.yml
 
 # Ignore sensitive information
 /web/sites/*/settings.php
