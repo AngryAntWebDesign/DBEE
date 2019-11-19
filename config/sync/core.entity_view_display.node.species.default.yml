@@ -55,7 +55,7 @@ third_party_settings:
         - field_recent_introduction
         - field_other_notes
       parent_name: ''
-      weight: 4
+      weight: 2
       format_type: fieldset
       format_settings:
         description: ''
@@ -70,7 +70,7 @@ third_party_settings:
         - group_anatomy
         - group_size_depth
       parent_name: ''
-      weight: 3
+      weight: 1
       format_type: tabs
       format_settings:
         label: Images
@@ -299,7 +299,7 @@ content:
     type: text_default
     region: content
   field_presence_map:
-    weight: 5
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -322,7 +322,7 @@ content:
     type: string
     region: content
   field_sightings:
-    weight: 27
+    weight: 4
     label: above
     settings:
       plugin_types:
@@ -353,6 +353,11 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  flippy_pager:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 0
     region: content
