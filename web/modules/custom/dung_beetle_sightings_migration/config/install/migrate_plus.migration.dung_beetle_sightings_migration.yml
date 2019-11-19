@@ -113,6 +113,9 @@ process:
   sighting_date2: 
     plugin: transform_value2
     source: eventDate  
+  season:
+    plugin: season_value
+    source: month
   species:
     plugin: entity_generate
     source: species

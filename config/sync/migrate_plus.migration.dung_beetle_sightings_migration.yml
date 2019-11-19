@@ -1,4 +1,4 @@
-uuid: 5a7cab15-6c87-46a4-b59b-81ad7bd7fa8f
+uuid: 2b044ac1-5eaa-4b75-8601-6b11727cd383
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - dung_beetle_sightings_migration
 _core:
-  default_config_hash: 07mmHlWvgD3_g6wbHG1nlqaodCqWdOCaE2koVcNMgyg
+  default_config_hash: tC7irtKlso6OXGJsdoTsxJW_h3q6e8dpN56J7bcEtnQ
 id: dung_beetle_sightings_migration
 class: null
 field_plugin_method: null
@@ -124,6 +124,9 @@ process:
   sighting_date2:
     plugin: transform_value2
     source: eventDate
+  season:
+    plugin: season_value
+    source: month
   species:
     plugin: entity_generate
     source: species

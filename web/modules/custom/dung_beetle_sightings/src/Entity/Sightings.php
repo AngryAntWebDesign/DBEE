@@ -402,6 +402,30 @@ class Sightings extends EditorialContentEntityBase implements SightingsInterface
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
+
+      // Season
+      $fields['season'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Season'))
+      ->setDescription(t('The Season of the Sighting entity.'))
+      ->setRevisionable(TRUE)
+      ->setSettings([
+        'max_length' => 50,
+        'text_processing' => 0,
+      ])
+      ->setDefaultValue('')
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setRequired(TRUE);
+
       // Phylum
       $fields['phylum'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Phylum'))
