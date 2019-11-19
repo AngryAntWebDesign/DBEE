@@ -36,7 +36,8 @@
         "drupal/field_group": "^1.0",
         "drupal/views_bootstrap": "^4.1",
         "drupal/environment_indicator": "^3.7",
-        "drupal/viewsreference": "^1.4"
+        "drupal/viewsreference": "^1.4",
+        "drupal/backup_migrate": "^4.0"
     },
     "require-dev": {
     },
