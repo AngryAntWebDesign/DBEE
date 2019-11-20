@@ -1,0 +1,4 @@
+[17-Nov-2019 09:05:25 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4718592 bytes) in /home/dungbeetlescom/public_html/web/modules/contrib/webform/src/Form/AdminConfig/WebformAdminConfigSubmissionsForm.php on line 15
+[17-Nov-2019 09:05:25 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4718592 bytes) in /home/dungbeetlescom/public_html/vendor/symfony/http-foundation/Response.php on line 19
+[17-Nov-2019 09:10:26 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4718592 bytes) in /home/dungbeetlescom/public_html/web/modules/contrib/webform/src/Form/AdminConfig/WebformAdminConfigElementsForm.php on line 257
+[17-Nov-2019 09:10:26 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4718592 bytes) in /home/dungbeetlescom/public_html/vendor/symfony/http-foundation/Response.php on line 19
