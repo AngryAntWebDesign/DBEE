@@ -82,6 +82,13 @@ process:
   field_roller: Roller
   field_recent_introduction: Recent
   field_other_notes: Other_notes
+  field_feature_image/target_id: 
+      plugin: migration_lookup
+      migration: species_csv_male_img1_import
+      source: 'SID'
+  field_feature_image/alt:
+    plugin: default_value
+    default_value: 'Feature Image Species'
   field_male_image_1/target_id: 
       plugin: migration_lookup
       migration: species_csv_male_img1_import
