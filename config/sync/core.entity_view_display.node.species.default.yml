@@ -11,7 +11,8 @@ dependencies:
     - field.field.node.species.field_distribution
     - field.field.node.species.field_dung_depth_chart
     - field.field.node.species.field_feature_image
-    - field.field.node.species.field_female_image
+    - field.field.node.species.field_female_image_1
+    - field.field.node.species.field_female_image_2
     - field.field.node.species.field_flight_time
     - field.field.node.species.field_genus
     - field.field.node.species.field_horns
@@ -55,7 +56,7 @@ third_party_settings:
         - field_recent_introduction
         - field_other_notes
       parent_name: ''
-      weight: 2
+      weight: 4
       format_type: fieldset
       format_settings:
         description: ''
@@ -70,7 +71,7 @@ third_party_settings:
         - group_anatomy
         - group_size_depth
       parent_name: ''
-      weight: 1
+      weight: 3
       format_type: tabs
       format_settings:
         label: Images
@@ -94,7 +95,8 @@ third_party_settings:
       label: Male
     group_female:
       children:
-        - field_female_image
+        - field_female_image_1
+        - field_female_image_2
       parent_name: group_images
       weight: 3
       format_type: tab
@@ -206,8 +208,17 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_female_image:
-    weight: 22
+  field_female_image_1:
+    weight: 28
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_female_image_2:
+    weight: 29
     label: hidden
     settings:
       image_style: ''
@@ -299,7 +310,7 @@ content:
     type: text_default
     region: content
   field_presence_map:
-    weight: 3
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -322,7 +333,7 @@ content:
     type: string
     region: content
   field_sightings:
-    weight: 4
+    weight: 27
     label: above
     settings:
       plugin_types:
@@ -353,11 +364,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  flippy_pager:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   links:
     weight: 0
     region: content

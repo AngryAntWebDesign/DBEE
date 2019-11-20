@@ -111,14 +111,14 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
+            alter_text: true
+            text: '{{ name }}'
+            make_link: true
+            path: '/species/{{ name }}'
             absolute: false
             external: false
-            replace_spaces: false
-            path_case: none
+            replace_spaces: true
+            path_case: lower
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -137,7 +137,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h3
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -152,7 +152,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -276,7 +276,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Genus
           exclude: true
           alter:
             alter_text: false
@@ -309,7 +309,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -341,7 +341,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Kingdom
           exclude: true
           alter:
             alter_text: false
@@ -374,7 +374,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -802,7 +802,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3>{{ name }}</h3>\r\n<ul>\r\n<li>{{ vernacular_name }} </li>\r\n<li>{{ genus }}</li>\r\n<li>{{ kingdom }} </li>\r\n<li>{{ lga }}</li>\r\n<li>{{ month }}</li>\r\n<li>{{ year }} </li>\r\n<li>{{ state }}</li>\r\n</ul>"
+            text: "<h3>{{ name }}</h3>\r\n<ul>\r\n<li><strong>Common Name:</strong> {{ vernacular_name }} </li>\r\n<li><strong>Genus:</strong> {{ genus }}</li>\r\n<li><strong>Kingdom:</strong> {{ kingdom }} </li>\r\n<li><strong>LGA:</strong> {{ lga }}</li>\r\n<li><strong>Month:</strong> {{ month }}</li>\r\n<li><strong>Year:</strong> {{ year }} </li>\r\n<li><strong>State:</strong> {{ state }}</li>\r\n</ul>"
             make_link: false
             path: ''
             absolute: false
@@ -1385,6 +1385,61 @@ display:
           entity_type: sightings
           entity_field: year
           plugin_id: numeric
+        season:
+          id: season
+          table: sightings_field_data
+          field: season
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: season_op
+            label: Season
+            description: null
+            use_operator: false
+            operator: season_op
+            identifier: season
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+          is_grouped: true
+          group_info:
+            label: Season
+            description: ''
+            identifier: season
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Summer
+                operator: '='
+                value: Summer
+              2:
+                title: Autumn
+                operator: '='
+                value: Autumn
+              3:
+                title: Winter
+                operator: '='
+                value: Winter
+              4:
+                title: Summer
+                operator: '='
+                value: Summer
+          entity_type: sightings
+          entity_field: season
+          plugin_id: string
       sorts: {  }
       title: Sightings
       header: {  }

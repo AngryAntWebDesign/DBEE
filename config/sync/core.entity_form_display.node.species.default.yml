@@ -12,7 +12,8 @@ dependencies:
     - field.field.node.species.field_distribution
     - field.field.node.species.field_dung_depth_chart
     - field.field.node.species.field_feature_image
-    - field.field.node.species.field_female_image
+    - field.field.node.species.field_female_image_1
+    - field.field.node.species.field_female_image_2
     - field.field.node.species.field_flight_time
     - field.field.node.species.field_genus
     - field.field.node.species.field_horns
@@ -44,7 +45,8 @@ third_party_settings:
       children:
         - field_male_image_1
         - field_male_image_2
-        - field_female_image
+        - field_female_image_1
+        - field_female_image_2
         - field_neutral_image_12
         - field_neutral_image_2
         - field_anatomy_image_1
@@ -116,7 +118,7 @@ content:
     third_party_settings: {  }
   field_anatomy_image_1:
     type: entity_browser_file
-    weight: 29
+    weight: 30
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -130,7 +132,7 @@ content:
     third_party_settings: {  }
   field_anatomy_image_2:
     type: entity_browser_file
-    weight: 30
+    weight: 31
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -144,7 +146,7 @@ content:
     third_party_settings: {  }
   field_beetle_size_chart:
     type: entity_browser_file
-    weight: 31
+    weight: 32
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -182,7 +184,7 @@ content:
     region: content
   field_dung_depth_chart:
     type: entity_browser_file
-    weight: 32
+    weight: 33
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -208,9 +210,23 @@ content:
       selection_mode: selection_append
     region: content
     third_party_settings: {  }
-  field_female_image:
+  field_female_image_1:
     type: entity_browser_file
     weight: 26
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      field_widget_replace: false
+      selection_mode: selection_append
+    region: content
+    third_party_settings: {  }
+  field_female_image_2:
+    type: entity_browser_file
+    weight: 27
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -292,7 +308,7 @@ content:
     region: content
   field_neutral_image_12:
     type: entity_browser_file
-    weight: 27
+    weight: 28
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -306,7 +322,7 @@ content:
     third_party_settings: {  }
   field_neutral_image_2:
     type: entity_browser_file
-    weight: 28
+    weight: 29
     settings:
       entity_browser: image_browser
       field_widget_edit: true

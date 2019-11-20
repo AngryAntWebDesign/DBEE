@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
       - species-menu
-    parent: 'species-menu:'
+    parent: 'main:'
 name: Species
 type: species
 description: 'Species pages are specific containers for different custom fields and implement consistent layout'
