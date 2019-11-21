@@ -15,10 +15,7 @@ label: 'Presence Map'
 description: 'Code for Presence/Absence Map this should be entered in via "Rich Text" and the source button. Provides the HTML placeholder for the map. The javascript for leaflet is introduced for the specific species page via a theme hook and the page id.'
 required: false
 translatable: false
-default_value:
-  -
-    value: "<div class=\"flex-map\">\r\n<div class=\"selectList quarter\">&nbsp;</div>\r\n\r\n<div id=\"map\">&nbsp;</div>\r\n</div>\r\n\r\n<p><b>Note:</b> Data is based on some recognised sources in the Atlas of Living Australia.</p>\r\n"
-    format: rich_text
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: text_long

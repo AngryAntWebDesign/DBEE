@@ -50,13 +50,87 @@ function aaweb_subtheme_page_attachments_alter(array &$page) {
     
     $page['#attached']['library'][] = 'aaweb_subtheme/varieties';
   }
+  //  this loads presence maps per species page
   if ($current_uri == '/species/bubas-bison') {
-    
     $page['#attached']['library'][] = 'aaweb_subtheme/bubas-bison';
     $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/euoniticellus-africanus') {
+    $page['#attached']['library'][] = 'aaweb_subtheme/euoniticellus-africanus';
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/euoniticellus-fulvus') {
+    $page['#attached']['library'][] = 'aaweb_subtheme/euoniticellus-fulvus';
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/sisyphus-rubrus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/sisyphus-rubrus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species'; 
+  } else if ($current_uri == '/species/onthophagus-obliquus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-obliquus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onitis-alexis') {
+    $page['#attached']['library'][] = 'aaweb_subtheme/onitis-alexis'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onitis-caffer') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onitis-caffer'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onitis-pecuarius') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onitis-pecuarius'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onitis-vanderkelleni') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onitis-vanderkelleni'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/bubas-bubalus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/bubas-bubalus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onitis-viridulus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onitis-viridulus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/copris-elphenor') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/copris-elphenor'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onitis-aygulus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onitis-aygulus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onthophagus-binodis') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-binodis'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onthophagus-sagittarius') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-sagittarius'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/euoniticellus-intermedius') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/euoniticellus-intermedius'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/liatongus-militaris') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/liatongus-militaris'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onthophagus-taurus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-taurus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/sisyphus-spinipes') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/sisyphus-spinipes'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/euoniticellus-fulvus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/euoniticellus-fulvus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/euoniticellus-pallipes') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/euoniticellus-pallipes'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onthophagus-nigriventris') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-nigriventris'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onthophagus-vacca') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-vacca'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/euoniticellus-africanus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/euoniticellus-africanus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/onthophagus-gazella') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/onthophagus-gazella'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/geotrupes-spiniger') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/geotrupes-spiniger'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';  
   }
 }
-
 /**
 * Implements hook_preprocess_page() for PAGE document templates.
 */

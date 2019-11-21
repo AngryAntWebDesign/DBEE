@@ -3,6 +3,7 @@ admin_toolbar_links_access_filter: 1.27.0
 admin_toolbar_tools: 1.27.0
 adminimal_admin_toolbar: 1.9.0
 adobe_edge_fonts: 3.2.0
+backup_migrate: 4.0.0
 bg_image_formatter: 1.10.0
 blazy: 1.0.0-rc4
 blazy_ui: 1.0.0-rc4
@@ -38,6 +39,8 @@ entity_browser: 2.1.0
 entity_browser_block: 1.0.0
 entity_embed: 1.0.0
 entity_reference: 8.7.4
+environment_indicator: 3.7.0
+environment_indicator_ui: 3.7.0
 field: 8.7.4
 field_group: 1.0.0
 field_ui: 8.7.4

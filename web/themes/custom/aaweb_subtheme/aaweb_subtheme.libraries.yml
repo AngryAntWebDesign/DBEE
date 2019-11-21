@@ -49,6 +49,190 @@ bubas-bison:
     #//unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
     js/NRM-regions.js: {}
     js/bubas-bison.js: {}
+sisyphus-rubrus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/NRM-regions.js: {}
+    js/sisyphus-rubrus.js: {}
+onthophagus-obliquus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-obliquus.js: {}
+onitis-alexis:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onitis-alexis.js: {}
+onitis-caffer:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onitis-caffer.js: {}
+onitis-pecuarius:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onitis-pecuarius.js: {}
+onitis-vanderkelleni:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onitis-vanderkelleni.js: {}
+bubas-bubalus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/bubas-bubalus.js: {}
+onitis-viridulus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onitis-viridulus.js: {}
+copris-elphenor:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/copris-elphenor.js: {}
+onitis-aygulus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onitis-aygulus.js: {}
+onthophagus-binodis:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-binodis.js: {}
+onthophagus-sagittarius:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-sagittarius.js: {}
+euoniticellus-intermedius:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/euoniticellus-intermedius.js: {}
+liatongus-militaris:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/liatongus-militaris.js: {}
+onthophagus-taurus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-taurus.js: {}
+sisyphus-spinipes:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/sisyphus-spinipes.js: {}
+euoniticellus-fulvus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/euoniticellus-fulvus.js: {}
+euoniticellus-pallipes:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/euoniticellus-pallipes.js: {}
+onthophagus-nigriventris:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-nigriventris.js: {}
+onthophagus-vacca:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-vacca.js: {}
+euoniticellus-africanus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/euoniticellus-africanus.js: {}
+onthophagus-gazella:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/onthophagus-gazella.js: {}
+geotrupes-spiniger:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/nrm-regions.js: {}
+    js/geotrupes-spiniger.js: {}
 species:
   version: 1.0
   css:

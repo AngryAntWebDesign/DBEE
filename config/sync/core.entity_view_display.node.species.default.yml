@@ -11,8 +11,7 @@ dependencies:
     - field.field.node.species.field_distribution
     - field.field.node.species.field_dung_depth_chart
     - field.field.node.species.field_feature_image
-    - field.field.node.species.field_female_image_1
-    - field.field.node.species.field_female_image_2
+    - field.field.node.species.field_female_image
     - field.field.node.species.field_flight_time
     - field.field.node.species.field_genus
     - field.field.node.species.field_horns
@@ -95,8 +94,7 @@ third_party_settings:
       label: Male
     group_female:
       children:
-        - field_female_image_1
-        - field_female_image_2
+        - field_female_image
       parent_name: group_images
       weight: 3
       format_type: tab
@@ -208,17 +206,8 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_female_image_1:
-    weight: 28
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_female_image_2:
-    weight: 29
+  field_female_image:
+    weight: 22
     label: hidden
     settings:
       image_style: ''

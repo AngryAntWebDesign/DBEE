@@ -1,24 +1,24 @@
-uuid: c7b2d71a-80a2-4252-b564-e89890f295f4
+uuid: 9f7129d6-a80a-44ec-80f7-11f5f77b73a9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_female_image_2
+    - field.storage.node.field_female_image
     - node.type.species
   module:
     - image
-id: node.species.field_female_image_2
-field_name: field_female_image_2
+id: node.species.field_female_image
+field_name: field_female_image
 entity_type: node
 bundle: species
-label: 'Female Image 2'
-description: ''
+label: 'Female Image'
+description: 'An image of a specific female beetle for the species'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: species_photos
+  file_directory: 'species-images/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''

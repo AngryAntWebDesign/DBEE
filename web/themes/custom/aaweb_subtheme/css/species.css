@@ -14,3 +14,7 @@
 #leaflet-map-view-species-sightings-block-1 {
     min-width:100% !important;
 }
+
+div[id^="leaflet-map-view-species-sightings-block-"] {
+    min-width: 100% !important;
+}

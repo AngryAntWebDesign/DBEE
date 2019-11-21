@@ -1,4 +1,4 @@
-uuid: cfe2b6bd-6325-45be-978b-d5ad5df29eff
+uuid: 91d8c955-eca0-402f-9d3a-eb564a63b552
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - node
-id: node.field_female_image_2
-field_name: field_female_image_2
+id: node.field_female_image
+field_name: field_female_image
 entity_type: node
 type: image
 settings:
