@@ -38,7 +38,10 @@
         "drupal/environment_indicator": "^3.7",
         "drupal/viewsreference": "^1.4",
         "drupal/backup_migrate": "^4.0",
+<<<<<<< HEAD
         "drupal/views_bulk_operations": "^3.3",
+=======
+>>>>>>> 3c18bb12c99d60261dcc0e1c721457305334bb46
         "drupal/views_bulk_edit": "^2.4"
     },
     "require-dev": {

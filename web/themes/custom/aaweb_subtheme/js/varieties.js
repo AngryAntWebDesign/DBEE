@@ -1,26 +1,3 @@
-
-var speciesType = '';
-var year = '';
-var summer = '';
-var spring = '';
-var winter = '';
-var autum = '';
-var conceptName = '';
-// $('#speciesdrodown').on('change',function(){
-//   var speciesType = $('#speciesdrodown').val();
-//   var year = 'props.season_' + speciesType +'_Yr';
-//   var summer = 'props.season_' + speciesType +'_S';
-//   var spring = 'props.season_' + speciesType +'_Sp';
-//   var winter = 'props.season_' + speciesType +'_W';
-//   var autum = 'props.season_' + speciesType +'_A';
-//   //alert(speciesType);
-//   console.log(autum);
-//   var conceptName = $('#speciesdrodown').find(":selected").text();
-//   console.log(conceptName);
-//   map.removeLayer(L.geoJson);
-//   });
-  
-
 //  create teh view for the leaflet map to work of as centre
 // var map = L.map("map", { zoomControl:false }).setView([-26.3202, 135.948], 4);
 // var map = L.map("map", {layers: [bison, bubalus]}).setView([-26.3202, 135.948], 4);
@@ -30,7 +7,7 @@ var map = L.map("map").setView([-26.3202, 135.948], 5);
 var mySelector = jQuery("#mySelector");
 // add a base map stype using API key from mapbox
 L.tileLayer(
-  "https://api.mapbox.com/styles/v1/angryantweb/ck1ifhzd81fwp1cpgtlk42k1i/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5ncnlhbnR3ZWIiLCJhIjoiY2pwcnlzeGJ2MHowbTQzbnZhZHE0dWoybCJ9.hIg1J7n1f91VwNLuz-F67w",
+  "https://api.mapbox.com/styles/v1/angryantweb/cjzopajcv050p1cqq15xfcyu7/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5ncnlhbnR3ZWIiLCJhIjoiY2pwcnlzeGJ2MHowbTQzbnZhZHE0dWoybCJ9.hIg1J7n1f91VwNLuz-F67w",
   {
     maxZoom: 18,
     attribution:
@@ -38,253 +15,235 @@ L.tileLayer(
       '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
       'Imagery © <a href="http://mapbox.com">Mapbox</a>',
     // id: "mapbox.light-v9",
-    accessToken: 'pk.eyJ1IjoiYW5ncnlhbnR3ZWIiLCJhIjoiY2p6b25ta2NxMGQ2ZzNibnBqdXl0ZTU1YSJ9.vZAZHUOSEatZCVyOo0pI2w'
+    accessToken:
+      "pk.eyJ1IjoiYW5ncnlhbnR3ZWIiLCJhIjoiY2p6b25ta2NxMGQ2ZzNibnBqdXl0ZTU1YSJ9.vZAZHUOSEatZCVyOo0pI2w"
   }
 ).addTo(map);
 
-// *******************
-// LABEL another label type control on the page
-//  *******************
-  infoother = L.control();
+// ********************************
+// ALL CONNECTED TO OUR HOVER LABEL
+// ********************************
+// // control that shows state info on hover
+var info = L.control();
 
-  infoother.onAdd = function(map) {
- this._div = L.DomUtil.create("div", "infoother");
- this.update();
- return this._div;
-};
-
-  infoother.update = function(props) {
-  this._div.innerHTML = ''
-};
-// this adds the info layer to the map object
-infoother.addTo(map);
-// *******************
-// END LABEL
-//  *******************
-
-
-var arr = ["1","5"];
-
-function evaluateLayerName () {
-x = 1 + 1;
-
-return x;
-}    
-
-var sname = ['Bubas_Bison', 'Bubas_Bubalus'];
-var x;
-var iCount = 0;
-
-// for (x of sname) {
-info = L.control();
-
+// using the control that was created in the variable info above describe the contents div with info L stands for layer
+// UNCOMMNET TO DO
 info.onAdd = function(map) {
   this._div = L.DomUtil.create("div", "info");
-  
+
   this.update();
   return this._div;
 };
 
-info.update = function(props,title) {
-  // SET SOME DEFAULTS FOR OUR VARIABLES
-  presence = 'NOT PRESENT';
-  presence_a = '';
-  presence_w = '';
-  presence_s = '';
-  presence_sp = '';
+var speciesName = "";
 
-  // FIRST CHECK ITS GOT A HOVER STATE OTHERWISE ERRORS
-  if(props) {
-  presence = (eval('props.season_'+title+'_Yr') == 1) ?  'PRESENT - ' :  'NOT PRESENT';
-  presence_a = (eval('props.season_'+title+'_A') == 1) ? 'Autum' : '';
-  presence_w = (eval('props.season_'+title+'_W') == 1) ? 'Winter' : '';
-  presence_s = (eval('props.season_'+title+'_S') == 1) ?  'Summer' : '';
-  presence_sp = (eval('props.season_'+title+'_Sp') == 1) ? 'Spring' : '';
-  
+// we have this layer called info update it use a function to look at props and assign text within the layer
+info.update = function(props) {
+  if (props) {
+    if (props.Species) {
+      speciesName = props.Species;
+    } else {
+      speciesName = "";
+    }
   }
   this._div.innerHTML =
+    "<h4></h4>" +
     (props
-      ? 
-        // "<h4>"+x+"</h4>" +
-        "<b>NRM:</b> " + " " + props.NRM_REGION + "<br /><b>STATE: </b>" + props.STATE +
-        "<br /><br />" + 
-        "<b>" +
-        presence + ' ' + presence_a + presence_w + ' ' + presence_s + ' ' + presence_sp + "</b>"
-      : "Select your species then hover over a Natural Resource Management Area (NRM)");
+      ? "<b>NRM:</b> " +
+        " " +
+        props.NRM_REGION +
+        "<br /><b>STATE: </b>" +
+        props.STATE +
+        "<br><br><p>" +
+        speciesName +
+        "</p>" +
+        ""
+      : "Hover over a Natural Resource Management Area (NRM)");
 };
 // this adds the info layer to the map object
 info.addTo(map);
+// ************ FINISH HOVER DEFINITION
 
 // // get color depending on population density value
 function getColor(d) {
-  
-  return d == 0
-    ? "gray"
-    : d == 1
-      ? "black" : "pink";
+  //   return d == 0 ? "gray" : d == 1 ? "black" : "red";
+  return d > 10
+    ? "#800026"
+    : d > 8
+    ? "#BD0026"
+    : d > 6
+    ? "#E31A1C"
+    : d > 4
+    ? "#FC4E2A"
+    : d > 2
+    ? "#FD8D3C"
+    : d > 1
+    ? "#FEB24C"
+    : d > 0
+    ? "#FED976"
+    : "gray";
 }
 
 // styling the tile or feature sing teh fillcolour function above and the prop densicey from the GEOjson
 function style(feature) {
-  // console.log(feature.properties.season_Bubas_Bison_Yr);
-return {
+  // console.log(feature.properties.Varieties);
+  return {
     weight: 0.8,
     opacity: 1,
     color: "white",
     dashArray: "1",
     fillOpacity: 0.5,
     // fillColor: getColor(feature.properties.density)
-    fillColor: getColor(feature.properties.season_Bubas_Bison_Yr)
-};
-}
-
-
-function style2(feature) {
-  // console.log(feature.properties.season_Bubas_Bison_Yr);
-return {
-    weight: 0.8,
-    opacity: 1,
-    color: "white",
-    dashArray: "1",
-    fillOpacity: 0.5,
-    // fillColor: getColor(feature.properties.density)
-    fillColor: getColor(feature.properties.season_Bubas_Bubalus_Yr)
-};
+    fillColor: getColor(feature.properties.Varieties)
+  };
 }
 
 // the hover event should highlight or crate a line around the object this below does that fuction
 function highlightFeature(e) {
-var layer = e.target;
+  geojson.setStyle(style);
 
-layer.setStyle({
+  var layer = e.target;
+
+  layer.setStyle({
     weight: 2,
     color: "#666",
     dashArray: "",
     fillOpacity: 0.3,
     fillColor: "#66887a"
-});
+  });
 
-if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
-}
-var title = 'bang';
+  }
   // this adds the details from the selected object to our hover box
-info.update(layer.feature.properties,title);
+  info.update(layer.feature.properties);
+}
+
+function dehighlight(layer) {
+  if (selected === null || selected._leaflet_id !== layer._leaflet_id) {
+    geojson.resetStyle(layer);
+  }
+}
+// Variable to store selection
+var selected = null;
+
+function select(layer) {
+  // See if there is already a selection
+  if (selected !== null) {
+    // Store for now
+    var previous = selected;
+  }
+  map.fitBounds(layer.getBounds());
+
+  // console.log(layer.getBounds());
+  // Set new selection
+  selected = layer;
+  // If there was a previous selection
+  if (previous) {
+    // Dehighlight previous
+    dehighlight(previous);
+  }
 }
 
 // initialises the geojson variable with nothing
 var geojson;
 
-// nothing is highlighted if the mouse goes out this function defineds that off action
-function resetHighlight(e) {
-    geojson.resetStyle(e.target);
-    info.update();
+function highlight(layer) {
+  // highlightFeature(layer);
+  layer.setStyle({
+    weight: 2,
+    color: "#666",
+    dashArray: "",
+    fillOpacity: 0.3
+    // fillColor: "#66887a"
+  });
+  if (!L.Browser.ie && !L.Browser.opera) {
+    layer.bringToFront();
+  }
+  // console.log(selected);
+  // if (selected !== null || selected._leaflet_id !== null) {
+  info.update(layer.feature.properties);
+  // }
 }
-// on click the zoomTofeature will fit the zoom to the sected area
-function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
+
+function dehighlight(layer) {
+  if (selected === null || selected._leaflet_id !== layer._leaflet_id) {
+    geojson.resetStyle(layer);
+  }
 }
-// describes the reactions on the actual layer and what to do what functions to hit on EachFeature passes in the feature selected and the layer
-function onEachFeature(feature, layer) {
-    layer.on({
-    mouseover: highlightFeature,
-    mouseout: resetHighlight //,
-    // click: zoomToFeature
-});
+
+function select(layer) {
+  if (selected !== null) {
+    var previous = selected;
+  }
+  map.fitBounds(layer.getBounds());
+  selected = layer;
+  if (previous) {
+    dehighlight(previous);
+  }
 }
-// ****** This is our key fuction adding all the data to our map
-// takes our empty geojson variable and assigns the StatesData on a layer L and adds it to the initialised map
-// geojson = L.geoJson(stateData, {
 
-// below stuff from the census example 
+var selected = null;
 
-//LAYER FUNCTIONALITY x2
-    //  layer 1
-    var species1 = new L.geoJson(nrmData, {
-        style: style,
-        onEachFeature: function (feature, layer) {
-        var defaultStyle = layer.style,
-            that = this;//NEW
-
-        layer.on('mouseover', function (e) {
-            this.setStyle({
-                weight: 5,
-                color: '#666',
-                dashArray: '',
-                fillOpacity: 0.7
-            });
-
-        if (!L.Browser.ie && !L.Browser.opera) {
-            layer.bringToFront();
-        }
-
-            info.update(layer.feature.properties,'Bubas_Bison');
-        });
-        layer.on('mouseout', function (e) {
-            species1.resetStyle(e.target); //NEW
-                info.update();
-        });
-        }
-        });
-    //  layer 2
-    var species2 = new L.geoJson(nrmData, {
-        style: style2,
-        onEachFeature: function (feature, layer) {
-        var defaultStyle = layer.style,
-            that = this;//NEW
-
-        layer.on('mouseover', function (e) {
-            this.setStyle({
-            weight: 5,
-            color: '#666',
-            dashArray: '',
-            fillOpacity: 0.7
-            });
-
-        if (!L.Browser.ie && !L.Browser.opera) {
-            layer.bringToFront();
-        }
-
-            info.update(layer.feature.properties,'Bubas_Bubalus');
-        });
-        layer.on('mouseout', function (e) {
-            species2.resetStyle(e.target); //NEW
-            info.update();
-        });
-        }
-        });
-
-    //LAYER CONTROL	
-    var overlays = {
-        "Bubas Bison": species1,
-        "Bubas Bubalus": species2
+var geojson = L.geoJson(nrmData, {
+  style: function(feature) {
+    return {
+      weight: 0.8,
+      opacity: 1,
+      color: "white",
+      dashArray: "1",
+      fillOpacity: 0.5,
+      fillColor: getColor(feature.properties.Varieties)
     };
+  },
+  onEachFeature: function(feature, layer) {
+    layer.on({
+      mouseover: function(e) {
+        if (selected === null || selected._leaflet_id === layer._leaflet_id) {
+          highlight(e.target);
+        }
+      },
+      mouseout: function(e) {
+        if (selected === null || selected._leaflet_id !== layer._leaflet_id) {
+          dehighlight(e.target);
+        }
+      },
+      click: function(e) {
+        if (selected) {
+          dehighlight(e.target);
+          highlight(e.target);
+        }
+        select(e.target);
+      }
+    });
+  }
+}).addTo(map);
 
-    let layerControl = L.control.layers(overlays, null, {collapsed: true}).addTo(map);
-    $('.leaflet-control-layers').on('mouseleave', () => {
-      layerControl.collapse();
-  });
-  $('.leaflet-control-layers-toggle').on('mouseenter', () => {
-      layerControl.expand();
-  });
-        
-
-    // LEGEND
-    var legend = L.control({position: 'bottomright'});
-
-    legend.onAdd = function (map) {
-        var div = L.DomUtil.create("div", "info legend"),
+// ****************
+// LEGEND STUFF
+// adds an extra attribution to the map credit
+// *******************
+map.attributionControl.addAttribution(
+  'Absence Data &copy; <a href="http://ala.org.au/">Atlas of Living Australa</a>'
+);
+// assigns where the legend should be placed and creates it
+var legend = L.control({ position: "bottomright" });
+// modifies the legend adding the html structure to it
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "info legend"),
     grades = ["Present", "Absent"],
     labels = [];
 
-  labels.push('<i style="background:gray;"></i>Absent');
-  labels.push('<i style="background:black;"></i>Present');
+  labels.push('<i style="background:#800026;"></i>10 or more Species');
+  labels.push('<i style="background:#BD0026;"></i>8-9 Species');
+  labels.push('<i style="background:#E31A1C;"></i>7-8 Species');
+  labels.push('<i style="background:#FC4E2A;"></i>5-6 Species');
+  labels.push('<i style="background:#FEB24C;"></i>3-4 Species');
+  labels.push('<i style="background:#FED976;"></i>1-2 Species');
+  labels.push('<i style="background:gray;"></i>0 Species');
 
   div.innerHTML = labels.join("<br>");
   return div;
-    };
+};
 
-    legend.addTo(map);
-// var zoomcontrol = L.control.zoom()
-// ***** END LEGEND 
-
+legend.addTo(map);

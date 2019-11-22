@@ -1,4 +1,4 @@
-uuid: 2b044ac1-5eaa-4b75-8601-6b11727cd383
+uuid: 060ebdb8-8ff1-45d0-95ed-efa9070b47fd
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - dung_beetle_sightings_migration
 _core:
-  default_config_hash: tC7irtKlso6OXGJsdoTsxJW_h3q6e8dpN56J7bcEtnQ
+  default_config_hash: hBPSdTuE8-9C9fmYmC6YTvpZROQloniTHh9aIVejVBQ
 id: dung_beetle_sightings_migration
 class: null
 field_plugin_method: null
@@ -23,7 +23,7 @@ source:
     Accept: 'application/json; charset=utf-8'
     Content-Type: application/json
   urls:
-    - 'https://biocache-ws.ala.org.au/ws/occurrences/search?fq=data_resource_uid:dr2270&pageSize=100'
+    - 'https://biocache-ws.ala.org.au/ws/occurrences/search?fq=data_resource_uid:dr2270&pageSize=500'
   item_selector: occurrences/
   fields:
     -

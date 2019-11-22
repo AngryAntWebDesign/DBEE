@@ -12,7 +12,7 @@ source:
     Accept: 'application/json; charset=utf-8'
     Content-Type: 'application/json'
   urls: 
-    - https://biocache-ws.ala.org.au/ws/occurrences/search?fq=data_resource_uid:dr2270&pageSize=100
+    - https://biocache-ws.ala.org.au/ws/occurrences/search?fq=data_resource_uid:dr2270&pageSize=500
   item_selector: occurrences/
   fields:
     -
