@@ -68,11 +68,11 @@ var speciesType = '';
       presence_sp = '';
       // FIRST CHECK ITS GOT A HOVER STATE OTHERWISE ERRORS
       if(props) {
-      presence = (props.season_Euoniticellus_Africanus_Yr == 1) ?  'PRESENT - ' :  'NOT PRESENT';
-      presence_a = (props.season_Euoniticellus_Africanus_A == 1) ? 'Autum' : '';
-      presence_w = (props.season_Euoniticellus_Africanus_W == 1) ? 'Winter' : '';
-      presence_s = (props.season_Euoniticellus_Africanus_S == 1) ?  'Summer' : '';
-      presence_sp = (props.season_Euoniticellus_Africanus_Sp == 1) ? 'Spring' : '';
+      presence = (props.season_Euoniticellus_africanus_Yr == 1) ?  'PRESENT - ' :  'NOT PRESENT';
+      presence_a = (props.season_Euoniticellus_africanus_A == 1) ? 'Autum' : '';
+      presence_w = (props.season_Euoniticellus_africanus_W == 1) ? 'Winter' : '';
+      presence_s = (props.season_Euoniticellus_africanus_S == 1) ?  'Summer' : '';
+      presence_sp = (props.season_Euoniticellus_africanus_Sp == 1) ? 'Spring' : '';
       }
       this._div.innerHTML =
         "<h4>" + conceptName + "</h4>" +
@@ -108,7 +108,7 @@ var speciesType = '';
         dashArray: "1",
         fillOpacity: 0.5,
         // fillColor: getColor(feature.properties.density)
-        fillColor: getColor(feature.properties.season_Euoniticellus_Africanus_Yr)
+        fillColor: getColor(feature.properties.season_Euoniticellus_africanus_Yr)
       };
     }
 
