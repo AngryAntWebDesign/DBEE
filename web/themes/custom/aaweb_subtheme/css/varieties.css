@@ -1,3 +1,6 @@
+/* **************************************** */
+/* Drives the styling for varieies mapping and presence/absence mapping on species page */
+/* **************************************** */
 body {
     text-align:center;
   }
@@ -45,4 +48,12 @@ body {
   }
   .form-control {
     max-width:200px;
+  }
+
+  /* #map {height: 600px;} */
+  /* The below will only work with "DEVICES"
+  PLEASE NOTE JS is setup to identify changes in resized windows and zoom levels
+  */
+  @media only screen and (min-width : 320px)  and (max-width : 568px) {
+    #map {height: 550px;}
   }

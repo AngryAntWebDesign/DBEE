@@ -47,192 +47,240 @@ bubas-bison:
         css/varieties.css: {}
   js:
     #//unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
+    js/pre-leaflet-vars.js: {}
     js/NRM-regions.js: {}
     js/bubas-bison.js: {}
+    js/leaflet-presence.js: {}    
 sisyphus-rubrus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/NRM-regions.js: {}
     js/sisyphus-rubrus.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-obliquus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-obliquus.js: {}
+    js/leaflet-presence.js: {}
 onitis-alexis:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onitis-alexis.js: {}
+    js/leaflet-presence.js: {}
 onitis-caffer:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onitis-caffer.js: {}
+    js/leaflet-presence.js: {}
 onitis-pecuarius:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onitis-pecuarius.js: {}
+    js/leaflet-presence.js: {}
 onitis-vanderkelleni:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onitis-vanderkelleni.js: {}
+    js/leaflet-presence.js: {}
 bubas-bubalus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/bubas-bubalus.js: {}
+    js/leaflet-presence.js: {}
 onitis-viridulus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onitis-viridulus.js: {}
+    js/leaflet-presence.js: {}
 copris-elphenor:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/copris-elphenor.js: {}
+    js/leaflet-presence.js: {}
 onitis-aygulus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onitis-aygulus.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-binodis:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-binodis.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-sagittarius:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-sagittarius.js: {}
+    js/leaflet-presence.js: {}
 euoniticellus-intermedius:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/euoniticellus-intermedius.js: {}
+    js/leaflet-presence.js: {}
 liatongus-militaris:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/liatongus-militaris.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-taurus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-taurus.js: {}
+    js/leaflet-presence.js: {}
 sisyphus-spinipes:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/sisyphus-spinipes.js: {}
+    js/leaflet-presence.js: {}
 euoniticellus-fulvus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/euoniticellus-fulvus.js: {}
+    js/leaflet-presence.js: {}
 euoniticellus-pallipes:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/euoniticellus-pallipes.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-nigriventris:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-nigriventris.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-vacca:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-vacca.js: {}
+    js/leaflet-presence.js: {}
 euoniticellus-africanus:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/euoniticellus-africanus.js: {}
+    js/leaflet-presence.js: {}
 onthophagus-gazella:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/onthophagus-gazella.js: {}
+    js/leaflet-presence.js: {}
 geotrupes-spiniger:
   version: 1.0
   css:
     component:
       css/varieties.css: {}
   js:
+    js/pre-leaflet-vars.js: {}
     js/nrm-regions.js: {}
     js/geotrupes-spiniger.js: {}
+    js/leaflet-presence.js: {}
 species:
   version: 1.0
   css:

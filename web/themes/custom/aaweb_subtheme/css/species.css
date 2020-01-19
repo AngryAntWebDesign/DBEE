@@ -1,3 +1,6 @@
+/* **************************************** */
+/* Drives the styling for species sightings */
+/* **************************************** */
 .node--type-species {
     text-align: left;
 }
@@ -17,4 +20,10 @@
 
 div[id^="leaflet-map-view-species-sightings-block-"] {
     min-width: 100% !important;
+}
+
+@media only screen and (min-device-width : 320px)  and (max-device-width : 568px) {
+#leaflet-map-view-species-sightings-block-1 {
+    #map {height: 450px;}
+}
 }
