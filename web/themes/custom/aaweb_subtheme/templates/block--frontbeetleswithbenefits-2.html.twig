@@ -1,10 +1,10 @@
 <div{{ attributes }} class="banner-block">
 
-  <div class="jumbotron jumbotron-fluid image-block-background" {% if content.field_banner_image['#items'].entity.uri.value %} style="background: url({{ file_url(content.field_banner_image['#items'].entity.uri.value) }}); background-size: cover; background-position: center"{% endif %} >
+  <div class="d-flex align-items-center jumbotron jumbotron-fluid image-block-background" {% if content.field_banner_image['#items'].entity.uri.value %} style="background: url({{ file_url(content.field_banner_image['#items'].entity.uri.value) }}); background-size: cover; background-position: center"{% endif %} >
     <!--<div class="container">-->
     <div class="non-container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="d-flex align-items-center">
           {{ title_prefix }}
           {% if label %}
             <h2{{ title_attributes.addClass('display-4') }}>{{ label }}</h2>

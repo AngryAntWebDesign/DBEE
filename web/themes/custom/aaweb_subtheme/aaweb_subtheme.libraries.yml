@@ -37,7 +37,7 @@ varieties:
         css/varieties.css: {}
   js:
     //unpkg.com/leaflet@1.5.1/dist/leaflet.js: {}
-    js/NRM-regions.js: {}
+    js/nrm-regions-varieties.js: {}
     js/varieties.js: {}
 bubas-bison:
   version: 1.0

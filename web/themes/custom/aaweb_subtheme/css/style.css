@@ -79,8 +79,8 @@ h1 {
     font-weight: 700;
     font-style: normal;
     /* below should be either ems, px or rems not mixing units */
-    font-size: 3.5em; 
-    text-align: center;
+    font-size: 3.5em;
+    text-align: left;
 }
 h2 {
     font-weight: 600;
@@ -132,7 +132,7 @@ a {
     word-wrap: break-word;
 }
 a:hover, a:active {
-    color: rgba(101,134,120,.6) !important;
+    color: rgba(101,134,120,.6);
     border-color: rgba(101,134,120,.15);
     outline: 0;
     text-decoration: none;
@@ -234,12 +234,18 @@ color: #778;
 #block-aaweb-subtheme-footer a {
     display: inline-block;
     text-transform: uppercase;
+    color: rgba(112,112,112,.5);
+    font-size: .8rem;
 }
-.image-block-background {width: 100% !important;-webkit-animation: anim-opacity-full 480ms ease-out;animation: anim-opacity-full 480ms ease-out;background-color: #452726;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #fff;min-height: 500px;padding: 4rem 0rem;margin: 0px;background-attachment: fixed !important;}
+#block-aaweb-subtheme-footer a:hover {
+    color: rgba(112,112,112,.25)
+}
+.image-block-background {width: 100% !important;-webkit-animation: anim-opacity-full 480ms ease-out;animation: anim-opacity-full 480ms ease-out;background-color: #452726;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #fff;min-height: 812px;padding: 0px;margin: 0px;background-attachment: fixed !important;/* -webkit-box-align: center!important; */-ms-flex-align: center!important;/* align-items: center!important; */}
 .image-block-background .lead {
-    position: absolute;
+    /* position: absolute; */
     z-index: 8;
     width: 100%;
+    display: flex;
 }
 .image-block-background p.block-button  {
     position: relative;
@@ -274,13 +280,14 @@ color: #778;
 #block-frontanaturalperformer,
 #block-frontshareyourstory {
     min-height: 500px;
+    /* background-color: #452726; */
 }
 
 /* white text on any image block includes hero */
 .image-block-background h1,
 .image-block-background h2,
 .image-block-background h3 {
-    color:#ffffff; 
+    color:#ffffff;
     text-align: center;
     white-space: pre-wrap;
 }
@@ -358,11 +365,17 @@ p.light-text {
     /* font-family: futura-pt; */
     font-weight: 700;
     font-style: normal;
-    font-size: 10px;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: rgba(112,112,112,.5);
-    text-align: center;
+    
+}
+/* seems squarespace isn't consistent styling for featured news items */
+.path-frontpage .view-news .views-field-title {
+    text-align:left;
+}
+.path-frontpage .view-news .views-field-created {
+    text-align:left;
 }
 .project-news img {
     width:100%;
@@ -382,6 +395,10 @@ p.light-text {
     color: #525252;
     line-height: 1em;
     /* padding-top: 50px; */
+}
+.view-news a>img {
+    margin: 0 0 15px 0;
+    display: block;
 }
 /* Mailchimp stuff - it's times like this you wish you could use scss or less variables and encapsulation */
 #block-mailchimpsubscriptionformsubscribeforprojectupdates {
@@ -472,12 +489,15 @@ footer .navbar-nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
 }
 footer .nav-item {
-    display: inline-block;
+    display: inline;
     float: left;
     width: auto;
     /* display: inline-block; */
+    padding: 10px;
 }
 
 
@@ -499,6 +519,11 @@ footer .nav-item {
     /* font-family: futura-pt !important; */
     letter-spacing: .08em !important;
     text-transform: none !important;
+}
+.btn-link {
+    color: #658678;
+    font-size: 1.2rem !important;
+    border-bottom: 1px dashed;
 }
 .btn-primary, .btn-secondary, .btn-third, .btn-fourth, .btn-fifth {
     -webkit-transition: .1s opacity linear;
@@ -626,6 +651,16 @@ a.btn-fifth {
 .is-ultimenu-canvas.is-ultimenu-expanded .is-ultimenu-canvas-off {
     width: 500px;
 }
+
+#views-bootstrap-faqs-block-1 {
+    width:100%;
+}
+
+#views-bootstrap-faqs-block-1 .card  {
+    border:0px;
+    background-color:inherit;
+}
+
 /* #ultimenu-main */
 /* DEFAULT BOOSTRAP 4 BREAKPOINTS */
 @media screen and (max-width: 1200px) { 

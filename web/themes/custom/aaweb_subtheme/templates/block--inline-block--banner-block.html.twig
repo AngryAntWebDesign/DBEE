@@ -1,5 +1,5 @@
 <div{{ attributes }}>
-  <div class="jumbotron jumbotron-fluid" {% if content.field_background_['#items'].entity.uri.value %} style="background-image: url({{ file_url(content.field_background_['#items'].entity.uri.value) }}); background-size: cover; background-position: center"{% endif %} >
+  <div class="d-flex align-items-center jumbotron jumbotron-fluid" {% if content.field_background_['#items'].entity.uri.value %} style="background-image: url({{ file_url(content.field_background_['#items'].entity.uri.value) }}); background-size: cover; background-position: center"{% endif %} >
     <div class="container">
       <div class="row">
         <div class="col-md-6">
