@@ -1,7 +1,7 @@
 //  create teh view for the leaflet map to work of as centre
 // var map = L.map("map", { zoomControl:false }).setView([-26.3202, 135.948], 4);
 // var map = L.map("map", {layers: [bison, bubalus]}).setView([-26.3202, 135.948], 4);
-var map = L.map("map").setView([-26.3202, 135.948], 5);
+var map = L.map("map").setView([-28.3202, 132.948], 5);
 // var map = L.map('map').setView([37.8, -96], 4);
 // var cities = L.layerGroup([littleton, denver, aurora, golden]);
 var mySelector = jQuery("#mySelector");
@@ -41,6 +41,7 @@ var speciesName = "";
 info.update = function(props) {
   if (props) {
     if (props.Species) {
+      // speciesName = '<a href="#">'+props.Species+'</a></br>';
       speciesName = props.Species;
     } else {
       speciesName = "";

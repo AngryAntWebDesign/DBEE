@@ -1,6 +1,7 @@
 <div{{ attributes.addClass(classes) }}>
-  <div loading="lazy" class="d-flex align-items-center lazyload jumbotron jumbotron-fluid image-block-background" {% if content.field_banner_image['#items'].entity.uri.value %} style="background: url({{ file_url(content.field_banner_image['#items'].entity.uri.value) }}); background-size: cover; background-position: center"{% endif %} >
-    <div class="container">
+<div class="overlay"></div>
+  <div loading="lazy" class="d-flex align-items-center justify-content-center lazyload jumbotron jumbotron-fluid image-block-background" {% if content.field_banner_image['#items'].entity.uri.value %} style="background: url({{ file_url(content.field_banner_image['#items'].entity.uri.value) }}); background-size: cover; background-position: center"{% endif %} >
+    <div class="non-container">
       <div class="row">
         <div class="col-md-12">
           {{ title_prefix }}

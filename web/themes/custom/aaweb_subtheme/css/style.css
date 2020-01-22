@@ -65,14 +65,15 @@ h1, h2, h3, h4, h5 {
     color:#2e2d49;
     margin-top: 15px;
     /* font-family: futura-pt; */
-    letter-spacing: -.01em;
-    line-height: 1em;
+    /* letter-spacing: -.01em; */
+    /* line-height: 1em; */
     text-transform: none;
     text-rendering: optimizeLegibility;
     text-align: left;
 }
 p {
     color: #636363;
+    font-size: 1rem;
 }
 h1 {
     margin: .67em 0;
@@ -81,6 +82,7 @@ h1 {
     /* below should be either ems, px or rems not mixing units */
     font-size: 3.5em;
     text-align: left;
+    color: #707070;
 }
 h2 {
     font-weight: 600;
@@ -142,6 +144,7 @@ a:hover, a:active {
 .block .ultimenu__flyout .ultimenu__region {
     /* width: 100%; */
     /* width: 300px; */
+    z-index: 500;
 }
 .ultimenu.ultimenu--hover .ultimenu__link {
     padding-right: .0em;
@@ -175,7 +178,26 @@ a:hover, a:active {
 #header .ultimenu--hover .ultimenu__flyout, #footer .ultimenu--hover .ultimenu__flyout, .sidebar .ultimenu__flyout {
     min-width: auto;
 }
+/* redifining the content width from bootstrap */
+.layout-no-sidebars .container {
+    width: 960px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    z-index: 99;
+    align-items:;
+}
+/* layout pages are at least 1140 wide consisitent with boostrap 4 yay */
+.node--type-landing-page .container {
+    width:1140px;
+}
 
+
+.jumbotron .non-container {
+    z-index:99;
+}
+#navbar-main .container {
+    width:1140px;
+}
 .navbar-brand img {
     max-width: 268px;
 }
@@ -240,7 +262,7 @@ color: #778;
 #block-aaweb-subtheme-footer a:hover {
     color: rgba(112,112,112,.25)
 }
-.image-block-background {width: 100% !important;-webkit-animation: anim-opacity-full 480ms ease-out;animation: anim-opacity-full 480ms ease-out;background-color: #452726;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #fff;min-height: 812px;padding: 0px;margin: 0px;background-attachment: fixed !important;/* -webkit-box-align: center!important; */-ms-flex-align: center!important;/* align-items: center!important; */}
+.image-block-background {width: 100% !important;-webkit-animation: anim-opacity-full 480ms ease-out;animation: anim-opacity-full 480ms ease-out;background-color: #452726;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #fff;min-height: 812px;padding: 0px;margin: 0px;/* background-attachment: fixed !important; *//* -webkit-box-align: center!important; */-ms-flex-align: center!important;/* align-items: center!important; */}
 .image-block-background .lead {
     /* position: absolute; */
     z-index: 8;
@@ -272,7 +294,13 @@ color: #778;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
+.block-block-content {
+    max-width:960px;
+}
+
+
 .node--type-news .node__content  {
     width: 100%;
 }
@@ -295,7 +323,25 @@ color: #778;
 .cta-block h3 {
     color:#ffffff;
 }
+/* Media page using layout builder */
+.page-node-45 .layout--threecol-section {
+    border-bottom: dashed 1px #bbb;
+    padding-bottom: 40px;
+}
+.page-node-45 .layout--threecol-section:nth-child(1) {
+    padding-top:0px;
+}
+.page-node-45 .layout--threecol-section {
+    padding-top:40px;
+}
+.page-node-45 h2 {
+    margin-top:17px;
+}
+.page-node-45 .layout__region--second {
+    padding:17px;
+}
 /* Team page using layout builder to make user experience easy */
+
 
 .page-node-2 .node__content {
     /* width: 100%; */
@@ -312,8 +358,14 @@ color: #778;
     padding-left: 17px;
     padding-right: 17px;
 }
-
-
+.node--type-page img,
+.node--type-news img {
+    width:100%;
+    height:auto;
+}
+.is-ultimenu-canvas--active .node--type-page img {
+    max-width:500px;
+}
 /* Webform stuff for getting involved */
 .webform-submission-register-interest-form button.webform-button--submit {
     background-color: transparent;
@@ -330,7 +382,18 @@ color: #778;
     background-color: #707070;
     color: #ffffff;
 }
-
+.js-form-item {
+    padding:0px;
+}
+.webform-flexbox {
+    padding:0px;
+}
+.webform-flex--container .edit-first-name {
+    margin:0px;
+}
+.js-form-wrapper {
+    padding:0px;
+}
 /* Defined Styleed classes needs to be part of development process due to specifying in rich text editor. This defines
 the default behaviour of syles to minimise overides. see dbee.ddev.site/website-styles. explicitly define to override globals */
 p.lead-bg-light {
@@ -386,6 +449,8 @@ p.light-text {
 }
 .project-news {
     text-align: center;
+    /* width: 100%; */
+    float: left;
 }
 .view-news a {
     font-size: 20px;
@@ -463,6 +528,15 @@ p.light-text {
 }
 /*  END MAILCHIMP STUFF */
 /* CUSTOM BLOCK TYPE  */
+
+.image-block-background h1 {
+    font-size:42px;
+    margin: 0px;
+    line-height: 24px;
+}
+.image-block-background h2 {
+    font-size: 24px;
+}
 .image-block-background h4 {
     color: #ffffff;
 }
@@ -478,9 +552,19 @@ p.light-text {
     height: 100%;
     background-color: rgba(69,39,38,.37);
 }
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(69,39,38,.37);
+}
+
 /*  */
 footer.site-footer {
-    background-color: #ffffff;
+    background-color: #fafafa;
     text-align: center;
     width: 100%;
 }
@@ -624,13 +708,35 @@ a.btn-fourth:hover {
 a.btn-fifth {
 
 }
-
+.node--type-news .node__meta em {
+    font-weight:bold;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.view-news .col-auto {
+    width: 100%;
+}
 #block-views-block-news-block-2 {
     padding-bottom: 17px;
 }
 /* FLIPPY */
 .flippy-previous {
     float: left;
+}
+.flippy-previous a {
+    text-transform:  capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 0px;
+    color: #525252;
+    font-weight:700;
+    /* font-family: futura-pt; */
+    color: gray;
+}
+.flippy-previous a:hover, 
+.flippy-previous a:active
+{
+    color: #525252;
 }
 .flippy-next {
     float: right;
