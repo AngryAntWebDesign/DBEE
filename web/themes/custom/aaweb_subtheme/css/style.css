@@ -308,8 +308,13 @@ color: #778;
 #block-frontanaturalperformer,
 #block-frontshareyourstory {
     min-height: 500px;
+    position: relative;
     /* background-color: #452726; */
 }
+#block-frontbeetleswithbenefits-2 {
+       position: relative;
+}
+
 
 /* white text on any image block includes hero */
 .image-block-background h1,
