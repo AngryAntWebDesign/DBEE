@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /dbee-study-occurrence-sightings
+    pages: "/dung-beetle-sightings\r\n/dung-beetles/dung-beetle-sightings"
     negate: false
     context_mapping: {  }

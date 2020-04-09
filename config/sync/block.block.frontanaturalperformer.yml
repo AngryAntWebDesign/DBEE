@@ -12,7 +12,7 @@ dependencies:
 id: frontanaturalperformer
 theme: aaweb_subtheme
 region: content
-weight: -10
+weight: -14
 provider: null
 plugin: 'block_content:8b49e89e-caa7-41ce-bd66-405660888360'
 settings:

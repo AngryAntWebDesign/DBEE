@@ -1,0 +1,61 @@
+uuid: 976c66c2-a51b-4f6a-a368-f0b0c551a9a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: beetle
+label: 'Beetle Thumbnail'
+effects:
+  7d9dba95-a45e-43ca-b567-9c4891356a4c:
+    uuid: 7d9dba95-a45e-43ca-b567-9c4891356a4c
+    id: image_scale
+    weight: 1
+    data:
+      width: 220
+      height: null
+      upscale: true
+  c4755656-6852-46b7-8b12-73e391fa2b6a:
+    uuid: c4755656-6852-46b7-8b12-73e391fa2b6a
+    id: image_effects_set_canvas
+    weight: 2
+    data:
+      canvas_size: exact
+      exact:
+        width: '280'
+        height: '280'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'
+  4efd18b7-87c6-42ca-b466-2c019378a1d3:
+    uuid: 4efd18b7-87c6-42ca-b466-2c019378a1d3
+    id: image_effects_set_canvas
+    weight: 3
+    data:
+      canvas_size: exact
+      exact:
+        width: '300'
+        height: '300'
+        placement: left-bottom
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: ''
+  865be099-f683-4d31-8daf-6a62682e2257:
+    uuid: 865be099-f683-4d31-8daf-6a62682e2257
+    id: image_scale
+    weight: 4
+    data:
+      width: 230
+      height: null
+      upscale: false

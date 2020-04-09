@@ -1,0 +1,15 @@
+uuid: 8789dd40-e7b6-4fab-91af-85948465a196
+langcode: en
+status: true
+dependencies: {  }
+name: staff_thumbnail
+label: 'Staff thumbnail'
+effects:
+  11b66721-9922-484c-8c57-f57abd42e3c5:
+    uuid: 11b66721-9922-484c-8c57-f57abd42e3c5
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: true

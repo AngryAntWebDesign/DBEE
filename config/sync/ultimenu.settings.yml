@@ -3,10 +3,11 @@ blocks:
 regions:
   ultimenu_main_dung_beetles: ultimenu_main_dung_beetles
   ultimenu_main_news_media: ultimenu_main_news_media
-  ultimenu_main_outcomes_benefits: ultimenu_main_outcomes_benefits
-  ultimenu_main_get_involved: ultimenu_main_get_involved
+  ultimenu_main_benefits: ultimenu_main_benefits
+  ultimenu_main_livestock_producers: ultimenu_main_livestock_producers
   ultimenu_main_about: ultimenu_main_about
   ultimenu_main_resources: ultimenu_main_resources
-goodies: {  }
+goodies:
+  counter-class: counter-class
 skins: ''
 fallback_text: ''

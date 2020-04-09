@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /objectives
+    pages: "/objectives\r\n/about/objectives\r\nindex.php/about/objectives"
     negate: false
     context_mapping: {  }

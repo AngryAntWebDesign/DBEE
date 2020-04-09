@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_browser
     - field.field.node.article.body
     - field.field.node.article.field_feature_image
-    - image.style.thumbnail
     - node.type.article
   module:
     - content_moderation
-    - image
+    - entity_browser
     - path
     - text
 id: node.article.default
@@ -24,6 +24,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -94,6 +95,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden: {  }

@@ -18,7 +18,7 @@ settings:
   id: 'menu_block:main'
   label: 'News & media'
   provider: menu_block
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand: 1

@@ -59,6 +59,7 @@ module:
   inline_entity_form: 0
   jsonapi: 0
   layout_builder: 0
+  layout_builder_modal: 0
   layout_builder_restrictions: 0
   layout_builder_st: 0
   layout_builder_styles: 0
@@ -119,7 +120,9 @@ module:
   page_cache: 0
   page_manager: 0
   panels: 0
+  parallax_bg: 0
   path: 0
+  path_alias: 0
   quickedit: 0
   rdf: 0
   schemata: 0

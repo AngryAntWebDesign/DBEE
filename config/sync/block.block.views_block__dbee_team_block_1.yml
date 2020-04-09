@@ -12,19 +12,19 @@ dependencies:
 id: views_block__dbee_team_block_1
 theme: aaweb_subtheme
 region: content
-weight: -2
+weight: -6
 provider: null
 plugin: 'views_block:dbee_team-block_1'
 settings:
   id: 'views_block:dbee_team-block_1'
-  label: ''
+  label: 'Theme leaders'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Theme leaders'
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /about/dbee-team
+    pages: /about/project-team
     negate: false
     context_mapping: {  }

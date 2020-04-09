@@ -11,11 +11,10 @@ dependencies:
     - field.field.node.team.field_position
     - field.field.node.team.field_theme
     - field.field.node.team.field_theme2
-    - image.style.crop_freeform_wide_220px_
+    - image.style.beetle_large
     - node.type.team
   module:
     - image
-    - options
     - text
     - user
 id: node.team.default
@@ -24,67 +23,28 @@ bundle: team
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
+    weight: 3
     region: content
-  field_institution:
-    weight: 4
     label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_member_type:
-    weight: 6
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_order:
-    weight: 7
-    label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
-    region: content
-  field_photo:
+  field_institution:
     weight: 1
     label: hidden
     settings:
-      image_style: crop_freeform_wide_220px_
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_position:
-    weight: 3
-    label: hidden
-    settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_theme:
+  field_photo:
     weight: 2
     label: hidden
     settings:
-      link_to_entity: false
+      image_style: beetle_large
+      image_link: ''
     third_party_settings: {  }
-    type: string
-    region: content
-  field_theme2:
-    weight: 8
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+    type: image
     region: content
   links:
     weight: 0
@@ -92,4 +52,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_member_type: true
+  field_order: true
+  field_position: true
+  field_theme: true
+  field_theme2: true
   search_api_excerpt: true

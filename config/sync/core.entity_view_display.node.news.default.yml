@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.news.layout_selection
     - node.type.news
   module:
-    - image
     - layout_builder
     - layout_builder_restrictions
     - layout_library
@@ -37,28 +36,19 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_author:
-    weight: 2
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_feature_image:
-    type: image
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   flippy_pager:
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -68,6 +58,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_feature_image: true
   field_featured_news: true
   field_float_to_top: true
   field_tags: true

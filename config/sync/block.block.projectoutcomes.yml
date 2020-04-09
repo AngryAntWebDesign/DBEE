@@ -1,0 +1,27 @@
+uuid: c0e2e2d1-d1f9-48b5-a7b6-867e4f81ecf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.project-outcomes
+  module:
+    - menu_block
+  theme:
+    - aaweb_subtheme
+id: projectoutcomes
+theme: aaweb_subtheme
+region: ultimenu_main_benefits
+weight: -23
+provider: null
+plugin: 'menu_block:project-outcomes'
+settings:
+  id: 'menu_block:project-outcomes'
+  label: 'Project outcomes'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'project-outcomes:'
+  suggestion: main
+visibility: {  }

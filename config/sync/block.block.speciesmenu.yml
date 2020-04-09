@@ -11,14 +11,14 @@ dependencies:
 id: speciesmenu
 theme: aaweb_subtheme
 region: ultimenu_main_dung_beetles
-weight: -19
+weight: -22
 provider: null
 plugin: 'system_menu_block:species-menu'
 settings:
   id: 'system_menu_block:species-menu'
-  label: 'Species Menu'
+  label: 'Identify a species'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand_all_items: false

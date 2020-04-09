@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.landing_page.layout_builder__translation
     - field.field.node.landing_page.layout_selection
     - node.type.landing_page
-    - workflows.workflow.editorial
   module:
     - content_moderation
     - metatag
@@ -31,6 +30,7 @@ content:
       rows: 5
       placeholder: ''
       summary_rows: 2
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -92,6 +92,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
 hidden:

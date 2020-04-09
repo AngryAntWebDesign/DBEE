@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_feature_image
-    - image.style.medium
+    - image.style.beetle
     - node.type.species
   module:
     - image
@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -111,7 +110,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
+            image_style: beetle
             image_link: content
           group_column: ''
           group_columns: {  }
@@ -182,6 +181,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         type:
           id: type
@@ -192,9 +193,39 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts: {  }
-      title: Species
-      header: {  }
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+      title: 'Introduced species in Australia'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "The following introduced dung beetle species can be found in Australia.\r\nClick on each species to learn more about the biology and distribution of the beetle within Australia."
+            format: rich_text
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }

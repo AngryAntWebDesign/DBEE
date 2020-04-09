@@ -1,0 +1,10 @@
+uuid: 8f00e5bf-6bc9-4ed1-9224-cc021720222f
+langcode: en
+status: true
+dependencies: {  }
+id: futura_medium
+label: Futura-medium
+font_url: 'local_fonts://futura_medium'
+fallback: 'helvetica, arial, san-serif'
+selectors: 'h2, h3, h4, h5'
+theme: aaweb_subtheme

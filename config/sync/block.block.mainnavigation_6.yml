@@ -11,14 +11,14 @@ dependencies:
 id: mainnavigation_6
 theme: aaweb_subtheme
 region: ultimenu_main_resources
-weight: 0
+weight: -24
 provider: null
 plugin: 'menu_block:main'
 settings:
   id: 'menu_block:main'
-  label: Resources
+  label: 'Project resources'
   provider: menu_block
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand: 1

@@ -29,6 +29,7 @@ dependencies:
     - field.field.node.species.field_similar_species
     - field.field.node.species.field_vernacular_name
     - field.field.node.species.field_yearly_activity
+    - image.style.beetle_large
     - node.type.species
   module:
     - field_group
@@ -55,7 +56,7 @@ third_party_settings:
         - field_recent_introduction
         - field_other_notes
       parent_name: ''
-      weight: 4
+      weight: 2
       format_type: fieldset
       format_settings:
         description: ''
@@ -64,113 +65,50 @@ third_party_settings:
       label: Details
     group_images:
       children:
-        - group_male
-        - group_female
-        - group_neutral
-        - group_anatomy
-        - group_size_depth
-      parent_name: ''
-      weight: 3
-      format_type: tabs
-      format_settings:
-        label: Images
-        direction: horizontal
-        id: ''
-        classes: ''
-      label: Images
-    group_male:
-      children:
         - field_male_image_1
         - field_male_image_2
-      parent_name: group_images
-      weight: 2
-      format_type: tab
-      format_settings:
-        label: Male
-        formatter: open
-        description: ''
-        id: ''
-        classes: ''
-      label: Male
-    group_female:
-      children:
         - field_female_image
-      parent_name: group_images
-      weight: 3
-      format_type: tab
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: ''
-        id: ''
-      label: Female
-    group_neutral:
-      children:
         - field_neutral_image_12
         - field_neutral_image_2
-      parent_name: group_images
-      weight: 4
-      format_type: tab
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: ''
-        id: ''
-      label: Neutral
-    group_anatomy:
-      children:
         - field_anatomy_image_1
         - field_anatomy_image_2
-      parent_name: group_images
-      weight: 5
-      format_type: tab
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
       format_settings:
-        formatter: closed
         description: ''
         classes: ''
         id: ''
-      label: Anatomy
-    group_size_depth:
-      children:
-        - field_beetle_size_chart
-        - field_dung_depth_chart
-      parent_name: group_images
-      weight: 6
-      format_type: tab
+      label: Images
+    group_presence:
+      children: {  }
+      parent_name: ''
+      weight: 4
+      format_type: accordion
       format_settings:
-        formatter: closed
-        description: ''
+        id: presence-tab
         classes: ''
-        id: ''
-      label: 'Size and Depth'
+        effect: none
+      label: Presence
 id: node.species.default
 targetEntityType: node
 bundle: species
 mode: default
 content:
   field_anatomy_image_1:
-    weight: 10
+    weight: 26
     label: hidden
     settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_anatomy_image_2:
-    weight: 11
+    weight: 27
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_beetle_size_chart:
-    weight: 25
-    label: hidden
-    settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -197,20 +135,11 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_dung_depth_chart:
-    weight: 26
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_female_image:
-    weight: 22
+    weight: 23
     label: hidden
     settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -251,7 +180,7 @@ content:
     weight: 21
     label: hidden
     settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -260,7 +189,7 @@ content:
     weight: 22
     label: hidden
     settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -274,19 +203,19 @@ content:
     type: string
     region: content
   field_neutral_image_12:
-    weight: 25
+    weight: 24
     label: hidden
     settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_neutral_image_2:
-    weight: 26
+    weight: 25
     label: hidden
     settings:
-      image_style: ''
+      image_style: beetle_large
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -299,7 +228,7 @@ content:
     type: text_default
     region: content
   field_presence_map:
-    weight: 5
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -322,8 +251,8 @@ content:
     type: string
     region: content
   field_sightings:
-    weight: 27
-    label: above
+    weight: 5
+    label: hidden
     settings:
       plugin_types:
         - block
@@ -353,11 +282,18 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  flippy_pager:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_beetle_size_chart: true
+  field_dung_depth_chart: true
   field_feature_image: true
   search_api_excerpt: true

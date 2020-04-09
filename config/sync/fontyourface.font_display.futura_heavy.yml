@@ -1,0 +1,10 @@
+uuid: 9913b1d0-3024-4ea9-b63b-0d4c8ff92f56
+langcode: en
+status: true
+dependencies: {  }
+id: futura_heavy
+label: Futura-heavy
+font_url: 'local_fonts://futura_heavy'
+fallback: 'helvetica, arial, san-serif'
+selectors: '.fontyourface h1'
+theme: aaweb_subtheme

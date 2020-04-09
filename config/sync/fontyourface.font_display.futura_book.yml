@@ -1,0 +1,10 @@
+uuid: 85da9cf4-0f8a-49f1-8fc6-7620a7781451
+langcode: en
+status: true
+dependencies: {  }
+id: futura_book
+label: Futura-book
+font_url: 'local_fonts://futura_book'
+fallback: 'helvetica, arial, san-serif'
+selectors: '.futura-book, .btn'
+theme: aaweb_subtheme

@@ -13,7 +13,6 @@ description: ''
 tag: ''
 base_table: sightings_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -61,6 +60,7 @@ display:
           view_mode: full
           leaflet_map: 'OSM Mapnik'
           height: '850'
+          height_unit: px
           hide_empty_map: 0
           disable_wheel: 0
           fullscreen_control: 1
@@ -70,15 +70,18 @@ display:
           map_position:
             force: 1
             center:
-              lat: '-26.3202'
-              lon: '135.948'
+              lat: '-28.3202'
+              lon: '132.948'
             zoom: '5'
             minZoom: '1'
-            maxZoom: '18'
+            maxZoom: '8'
             zoomFiner: '0'
           icon:
+            iconType: marker
             iconUrl: ''
             shadowUrl: ''
+            html: '<div></div>'
+            html_class: leaflet-map-divicon
             iconSize:
               x: ''
               'y': ''
@@ -851,6 +854,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -906,6 +911,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -993,9 +1000,35 @@ display:
           plugin_id: numeric
       sorts: {  }
       title: 'Onthophagus nigriventris Sightings'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h2><br />\r\nDBEE project species sightings</h2>\r\n<p>Map includes sightings that were reported <strong>during the DBEE project only</strong>.\r\n<br><b>BELOW:</b> Click and zoom on grouped data sets to view sighting location with greater accuracy.<br><em>Note: The zoom level is restricted to protect the privacy and security of monitoring locations.</em></p>"
+            format: rich_text
+          plugin_id: text
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'This species has not been sighted during the DBEE project.  Please refer to the map above for an indication of presence in Australia.'
+            format: rich_text
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -1030,6 +1063,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -1085,6 +1120,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -1208,6 +1245,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -1263,6 +1302,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -1383,6 +1424,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -1438,6 +1481,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -1558,6 +1603,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -1613,6 +1660,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -1732,6 +1781,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -1787,6 +1838,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -1907,6 +1960,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -1962,6 +2017,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -2082,6 +2139,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -2137,6 +2196,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -2258,6 +2319,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -2313,6 +2376,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -2432,6 +2497,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -2487,6 +2554,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -2607,6 +2676,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -2662,6 +2733,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -2778,6 +2851,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -2799,6 +2874,190 @@ display:
             description: ''
             use_operator: false
             operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Bubas bubalus'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      block_description: 'Bubas bubalus'
+      title: 'Bubas bubalus Sightings'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '2'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: species
             required: false
             remember: false
@@ -2918,31 +3177,10 @@ display:
           entity_type: sightings
           entity_field: species
           plugin_id: numeric
-      defaults:
-        filters: false
-        filter_groups: false
       filter_groups:
         operator: AND
         groups:
           1: AND
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-      tags: {  }
-  block_2:
-    display_plugin: block
-    id: block_2
-    display_title: 'Bubas bubalus'
-    position: 2
-    display_options:
-      display_extenders: {  }
-      block_description: 'Bubas bubalus'
-      title: 'Bubas bubalus Sightings'
-      defaults:
-        title: false
-      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -2973,6 +3211,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -3028,6 +3268,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -3148,6 +3390,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -3203,6 +3447,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -3322,6 +3568,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -3377,6 +3625,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -3499,6 +3749,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -3554,6 +3806,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -3673,6 +3927,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -3728,6 +3984,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -3849,6 +4107,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -3904,6 +4164,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -4024,6 +4286,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -4045,6 +4309,187 @@ display:
             description: ''
             use_operator: false
             operator: species_op
+            identifier: species
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              webform_creator: '0'
+              webform_reviewer: '0'
+              article_creator: '0'
+              article_reviewer: '0'
+              news_creator: '0'
+              news_reviewer: '0'
+              species_creator: '0'
+              species_reviewer: '0'
+              timeline_item_creator: '0'
+              timeline_item_reviewer: '0'
+              publications_creator: '0'
+              publications_reviewer: '0'
+              team_creator: '0'
+              team_reviewer: '0'
+              faqs_creator: '0'
+              faqs_reviewer: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: Species
+            description: ''
+            identifier: species
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Bubas bison'
+                operator: '='
+                value:
+                  value: '1'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Bubas bubalus'
+                operator: '='
+                value:
+                  value: '2'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Copris elphenor'
+                operator: '='
+                value:
+                  value: '3'
+                  min: ''
+                  max: ''
+              4:
+                title: 'Copris hispanus'
+                operator: '='
+                value:
+                  value: '4'
+                  min: ''
+                  max: ''
+              5:
+                title: 'Euoniticellus africanus'
+                operator: '='
+                value:
+                  value: '5'
+                  min: ''
+                  max: ''
+              6:
+                title: 'Euoniticellus intermedius'
+                operator: '='
+                value:
+                  value: '6'
+                  min: ''
+                  max: ''
+              7:
+                title: 'Euoniticellus pallipes'
+                operator: '='
+                value:
+                  value: '7'
+                  min: ''
+                  max: ''
+              8:
+                title: 'Geotrupes spiniger'
+                operator: '='
+                value:
+                  value: '8'
+                  min: ''
+                  max: ''
+              9:
+                title: 'Liatongus militaris'
+                operator: '='
+                value:
+                  value: '9'
+                  min: ''
+                  max: ''
+              10:
+                title: ''
+                operator: '='
+                value:
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: species
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags: {  }
+  block_4:
+    display_plugin: block
+    id: block_4
+    display_title: 'Copris hispanus'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      block_description: 'Copris hispanus'
+      title: 'Copris hispanus'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: sightings_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: sightings
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        species:
+          id: species
+          table: sightings_field_data
+          field: species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '4'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: species_op
+            label: Species
+            description: ''
+            use_operator: false
+            operator: species_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: species
             required: false
             remember: false
@@ -4174,24 +4619,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags: {  }
-  block_4:
-    display_plugin: block
-    id: block_4
-    display_title: 'Copris hispanus'
-    position: 4
-    display_options:
-      display_extenders: {  }
-      block_description: 'Copris hispanus'
-      title: 'Copris hispanus'
-      defaults:
-        title: false
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-      tags: {  }
   block_5:
     display_plugin: block
     id: block_5
@@ -4212,6 +4639,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -4224,7 +4653,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '5'
+            value: '7'
           group: 1
           exposed: false
           expose:
@@ -4233,6 +4662,8 @@ display:
             description: ''
             use_operator: false
             operator: species_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: species
             required: false
             remember: false
@@ -4390,6 +4821,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -4445,6 +4878,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -4560,6 +4995,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -4615,6 +5052,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -4738,6 +5177,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -4793,6 +5234,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
@@ -4907,6 +5350,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         species:
           id: species
@@ -4962,6 +5407,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Species
