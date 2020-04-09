@@ -141,6 +141,16 @@ copris-elphenor:
     js/nrm-regions.js: {}
     js/copris-elphenor.js: {}
     js/leaflet-presence.js: {}
+copris-hispanus:
+  version: 1.0
+  css:
+    component:
+      css/varieties.css: {}
+  js:
+    js/pre-leaflet-vars.js: {}
+    js/nrm-regions.js: {}
+    js/copris-hispanus.js: {}
+    js/leaflet-presence.js: {}    
 onitis-aygulus:
   version: 1.0
   css:

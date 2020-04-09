@@ -12,7 +12,7 @@ function getColor(d) {
 function highlightFeature(e) {
   var layer = e.target;
 
-  //console.log(e);
+  console.log(e);
 
   if (layer.options.fillColor == 'transparent') {
     

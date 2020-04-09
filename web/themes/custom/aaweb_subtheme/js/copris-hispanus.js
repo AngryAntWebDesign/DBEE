@@ -1,5 +1,5 @@
-    var conceptName = 'Onthophagus gazella';
-    var dynamicVar = "season_Onthophagus_gazella";
+    var conceptName = 'Copris hispanus';
+    var dynamicVar = "season_Copris_hispanus";
     // ********************************
     // ALL CONNECTED TO OUR HOVER LABEL
     // ********************************     

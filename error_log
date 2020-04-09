@@ -1,0 +1,1 @@
+[19-Jan-2020 15:31:26 Australia/Sydney] PHP Warning:  pcntl_exec(): Error has occurred: (errno 13) Permission denied in phar:///usr/local/bin/drush/includes/startup.inc on line 419

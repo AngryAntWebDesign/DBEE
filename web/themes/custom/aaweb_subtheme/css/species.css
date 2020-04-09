@@ -22,6 +22,33 @@ div[id^="leaflet-map-view-species-sightings-block-"] {
     min-width: 100% !important;
 }
 
+
+/*
+
+MAP COLOURS
+
+ocean
+	fill: #c1dee2
+
+present NRM -     
+	fill: #658678
+    fill-opacity: 75
+
+focus NRM -     
+	fill: #658678
+    fill-opacity: 50
+
+
+*/
+@media only screen and (max-device-width : 991px) {
+.node--type-species fieldset, .field--name-field-feature-image {
+    width: 100%;
+    float: none;
+}
+
+}
+
+
 @media only screen and (min-device-width : 320px)  and (max-device-width : 568px) {
 #leaflet-map-view-species-sightings-block-1 {
     #map {height: 450px;}

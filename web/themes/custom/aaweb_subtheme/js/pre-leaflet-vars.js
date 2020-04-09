@@ -16,10 +16,12 @@ if (width < 960) {
 else {
     var dynamicZoom = 5;
 }
-var map = L.map("map").setView([-28.3202, 132.948], dynamicZoom);
+var map = L.map("map", {zoomControl: false}).setView([-28.3202, 132.948], dynamicZoom);
+L.control.zoom({position: 'topright'}).addTo(map);
+
 var mySelector = jQuery("#mySelector");    
 L.tileLayer(
-    "https://api.mapbox.com/styles/v1/angryantweb/ck1ifhzd81fwp1cpgtlk42k1i/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5ncnlhbnR3ZWIiLCJhIjoiY2pwcnlzeGJ2MHowbTQzbnZhZHE0dWoybCJ9.hIg1J7n1f91VwNLuz-F67w",
+    "https://api.mapbox.com/styles/v1/angryantweb/ck7imihw11scf1io9nro4iizb/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5ncnlhbnR3ZWIiLCJhIjoiY2pwcnlzeGJ2MHowbTQzbnZhZHE0dWoybCJ9.hIg1J7n1f91VwNLuz-F67w",
     {
     maxZoom: 18,
     attribution:
