@@ -1,0 +1,8 @@
+uuid: 740662b3-5ffe-47d5-9f64-4ff29ec99521
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron
+selector: .jumbotron
+position: 50%
+speed: '0.2'

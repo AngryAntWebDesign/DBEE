@@ -1,0 +1,30 @@
+uuid: 08ceaaef-04aa-4907-ba9a-6d81a56e8639
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - aaweb_subtheme
+id: views_block__news_block_4
+theme: aaweb_subtheme
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:news-block_4'
+settings:
+  id: 'views_block:news-block_4'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /media-releases
+    negate: false
+    context_mapping: {  }

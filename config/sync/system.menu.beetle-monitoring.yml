@@ -1,0 +1,8 @@
+uuid: 83bb597a-951f-40ff-8722-4ff9521261ec
+langcode: en
+status: true
+dependencies: {  }
+id: beetle-monitoring
+label: 'Beetle monitoring'
+description: ''
+locked: false

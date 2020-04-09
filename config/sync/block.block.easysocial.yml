@@ -11,7 +11,7 @@ dependencies:
 id: easysocial
 theme: aaweb_subtheme
 region: content
-weight: -8
+weight: -12
 provider: null
 plugin: easy_social_block
 settings:

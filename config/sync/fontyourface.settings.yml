@@ -1,4 +1,9 @@
-enabled_fonts: {  }
+enabled_fonts:
+  0: 'local_fonts://proximanova'
+  1: 'local_fonts://futura_book'
+  2: 'local_fonts://proximanova_bold'
+  4: 'local_fonts://futura_medium'
+  5: 'local_fonts://futura_heavy'
 load_all_enabled_fonts: 1
 _core:
   default_config_hash: r8uAx4mTBwCkgDFbdKCmhjgbb91BQ4HbWSYRKrlowMY

@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: aaweb_subtheme
 region: top_header
-weight: -20
+weight: -25
 provider: null
 plugin: 'system_menu_block:main'
 settings:

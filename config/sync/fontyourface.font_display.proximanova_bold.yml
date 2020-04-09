@@ -1,0 +1,10 @@
+uuid: 45470c3b-37c5-4cae-8593-211b14b467cd
+langcode: en
+status: true
+dependencies: {  }
+id: proximanova_bold
+label: ProximaNova-bold
+font_url: 'local_fonts://proximanova_bold'
+fallback: 'helvetica, arial, san-serif'
+selectors: strong
+theme: aaweb_subtheme

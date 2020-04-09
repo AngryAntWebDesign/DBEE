@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_browser
     - field.field.node.timeline_item.body
     - field.field.node.timeline_item.field_date
     - field.field.node.timeline_item.field_timeline_image
-    - image.style.thumbnail
     - node.type.timeline_item
   module:
     - content_moderation
     - datetime
-    - image
+    - entity_browser
     - path
     - text
 id: node.timeline_item.default
@@ -26,6 +26,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -102,6 +103,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden: {  }

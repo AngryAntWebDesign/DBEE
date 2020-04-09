@@ -12,7 +12,7 @@ dependencies:
 id: frontgetinvolved
 theme: aaweb_subtheme
 region: content
-weight: -9
+weight: -13
 provider: null
 plugin: 'block_content:42b07e88-522b-475b-9776-d094a82276ae'
 settings:

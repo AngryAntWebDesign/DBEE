@@ -1,0 +1,10 @@
+uuid: 85ac890a-661e-47ea-9afb-6952beaedb82
+langcode: en
+status: true
+dependencies: {  }
+id: futura_bold
+label: Futura-bold
+font_url: 'local_fonts://futura_bold'
+fallback: 'helvetica, arial, san-serif'
+selectors: '.fontyourface h1'
+theme: aaweb_subtheme

@@ -1,0 +1,35 @@
+uuid: 7fa9bc34-f44f-4d0d-b76d-6c98f58a52b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:e4ce853f-7b6c-4272-9d4a-11631d36c079'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - aaweb_subtheme
+third_party_settings:
+  block_class:
+    classes: social-media-icons
+id: socialmediaicons
+theme: aaweb_subtheme
+region: content
+weight: -17
+provider: null
+plugin: 'block_content:e4ce853f-7b6c-4272-9d4a-11631d36c079'
+settings:
+  id: 'block_content:e4ce853f-7b6c-4272-9d4a-11631d36c079'
+  label: 'Social media icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

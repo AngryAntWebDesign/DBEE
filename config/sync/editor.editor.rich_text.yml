@@ -29,6 +29,8 @@ settings:
             - JustifyCenter
             - JustifyBlock
             - JustifyRight
+            - Outdent
+            - Indent
         -
           name: Linking
           items:
@@ -44,6 +46,7 @@ settings:
           items:
             - Blockquote
             - DrupalImage
+            - DrupalMediaLibrary
             - Table
             - HorizontalRule
             - media_browser
@@ -57,13 +60,18 @@ settings:
           items:
             - ShowBlocks
             - Source
+            - Cut
+            - Copy
+            - '-'
+            - Paste
             - PasteFromWord
             - PasteText
+            - Maximize
   plugins:
-    stylescombo:
-      styles: "p.lead-bg-light|Lead text BG Dark\r\np.lead-bg-dark|Lead text BG White\r\np.subtext-bg-light|Subtext BG Dark\r\np.subtext-bg-dark|Sub text BG White\r\np.light-text|Lighter text\r\np.block-button|Block Btn Space\r\na.btn.btn-primary|Primary Button\r\na.btn.btn-secondary|Secondary Button\r\na.btn-third|Third Button\r\na.btn-fourth|Fourth Button\r\na.btn-fifth|Fifith Button"
     language:
       language_list: un
+    stylescombo:
+      styles: "p.lead-bg-light|Lead text BG Dark\r\np.lead-bg-dark|Lead text BG White\r\np.subtext-bg-light|Subtext BG Dark\r\np.subtext-bg-dark|Sub text BG White\r\np.light-text|Lighter text\r\np.block-button|Block Btn Space\r\na.btn.btn-primary|Primary Button\r\na.btn.btn-secondary|Secondary Button\r\na.btn-third|Third Button\r\na.btn-fourth|Fourth Button\r\na.btn-fifth|Fifith Button"
 image_upload:
   status: true
   scheme: public

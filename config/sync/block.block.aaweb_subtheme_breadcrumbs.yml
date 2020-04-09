@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: 'news/*'
+    pages: "/news/*\r\n/resources/*\r\n/get-involved/\r\n/about/\r\n/species/*"
     negate: true
     context_mapping: {  }

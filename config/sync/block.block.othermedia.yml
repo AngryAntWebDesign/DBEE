@@ -1,0 +1,27 @@
+uuid: 7b1edc19-ca8e-4ed8-84d6-e023e8d55b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.other-media
+  module:
+    - menu_block
+  theme:
+    - aaweb_subtheme
+id: othermedia
+theme: aaweb_subtheme
+region: ultimenu_main_news_media
+weight: 0
+provider: null
+plugin: 'menu_block:other-media'
+settings:
+  id: 'menu_block:other-media'
+  label: 'Project kits'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'other-media:'
+  suggestion: main
+visibility: {  }

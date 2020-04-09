@@ -12,19 +12,19 @@ dependencies:
 id: views_block__dbee_team_block_3
 theme: aaweb_subtheme
 region: content
-weight: -1
+weight: -7
 provider: null
 plugin: 'views_block:dbee_team-block_3'
 settings:
   id: 'views_block:dbee_team-block_3'
-  label: ''
+  label: 'Steering committee'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Steering committee'
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /about/dbee-team
+    pages: /about/project-team
     negate: false
     context_mapping: {  }

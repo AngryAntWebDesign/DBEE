@@ -1,0 +1,27 @@
+uuid: 04a0733f-61ae-40f9-bbb4-0a7ba62def32
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.beetle-monitoring
+  module:
+    - menu_block
+  theme:
+    - aaweb_subtheme
+id: beetlemonitoring
+theme: aaweb_subtheme
+region: ultimenu_main_dung_beetles
+weight: -23
+provider: null
+plugin: 'menu_block:beetle-monitoring'
+settings:
+  id: 'menu_block:beetle-monitoring'
+  label: 'Beetle monitoring'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'beetle-monitoring:'
+  suggestion: main
+visibility: {  }

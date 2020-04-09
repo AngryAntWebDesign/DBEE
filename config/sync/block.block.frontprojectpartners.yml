@@ -12,7 +12,7 @@ dependencies:
 id: frontprojectpartners
 theme: aaweb_subtheme
 region: content
-weight: -5
+weight: -10
 provider: null
 plugin: 'block_content:8c4ab271-4d56-44c7-8d87-c0e3d9d5e784'
 settings:

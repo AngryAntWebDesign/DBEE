@@ -1,0 +1,42 @@
+uuid: a3274ed8-e291-4c90-8e0b-80bf79580953
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: media_logo
+label: 'Media logo'
+effects:
+  7add6681-2746-4adb-b66b-f3d2001f5518:
+    uuid: 7add6681-2746-4adb-b66b-f3d2001f5518
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      anchor: center-center
+  f13a3272-a63f-43bd-b34f-9d11168afaa9:
+    uuid: f13a3272-a63f-43bd-b34f-9d11168afaa9
+    id: image_effects_set_canvas
+    weight: 2
+    data:
+      canvas_size: exact
+      exact:
+        width: '900'
+        height: '600'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'
+  24301e8f-52fd-4a48-ada3-e26bdc9d925f:
+    uuid: 24301e8f-52fd-4a48-ada3-e26bdc9d925f
+    id: image_effects_resize_percentage
+    weight: 3
+    data:
+      width: 50%
+      height: ''

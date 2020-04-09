@@ -11,14 +11,14 @@ dependencies:
 id: mainnavigation_2
 theme: aaweb_subtheme
 region: ultimenu_main_dung_beetles
-weight: -20
+weight: -24
 provider: null
 plugin: 'menu_block:main'
 settings:
   id: 'menu_block:main'
-  label: 'Main navigation'
+  label: 'Dung beetles in Australia'
   provider: menu_block
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand: 1

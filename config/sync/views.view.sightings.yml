@@ -13,7 +13,6 @@ description: ''
 tag: ''
 base_table: sightings_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -61,6 +60,7 @@ display:
           view_mode: full
           leaflet_map: 'OSM Mapnik'
           height: '850'
+          height_unit: px
           hide_empty_map: 0
           disable_wheel: 0
           fullscreen_control: 1
@@ -74,11 +74,14 @@ display:
               lon: '135.948'
             zoom: '5'
             minZoom: '1'
-            maxZoom: '18'
+            maxZoom: '8'
             zoomFiner: '0'
           icon:
+            iconType: marker
             iconUrl: ''
             shadowUrl: ''
+            html: '<div></div>'
+            html_class: leaflet-map-divicon
             iconSize:
               x: ''
               'y': ''
@@ -851,6 +854,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         genus:
           id: genus
@@ -881,6 +886,8 @@ display:
             placeholder: null
             min_placeholder: null
             max_placeholder: null
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: Genus
@@ -952,134 +959,6 @@ display:
           entity_type: sightings
           entity_field: genus
           plugin_id: numeric
-        month:
-          id: month
-          table: sightings_field_data
-          field: month
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: month_op
-            label: Month
-            description: null
-            use_operator: false
-            operator: month_op
-            identifier: month
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: null
-            min_placeholder: null
-            max_placeholder: null
-          is_grouped: true
-          group_info:
-            label: Month
-            description: ''
-            identifier: month
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: Jan
-                operator: '='
-                value:
-                  value: '01'
-                  min: ''
-                  max: ''
-              2:
-                title: Feb
-                operator: '='
-                value:
-                  value: '02'
-                  min: ''
-                  max: ''
-              3:
-                title: Mar
-                operator: '='
-                value:
-                  value: '03'
-                  min: ''
-                  max: ''
-              4:
-                title: Apr
-                operator: '='
-                value:
-                  value: '04'
-                  min: ''
-                  max: ''
-              5:
-                title: May
-                operator: '='
-                value:
-                  value: '05'
-                  min: ''
-                  max: ''
-              6:
-                title: Jun
-                operator: '='
-                value:
-                  value: '06'
-                  min: ''
-                  max: ''
-              7:
-                title: Jul
-                operator: '='
-                value:
-                  value: '07'
-                  min: ''
-                  max: ''
-              8:
-                title: Aug
-                operator: '='
-                value:
-                  value: '08'
-                  min: ''
-                  max: ''
-              9:
-                title: Sep
-                operator: '='
-                value:
-                  value: '09'
-                  min: ''
-                  max: ''
-              10:
-                title: Oct
-                operator: '='
-                value:
-                  value: '10'
-                  min: ''
-                  max: ''
-              11:
-                title: Nov
-                operator: '='
-                value:
-                  value: '11'
-                  min: ''
-                  max: ''
-              12:
-                title: Dec
-                operator: '='
-                value:
-                  value: '12'
-                  min: ''
-                  max: ''
-          entity_type: sightings
-          entity_field: month
-          plugin_id: numeric
         species:
           id: species
           table: sightings_field_data
@@ -1100,6 +979,8 @@ display:
             description: null
             use_operator: false
             operator: species_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: species
             required: false
             remember: false
@@ -1153,14 +1034,14 @@ display:
                 title: 'Euoniticellus africanus'
                 operator: '='
                 value:
-                  value: '5'
+                  value: '7'
                   min: ''
                   max: ''
               6:
                 title: 'Euoniticellus intermedius'
                 operator: '='
                 value:
-                  value: '6'
+                  value: '5'
                   min: ''
                   max: ''
               7:
@@ -1321,6 +1202,8 @@ display:
             placeholder: null
             min_placeholder: null
             max_placeholder: null
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: Year
@@ -1402,6 +1285,8 @@ display:
             description: null
             use_operator: false
             operator: season_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: season
             required: false
             remember: false
@@ -1434,12 +1319,142 @@ display:
                 operator: '='
                 value: Winter
               4:
-                title: Summer
+                title: Spring
                 operator: '='
-                value: Summer
+                value: Spring
           entity_type: sightings
           entity_field: season
           plugin_id: string
+        month:
+          id: month
+          table: sightings_field_data
+          field: month
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: month_op
+            label: Month
+            description: null
+            use_operator: false
+            operator: month_op
+            identifier: month
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: true
+          group_info:
+            label: Month
+            description: ''
+            identifier: month
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Jan
+                operator: '='
+                value:
+                  value: '01'
+                  min: ''
+                  max: ''
+              2:
+                title: Feb
+                operator: '='
+                value:
+                  value: '02'
+                  min: ''
+                  max: ''
+              3:
+                title: Mar
+                operator: '='
+                value:
+                  value: '03'
+                  min: ''
+                  max: ''
+              4:
+                title: Apr
+                operator: '='
+                value:
+                  value: '04'
+                  min: ''
+                  max: ''
+              5:
+                title: May
+                operator: '='
+                value:
+                  value: '05'
+                  min: ''
+                  max: ''
+              6:
+                title: Jun
+                operator: '='
+                value:
+                  value: '06'
+                  min: ''
+                  max: ''
+              7:
+                title: Jul
+                operator: '='
+                value:
+                  value: '07'
+                  min: ''
+                  max: ''
+              8:
+                title: Aug
+                operator: '='
+                value:
+                  value: '08'
+                  min: ''
+                  max: ''
+              9:
+                title: Sep
+                operator: '='
+                value:
+                  value: '09'
+                  min: ''
+                  max: ''
+              10:
+                title: Oct
+                operator: '='
+                value:
+                  value: '10'
+                  min: ''
+                  max: ''
+              11:
+                title: Nov
+                operator: '='
+                value:
+                  value: '11'
+                  min: ''
+                  max: ''
+              12:
+                title: Dec
+                operator: '='
+                value:
+                  value: '12'
+                  min: ''
+                  max: ''
+          entity_type: sightings
+          entity_field: month
+          plugin_id: numeric
       sorts: {  }
       title: Sightings
       header: {  }

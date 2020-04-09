@@ -10,7 +10,7 @@ dependencies:
 id: mailchimpsubscriptionformsubscribeforprojectupdates
 theme: aaweb_subtheme
 region: content
-weight: -12
+weight: -16
 provider: null
 plugin: 'mailchimp_signup_subscribe_block:subscribe_for_project_updates'
 settings:
