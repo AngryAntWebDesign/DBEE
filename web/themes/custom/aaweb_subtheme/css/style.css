@@ -56,6 +56,13 @@ body {
     color: #636363;
     background-color: #fafafa !important;
 }
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
 /* override bario  */
 #page, #main-wrapper {
     background-color: #fafafa !important;
@@ -64,7 +71,7 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
     color:#2e2d49;
     margin-top: 15px;
-    /* font-family: futura-pt; */
+    /* font-family: futura; */
     /* letter-spacing: -.01em; */
     /* line-height: 1em; */
     text-transform: none;
@@ -83,6 +90,8 @@ h1 {
     font-size: 3.5em;
     text-align: left;
     color: #707070;
+	margin-bottom: 40px !important;
+
 }
 h2 {
     font-weight: 600;
@@ -92,11 +101,33 @@ h2 {
 }
 /* ????  */
 h3 {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 35px;
     color:#658678;
+
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 1.2em;
+    text-transform: none;
+    font-family: futura;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .15em;
+    line-height: 2em;
+    text-transform: uppercase;
 }
+
+#block-aaweb-subtheme-content h3
+{
+	color: #2e2c48;
+    margin-bottom: 0 !important;
+    margin-top: 5px;
+}
+
+#block-aaweb-subtheme-content h3 em
+{
+    color: #658678;
+}
+
 h4 {
     font-weight: 600;
     font-style: normal;
@@ -139,7 +170,32 @@ a:hover, a:active {
     outline: 0;
     text-decoration: none;
 }
+
+a:hover, a:active {
+	color: rgba(101,134,120,.6) !important;
+}
+
+
+figure.caption-img.align-right {
+	width: 50%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.caption > figcaption {
+    font-size: 14px;
+    color: #658678;
+    line-height: 1.2em;
+    padding-top: 8px;
+    min-width: 125px;
+}
+
 /* too generic needs specific for each menu  */
+.button.button--ultimenu {
+    background: #66887a;
+}
+
 .block-menu,
 .block .ultimenu__flyout .ultimenu__region {
     /* width: 100%; */
@@ -149,6 +205,20 @@ a:hover, a:active {
 .ultimenu.ultimenu--hover .ultimenu__link {
     padding-right: .0em;
 }
+
+
+.ultimenu h2 {
+	font-size: 24px;
+}
+
+.ultimenu .menu--main,
+#block-speciesmenu {
+	padding-right: 80px;
+    padding-left: 20px;
+}
+
+
+
 .ultimenu--main .ultimenu__link, .ultimenu .ultimenu__ajax {
     padding: 1em 1.25em;
     min-height: 42px;
@@ -157,20 +227,177 @@ a:hover, a:active {
     color: #658678;
 }
 
+.nav-link {
+    padding: .25rem;
+	font-weight: 500;
+	color: #2e2d49;
+	text-align: left;
+}
+
+.nav-link::before {
+	content: "– ";
+}
+
+footer .nav-link::before {
+	content: none !important;
+}
+
 .ultimenu__flyout #block-speciesmenu li.nav-item  {
     width:220px;
     /* display: inline-block; */
     flex-flow: column;
 }
+
+.nav-link.highlight {
+	font-weight: bold;
+	
+}
+
 #block-speciesmenu, .region-ultimenu-main-species  {
     width:800px;
 }
+
+.node--type-species {
+	
+}
+
+.node--type-species h1.title {
+	font-style: italic;
+}
+
+.field--name-field-genus .field__item {
+		font-style: italic;
+}
+
+#map .info h4 {
+    margin: 0 0 5px;
+    color: #2e2d49;
+    font-size: 1.5em;
+    letter-spacing: 0;
+    font-style: italic;
+}
+
+#map .info {
+    padding: 16px 18px;
+}
+
+#map .info {
+	font-weight: bold !important;
+}
+
+#map .info b {
+	font-weight: normal !important;
+}
+
+#map .info p {
+	font-weight: normal !important;
+}
+
+#map .info br {
+
+}
+
+#map .info.legend {
+color: #2e2d49;
+    font-weight: 500 !important;
+    font-size: 14px;
+    letter-spacing: 0;
+	    min-width: 190px;
+}
+
+.page-node-16 #map .info a {
+font-style: italic;
+    color: #658678;
+    font-weight: 600;
+}
+
+.leaflet-container {
+	font: inherit !important;
+    text-align: left;
+	    color: #2e2d49;
+}
+
+.flippy-previous a,
+.flippy-next a {
+    /*text-transform: capitalize;*/
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 0px;
+    font-style: italic;
+    color: #658678;
+	font-family: 'Futura', helvetica, arial, san-serif;
+    font-weight: 600 !important;
+	position: relative;
+}
+
+.flippy-previous a::before {
+	content: url( ../../../../sites/default/files/arrow-left-24.png);
+	position: absolute;
+    left: -25px;
+    top: 3px;
+
+}
+.flippy-next a::after {
+	content: url( ../../../../sites/default/files/arrow-right-24.png);
+	position: absolute;
+    right: -25px;
+    top: 3px;
+
+	
+}
+
+.field--name-field-recent-introduction {
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 0px;
+    font-style: normal;
+    color: #658678;
+	font-family: 'Futura', helvetica, arial, san-serif;
+    font-weight: 700 !important;
+}
+
+.field--name-field-recent-introduction::before {
+    content: "* ";
+    text-decoration: none;
+    border-bottom: 0px;
+	font-style: normal;
+    color: #658678;
+	font-family: 'Futura', helvetica, arial, san-serif;
+    font-weight: 700 !important;
+}
+
+.ultimenu__flyout #block-speciesmenu li.nav-item{
+	    font-style: italic;
+}
+
+
+.view-species {
+	
+}
+
+.view-species .views-field-title {
+	text-align: center;
+}
+
+.view-species .views-field-title a {
+	font-weight: 600;
+	text-align: center;
+}
+
+.view-species .views-row {
+	margin-bottom: 40px;
+}
+
 .navbar-expand-lg .navbar-nav {
     flex-direction: column;
 }
 #ultimenu-main span.ultimenu__link {
-    color:#ffffff;
-    font-weight: bold;
+    color: #ffffff;
+    font-size: 15px !important;
+    font-weight: 500;
+    font-family: futura !important;
+    letter-spacing: .08em !important;
+    text-transform: none !important;
 }
 .navbar-dark .navbar-nav .nav-link {
     color:#666;
@@ -183,23 +410,24 @@ a:hover, a:active {
     width: 960px;
     /* margin-left: auto; */
     /* margin-right: auto; */
-    z-index: 99;
-    align-items:;
-}
-/* layout pages are at least 1140 wide consisitent with boostrap 4 yay */
+    /* 
+    JASE REMOVED DUE TO CONFLICTS WITH MEGA MENU AND CONTENT 
+    z-index: 99; */
+}s
+/* layout pages are at least 1140 wide consisitent with boostrap 4 */
 .node--type-landing-page .container {
     width:1140px;
 }
 
 
 .jumbotron .non-container {
-    z-index:99;
+    z-index:50;
 }
 #navbar-main .container {
     width:1140px;
 }
 .navbar-brand img {
-    max-width: 268px;
+    max-width: 285px;
 }
 /* right hand main menu separateion from the left side -realigned  */
 .main-cta-separation {
@@ -222,6 +450,16 @@ color: #778;
 #block-aaweb-subtheme-footer {
     text-align: center;
     width: 100%;
+}
+
+Footer .nav-item {
+    font-family: futura;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .18em;
+    line-height: 1.8em;
+    text-transform: uppercase;
 }
 
 .footer-contained img {
@@ -269,6 +507,11 @@ color: #778;
     width: 100%;
     display: flex;
 }
+
+.image-block-background {
+	background-position-y: 0 !important;
+}
+
 .image-block-background p.block-button  {
     position: relative;
     height: auto;
@@ -293,8 +536,8 @@ color: #778;
     /* width: 66.666666%; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 .block-block-content {
     max-width:960px;
@@ -325,26 +568,198 @@ color: #778;
     white-space: pre-wrap;
 }
 
+
+/* HEADING OVERRIDES */
 .cta-block h3 {
     color:#ffffff;
 }
-/* Media page using layout builder */
-.page-node-45 .layout--threecol-section {
+
+.path-frontpage .lead h2 {
+	font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    margin-block-end: 20.05px;
+}
+
+.featured-top p {
+    font-size: 48px;
+    margin: 0px;
+    line-height: 24px;
+	color:#fff;
+	font-family: 'Futura', helvetica, arial, san-serif;
+	font-weight: 700;
+	 margin-block-end: 20.05px;
+	line-height: 1em;
+}
+
+#block-aaweb-subtheme-content .node__content {
+    margin-top: 60px;
+}
+
+
+#block-frontanaturalperformer h2,
+#block-frontshareyourstory h2 {
+	margin-bottom: 0;
+}
+
+#block-frontanaturalperformer h3,
+#block-frontshareyourstory h3 {
+	letter-spacing: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+	margin-top: 0;
+	font-size: 22px !important;
+	font-weight: 600;
+}
+
+#block-frontanaturalperformer h4,
+#block-frontshareyourstory h4 {
+    text-transform: uppercase;
+}
+
+#block-socialmediaicons {
+    background-color: #3a3953;
+    color: #ffffff;
+    padding: 40px 0px; 
+    text-align: center;
+	max-width: 100%;
+	/*padding-bottom: 0;*/
+}
+
+#block-socialmediaicons a {
+    text-decoration: none;
+	border: none;
+}
+
+#block-socialmediaicons img {
+	width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+#block-socialmediaicons h2 {
+	color:#fff;
+}
+
+.featured-top  h1 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px !important;
+	line-height: 1em;
+   
+}
+
+h1.title {
+	font-size: 42px;
+    margin-top: 60px;
+	color: #658678;
+}
+
+
+/* Media and Partner kit page using layout builder */
+.page-node-45 .layout--threecol-section,
+.page-node-122 .layout--twocol-section,
+.page-node-125 .layout--twocol-section,
+.page-node-207 .layout--threecol-section,
+.page-node-208 .layout--threecol-section
+{
     border-bottom: dashed 1px #bbb;
     padding-bottom: 40px;
 }
-.page-node-45 .layout--threecol-section:nth-child(1) {
+.page-node-45 .layout--threecol-section:nth-child(1),
+.page-node-122 .layout--twocol-section:nth-child(1),
+.page-node-125 .layout--twocol-section:nth-child(1),
+.page-node-207 .layout--threecol-section:nth-child(1),
+.page-node-208 .layout--threecol-section:nth-child(1) {
     padding-top:0px;
 }
-.page-node-45 .layout--threecol-section {
+.page-node-45 .layout--threecol-section,
+.page-node-122 .layout--twocol-section,
+.page-node-125 .layout--twocol-section,
+.page-node-207 .layout--threecol-section,
+.page-node-208 .layout--threecol-section {
     padding-top:40px;
 }
-.page-node-45 h2 {
+.page-node-45 h2,
+.page-node-122 h2,
+.page-node-125 h2,
+.page-node-207 h2,
+.page-node-208 h2 {
     margin-top:17px;
 }
-.page-node-45 .layout__region--second {
+
+.page-node-207 h2,
+.page-node-208 h2{
+    font-size:1.5em;
+}
+
+.layout--threecol-section--33-34-33 > .layout__region--first, .layout--threecol-section--33-34-33 > .layout__region--third {
+    flex: 0 1 30%;
+}
+
+
+.page-node-45 .layout__region--second,
+.page-node-122 .layout__region--second,
+.page-node-125 .layout__region--second,
+.page-node-207 .layout__region--second,
+.page-node-207 .layout__region--third,
+.page-node-208 .layout__region--second,
+.page-node-208 .layout__region--third {
     padding:17px;
 }
+
+
+
+.page-node-45 ol,
+.page-node-122 ol,
+.page-node-125 ol,
+.page-node-207 ol,
+.page-node-208 ol {
+    color: #658678;
+    text-transform: inherit;
+}
+
+
+.page-node-41 .node__content {
+    margin-bottom: 0;
+}
+
+
+/* TEAM */
+/*.node--type-page img, */.node--type-news img {
+    width: 100%;
+    height: auto;
+    /*max-width: 230px;*/
+}
+
+/* HISTORY TIMELINE */
+.node--type-page .view-timeline-view img {
+	width: 200px;
+	height: auto;
+}
+
+.view-timeline-view .views-field-title a {
+	font-size: 18px;
+    margin-bottom: 20px;
+    color: #658678;
+    font-family: 'Futura', helvetica, arial, san-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.view-timeline-view .views-field-field-date {
+	font-size: 42px;
+    margin-bottom: 20px;
+    color: #2e2d49;
+    font-family: 'Futura', helvetica, arial, san-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+ul.timeline-list li.timeline-item {
+    margin-bottom: 60px;
+}
+
 /* Team page using layout builder to make user experience easy */
 
 
@@ -368,6 +783,93 @@ color: #778;
     width:100%;
     height:auto;
 }
+
+
+/* TEAM PAGE */
+
+.page-node-61 img {
+    width:inherit;
+    height:auto;
+}
+
+.page-node-61 .node__content {
+	margin-bottom: 0;
+}
+
+.page-node-61 .block-views h2{
+    margin-top: 120px;
+	margin-bottom: 0;
+	padding-left: 15px;
+}
+
+#block-views-block-dbee-team-block-3 h2 {
+	margin-top: 40px;
+}
+
+.view-dbee-team {
+	
+}
+
+.node--type-team h1.title {
+	margin-bottom: 0 !important;
+	    margin-left: 10px;
+
+}
+
+.node--type-team .field--name-field-institution {
+	color: #658678;
+}
+
+.node--type-team .node__content {
+    margin-top: 0 !important;
+}
+
+.view-dbee-team .views-row {
+	    margin-top: 30px;
+}
+
+.view-dbee-team .views-field {
+	display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.view-dbee-team .views-field-title {
+font-weight: bold;
+    line-height: 1.2em;
+    font-size: 1.2em;
+	letter-spacing: 0;
+
+}
+
+.view-dbee-team .views-field-title a {
+    text-decoration: none;
+	    color: #2e2d49;
+}
+
+
+.view-dbee-team .views-field-field-position,
+.view-dbee-team .views-field-field-institution,
+.view-dbee-team .views-field-field-theme2 {
+	font-size: .75em;
+    line-height: 1.25em;
+    margin-top: 3px;
+	color: #888;
+}
+
+.view-dbee-team .views-field-field-position {
+	color: #333;
+	font-weight: 500;
+}
+
+.view-dbee-team .views-field-field-theme2 {
+	color: #658678;
+font-weight: 700;
+}
+
+
+
+
 .is-ultimenu-canvas--active .node--type-page img {
     max-width:500px;
 }
@@ -399,7 +901,7 @@ color: #778;
 .js-form-wrapper {
     padding:0px;
 }
-/* Defined Styleed classes needs to be part of development process due to specifying in rich text editor. This defines
+/* Defined Styled classes needs to be part of development process due to specifying in rich text editor. This defines
 the default behaviour of syles to minimise overides. see dbee.ddev.site/website-styles. explicitly define to override globals */
 p.lead-bg-light {
     color: #636363;
@@ -419,7 +921,6 @@ p.light-text {
 }
 /* news view front page */
 .view-news .views-field-created {
-    /* font-size: 12px; */
     display: -moz-box;
     /* display: -webkit-box; */
     display: -ms-flexbox;
@@ -430,17 +931,25 @@ p.light-text {
     font-size: 12px;
     letter-spacing: 0em;
     text-transform: none;
-    /* font-family: futura-pt; */
-    font-weight: 700;
+    /* font-family: futura; */
+    /* font-weight: 700; */
     font-style: normal;
-    letter-spacing: .2em;
-    text-transform: uppercase;
+    /* letter-spacing: .2em; */
+    /* text-transform: uppercase; */
     color: rgba(112,112,112,.5);
+	    font-family: 'Futura', helvetica, arial, san-serif;
+    font-weight: 700;
+    font-size: 10px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
     
 }
+
 /* seems squarespace isn't consistent styling for featured news items */
 .path-frontpage .view-news .views-field-title {
     text-align:left;
+	    line-height: normal;
 }
 .path-frontpage .view-news .views-field-created {
     text-align:left;
@@ -453,16 +962,29 @@ p.light-text {
     margin-right: auto;
 }
 .project-news {
-    text-align: center;
+    text-align: left;
     /* width: 100%; */
     float: left;
+	    min-height: 330px;
+	padding-right: 30px;
 }
-.view-news a {
+
+#block-views-block-news-block-3 .view-news a {
+    color: #2e2d49;
+}
+
+#block-views-block-news-block-3 .project-news  {
+	    min-height: 380px !important;
+}
+
+
+
+.view-news .views-field-title a {
     font-size: 20px;
     text-decoration: none;
     border-bottom: 0px;
     /* text-transform: uppercase; */
-    color: #525252;
+    color: #2e2d49;
     line-height: 1em;
     /* padding-top: 50px; */
 }
@@ -470,12 +992,55 @@ p.light-text {
     margin: 0 0 15px 0;
     display: block;
 }
+
+.view-news {
+    text-align: left;
+    min-height: 330px;
+    line-height: 1.25em !important;
+}
+
+.view-news .views-field-title a {
+font-family: 'Futura', helvetica, arial, san-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 0;
+    color: #525252;
+    letter-spacing: .02em;
+}
+
+.view-news .views-field-title {
+		margin-bottom: 10px;
+}
+
+.project-news .views-field-title {
+	margin-top: 10px;
+}
+
+.project-news .views-field-field-author {
+	    font-size: .8em;
+}
+
+.project-news .views-field-field-author a {
+	text-decoration: none;
+    color: #3b3b3b !important;
+	border: none;
+}
+
+.project-news .views-field-field-author a:hover {
+    color: #3b3b3b !important;
+	cursor: default;
+}
+
+
+
+
 /* Mailchimp stuff - it's times like this you wish you could use scss or less variables and encapsulation */
 #block-mailchimpsubscriptionformsubscribeforprojectupdates {
     background-color: #2e2d49;
     color: #ffffff;
     padding: 40px 0px;
-    margin: 17px 0;
+	text-align: center;
 }
 #block-mailchimpsubscriptionformsubscribeforprojectupdates label {
     display: none;  
@@ -605,7 +1170,7 @@ footer .nav-item {
     font-size: 16px !important;
     padding: 14px 20px !important;
     font-weight: 700;
-    /* font-family: futura-pt !important; */
+    font-family: futura !important;
     letter-spacing: .08em !important;
     text-transform: none !important;
 }
@@ -724,19 +1289,25 @@ a.btn-fifth {
 #block-views-block-news-block-2 {
     padding-bottom: 17px;
     padding-top: 17px;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 }
+
+
 /* FLIPPY */
 .flippy-previous {
     float: left;
 }
 .flippy-previous a {
-    text-transform:  capitalize;
+    /*text-transform:  capitalize;*/
     font-size: 20px;
     text-decoration: none;
     border-bottom: 0px;
     color: #525252;
     font-weight:700;
-    /* font-family: futura-pt; */
+    /* font-family: futura; */
     color: gray;
 }
 .flippy-previous a:hover, 
@@ -773,6 +1344,10 @@ a.btn-fifth {
     background-color:inherit;
 }
 
+#views-bootstrap-faqs-block-1 .btn-link {
+    letter-spacing: 0px !important;
+}
+
 /* #ultimenu-main */
 /* DEFAULT BOOSTRAP 4 BREAKPOINTS */
 @media screen and (max-width: 1200px) { 
@@ -792,12 +1367,33 @@ a.btn-fifth {
         max-width: 150px;
     }
     .featured-top__inner {
-        padding-top: 120px;
+        /*padding-top: 120px;*/
+		padding-top: 68px;
+		background-color: #2e2d49;
     }
     #block-speciesmenu, .region-ultimenu-main-species {
         width: 100%;
     }
+	.layout-no-sidebars .container {
+    max-width: 100%;
+    width: calc(100% - 30px);
 }
+	
+	.node--type-news .button--ultimenu {
+		position: absolute;
+	}
+	
+	.view-dbee-team .views-field {
+    display: inline-block;
+    float: none;
+    width: 100%;
+}
+.layout--threecol-section--33-34-33 > .layout__region--first, .layout--threecol-section--33-34-33 > .layout__region--third {
+    flex: 0 1 100%;
+}
+}
+
+
 /* unsure why 944 megamenu breaks at this point would be better at 768 or 992 to maintain bootstrap consistency*/
 @media only screen and (max-width: 944px) {
 #header-mobile {
@@ -809,6 +1405,46 @@ a.btn-fifth {
     z-index: 999;
     padding: 0 20px;
 }
+.view-news {
+    text-align: left;
+    min-height: 330px;
+    line-height: 1.25em !important;
+}
+	
+#block-views-block-news-block-2 {
+    display: none;
+}
+	
+.layout-no-sidebars .container {
+    /*max-width: 100%;*/
+	width: calc(100% - 30px);
+	width: 100%;
+}
+	
+.path-frontpage .content {
+    padding-left:30px;
+	padding-right:30px;
+}
+	
+	
+.content .content,
+.content article {
+    padding-left:0 !important;
+	padding-right:0 !important;
+}
+	
+.path-frontpage #block-aaweb-subtheme-content .content {
+    padding-left:30px;
+	padding-right:30px;
+}
+	
+.field--name-field-sightings .views-element-container {
+    padding-left:0 !important;
+	padding-right:0 !important;
+	}
+	
+
+	
 }
 
 
@@ -833,3 +1469,53 @@ a.btn-fifth {
         width: 425px;
     }
 }
+
+
+
+
+/** WEB FONTS **/
+@font-face {
+	font-family: 'futura-bold';
+	src: url('fonts/futura-bold.eot');
+	src: local('☺'), url('fonts/futura-bold.woff') format('woff'), url('fonts/futura-bold.ttf') format('truetype'), url('fonts/futura-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'futura-regular';
+	src: url('fonts/futura-regular.eot');
+	src: local('☺'), url('fonts/futura-regular.woff') format('woff'), url('fonts/futura-regular.ttf') format('truetype'), url('fonts/futura-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima-noma-bold';
+	src: url('fonts/proxima-noma-bold.eot');
+	src: local('☺'), url('fonts/proxima-noma-bold.woff') format('woff'), url('fonts/proxima-noma-bold.ttf') format('truetype'), url('fonts/proxima-noma-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima-noma-regular';
+	src: url('fonts/proxima-noma-regular.eot');
+	src: local('☺'), url('fonts/proxima-noma-regular.woff') format('woff'), url('fonts/proxima-noma-regular.ttf') format('truetype'), url('fonts/proxima-noma-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* TEMP - HIDE SIGHTINGS AND WIP PAGES */
+.field--name-field-sightings .views-element-container {
+    	display: none;
+	}
+	.leaflet-control-attribution {
+		display: none;
+	}
+	/* MegaMenu - temp hide unused items */
+	#block-beetlemonitoring,
+	#block-projectoutcomes {
+		display: none !important;
+	}

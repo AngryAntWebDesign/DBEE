@@ -2,9 +2,9 @@
 function getColor(d) {
   
   return d == 0
-    ? "gray"
+    ? "transparent"
     : d == 1
-      ? "black" : "pink";
+      ? "#66887a" : "pink";
 }
 
 
@@ -12,12 +12,24 @@ function getColor(d) {
 function highlightFeature(e) {
   var layer = e.target;
 
+  //console.log(e);
+
+  if (layer.options.fillColor == 'transparent') {
+    
+    var strFillColor = '#000';
+    var strFillOpacity = .05;
+  }
+  else {
+    var strFillColor = '#66887a';
+    var strFillOpacity = .7;
+  }
+
   layer.setStyle({
-    weight: 2,
-    color: "#666",
-    dashArray: "",
-    fillOpacity: 0.3,
-    fillColor: "#66887a"
+    weight: 1,
+    color: "#fff",
+    dashArray: "1",
+    fillOpacity: strFillOpacity,
+    fillColor: strFillColor
   });
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -62,17 +74,17 @@ map.attributionControl.addAttribution(
   'Absence Data &copy; <a href="http://ala.org.au/">Atlas of Living Australa</a>'
 );
 // assigns where the legend should be placed and creates it
-var legend = L.control({ position: "bottomright" });
+var legend = L.control({ position: "bottomleft" });
 // modifies the legend adding the html structure to it
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "info legend"),
     grades = ["Present", "Absent"],
     labels = [];
 
-  labels.push('<i style="background:gray;"></i>Absent');
-  labels.push('<i style="background:black;"></i>Present');
+  labels.push('<p><i style="background:#ffffff;border:1px solid #555;box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);"></i>Absent</p>');
+  labels.push('<p style="margin-bottom:0px;"><i style="background:#66887a;"></i>Present</p>');
 
-  div.innerHTML = labels.join("<br>");
+  div.innerHTML = labels.join("");
   return div;
 };
 

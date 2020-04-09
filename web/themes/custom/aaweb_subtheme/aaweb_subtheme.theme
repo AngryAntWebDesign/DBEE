@@ -47,7 +47,6 @@ function aaweb_subtheme_page_attachments_alter(array &$page) {
   $current_uri = \Drupal::request()->getRequestUri();          
 
   if ($path == '/node/16') {
-    
     $page['#attached']['library'][] = 'aaweb_subtheme/varieties';
   }
   //  this loads presence maps per species page
@@ -87,6 +86,9 @@ function aaweb_subtheme_page_attachments_alter(array &$page) {
   } else if ($current_uri == '/species/copris-elphenor') { 
     $page['#attached']['library'][] = 'aaweb_subtheme/copris-elphenor'; 
     $page['#attached']['library'][] = 'aaweb_subtheme/species';
+  } else if ($current_uri == '/species/copris-hispanus') { 
+    $page['#attached']['library'][] = 'aaweb_subtheme/copris-hispanus'; 
+    $page['#attached']['library'][] = 'aaweb_subtheme/species';    
   } else if ($current_uri == '/species/onitis-aygulus') { 
     $page['#attached']['library'][] = 'aaweb_subtheme/onitis-aygulus'; 
     $page['#attached']['library'][] = 'aaweb_subtheme/species';
